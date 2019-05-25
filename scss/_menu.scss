@@ -12,24 +12,26 @@
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    @include  easeOut;
+    @include easeOut;
   }
 
-/*  Rotate into X with menu lines*/
+  /*  Rotate into X with menu lines*/
   &.close {
     transform: rotate(180deg);
 
-    .btn-line{
-/*      Line 1 = Rotate*/
-      &:nth-child(1){
+    .btn-line {
+      /*      Line 1 = Rotate*/
+      &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
-/*      Line 2 - Hide*/
-      &:nth-child(2){
-       opacity: 0;
+
+      /*      Line 2 - Hide*/
+      &:nth-child(2) {
+        opacity: 0;
       }
-/*      Line 3 - Rotate*/
-      &:nth-child(3){
+
+      /*      Line 3 - Rotate*/
+      &:nth-child(3) {
         transform: rotate(135deg) translate(-6px, 6px);
       }
     }
@@ -37,14 +39,14 @@
 }
 
 /*Menu Overlay*/
-.menu{
+.menu {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
 
-  &.show{
+  &.show {
     visibility: visible;
   }
 
@@ -69,13 +71,13 @@
     @include easeOut;
 
     &.show {
-/*      Slide in from top*/
-      transform: translate3d(0,0,0);
+      /*      Slide in from top*/
+      transform: translate3d(0, 0, 0);
     }
   }
 
-/*  Branding side*/
-  &-branding{
+  /*  Branding side*/
+  &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -83,25 +85,25 @@
 
     &.show {
       /*      Slide in from bottom*/
-       transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
     }
 
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../images/portraitdark.png');
+      background: url('../images/portrait250.png');
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
-}
+  }
 
-  .nav-item{
+  .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
     &.show {
       /*      Slide in from right*/
-       transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
     }
 
     &.current > a {
@@ -120,14 +122,15 @@
     text-decoration: none;
     @include easeOut;
 
-    &:hover{
+    &:hover {
       color: $secondary-color;
     }
   }
 }
+
 /*Delay each nav item slide by 0.1s*/
 @for $x from 1 through 4 {
-  .nav-item:nth-child(#{$x}){
+  .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
 
