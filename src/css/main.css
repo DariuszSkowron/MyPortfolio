@@ -1,13 +1,10 @@
-/*Media Query Mixins*/
-/*Menu Button*/
 .menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out;
-  /*  Rotate into X with menu lines*/ }
+  transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -16,25 +13,19 @@
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line {
-      /*      Line 1 = Rotate*/
-      /*      Line 2 - Hide*/
-      /*      Line 3 - Rotate*/ }
-      .menu-btn.close .btn-line:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px); }
-      .menu-btn.close .btn-line:nth-child(2) {
-        opacity: 0; }
-      .menu-btn.close .btn-line:nth-child(3) {
-        transform: rotate(135deg) translate(-6px, 6px); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(135deg) translate(-6px, 6px); }
 
-/*Menu Overlay*/
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.9;
-  visibility: hidden;
-  /*  Branding side*/ }
+  visibility: hidden; }
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
@@ -54,14 +45,12 @@
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
-      /*      Slide in from top*/
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
-      /*      Slide in from bottom*/
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 250px;
@@ -73,8 +62,7 @@
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
-      /*      Slide in from right*/
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(0px, 0px, 0px); }
     .menu .nav-item.current > a {
       color: #4f651c; }
   .menu .nav-link {
@@ -90,7 +78,6 @@
     .menu .nav-link:hover {
       color: #4f651c; }
 
-/*Delay each nav item slide by 0.1s*/
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
 
@@ -103,39 +90,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-/*Widescreens*/
-/*Desktops & Laptops*/
-/*Tablets & Small Laptops*/
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav, div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show, div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url "../images/portrait150.png";
-      width: 150px;
-      height: 150px; } }
-
-/*Smartphones*/
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
@@ -145,8 +99,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  /*  Headings*/ }
+  line-height: 1.5; }
   body#bg-img {
     background: url(../images/background.jpg);
     background-attachment: fixed;
@@ -210,3 +163,32 @@ body {
       overflow: hidden; }
       body main#home h1 {
         margin-top: 20vh; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../images/portrait150.png");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }

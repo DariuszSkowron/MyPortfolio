@@ -1,4 +1,4 @@
-/*Menu Button*/
+//Menu Button
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -15,22 +15,22 @@
     @include easeOut;
   }
 
-  /*  Rotate into X with menu lines*/
+    //Rotate into X with menu lines
   &.close {
     transform: rotate(180deg);
 
     .btn-line {
-      /*      Line 1 = Rotate*/
+            //Line 1 = Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
 
-      /*      Line 2 - Hide*/
+            //Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
       }
 
-      /*      Line 3 - Rotate*/
+            //Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(135deg) translate(-6px, 6px);
       }
@@ -38,7 +38,7 @@
   }
 }
 
-/*Menu Overlay*/
+//Menu Overlay
 .menu {
   position: fixed;
   top: 0;
@@ -67,16 +67,16 @@
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0,-100%, 0);
     @include easeOut;
 
     &.show {
-      /*      Slide in from top*/
+            //Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
 
-  /*  Branding side*/
+    //Branding side
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
@@ -84,7 +84,7 @@
 
 
     &.show {
-      /*      Slide in from bottom*/
+            //Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
 
@@ -98,12 +98,12 @@
   }
 
   .nav-item {
-    transform: translate3d(600px, 0, 0);
+    transform: translate3d(600px,0,0);
     @include easeOut;
 
     &.show {
-      /*      Slide in from right*/
-      transform: translate3d(0, 0, 0);
+            //Slide in from right
+      transform: translate3d(0px,0px,0px);
     }
 
     &.current > a {
@@ -128,10 +128,9 @@
   }
 }
 
-/*Delay each nav item slide by 0.1s*/
+//Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
-
 }
