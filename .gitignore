@@ -11,6 +11,5 @@ gen
 .idea/
 MyPortfolio.iml
 node_modules
-package-lock.json
-package.json
+
 
