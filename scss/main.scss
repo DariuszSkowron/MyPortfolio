@@ -172,9 +172,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5rem;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
 
+  //i {
+  //  align-items: center;
+  //  vertical-align: middle;
+  //}
 
   div {
     font-size: 2rem;
@@ -227,20 +231,21 @@ body {
 }
 
 .resume{
+  margin-top: 1rem;
     a {
       padding: 0.4rem;
 
 
       &:hover {
-        color: $secondary-color;
+        background: $secondary-color;
         color: set-text-color($secondary-color);
         @include easeOut();
       }
 
   }
   .button.resume::after{
+    padding: 0 0 15px 15px;
     border: none;
-    width: 115px;
     text-align: center;
     margin: 5px;
     content: "\f56d";

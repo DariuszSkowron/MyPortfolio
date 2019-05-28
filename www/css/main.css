@@ -4543,7 +4543,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5rem;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle; }
   .boxes div {
     font-size: 2rem;
@@ -4582,21 +4582,22 @@ main {
   color: #fff;
   height: 60px; }
 
-.resume a {
-  padding: 0.4rem; }
-  .resume a:hover {
-    color: #4f651c;
-    color: #fff;
-    transition: all 0.5s ease-out; }
-
-.resume .button.resume::after {
-  border: none;
-  width: 115px;
-  text-align: center;
-  margin: 5px;
-  content: "\f56d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900; }
+.resume {
+  margin-top: 1rem; }
+  .resume a {
+    padding: 0.4rem; }
+    .resume a:hover {
+      background: #4f651c;
+      color: #fff;
+      transition: all 0.5s ease-out; }
+  .resume .button.resume::after {
+    padding: 0 0 15px 15px;
+    border: none;
+    text-align: center;
+    margin: 5px;
+    content: "\f56d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; }
 
 @media screen and (min-width: 1171px) {
   .projects {
