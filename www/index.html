@@ -58,8 +58,9 @@
 
 <!--    </button>-->
     <div class="resume">
-        <a href="#!" class="button resume">Download Resume
-        </a>
+        <a href="#!" class="button resume" id="button1">Download Resume</a>
+        <a  class="button lang" id="button2">Polish</a>
+        <a class="button lang" id="button3">English</a>
     </div>
 
     <div class="icons">
@@ -76,6 +77,15 @@
 </main>
 
 <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#button1').on('click',function(){
+            $('#button2').toggle();
+            $('#button3').toggle();
+        });
+    });
+</script>
 </body>
 
 </html>

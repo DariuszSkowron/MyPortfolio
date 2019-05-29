@@ -255,3 +255,62 @@ body {
 }
 
 @import '_mobile.scss';
+
+
+//
+//.button.lang::after{
+//  padding: 0 0 15px 15px;
+//  border: none;
+//  text-align: center;
+//  margin: 5px;
+//  -webkit-transition: opacity 2s; /* Safari */
+//  transition: transform 2s;
+//  -webkit-transition: -webkit-transform 2s;
+//}
+//
+//
+//.hide{
+//  opacity:0;
+//}
+//
+//#button3, #button2{
+//  display:none;
+//  -webkit-transition: -webkit-transform 2s; /* Safari */
+//  transition: transform 2s;
+//}
+//#button1{
+//  z-index:10;
+//  -webkit-transition: opacity 2s; /* Safari */
+//  transition: opacity 2s;
+//}
+//
+//.animateToRight{
+//  -webkit-transform: translate(50px); /* Safari */
+//  transform: translate(50px);
+//}
+//.animateToLeft{
+//  -webkit-transform: translate(100px); /* Safari */
+//  transform: translate(100px);
+//}
+//
+//button{
+//  padding: 0 0 15px 15px;
+//  border: none;
+//  text-align: center;
+//  border: none;
+//  margin: 5px;
+//  font-weight: 900;
+//  position: absolute;
+//
+//}
+//
+//.blobs {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  background: none;
+//  width: 200px;
+//  height: 200px;
+//}
