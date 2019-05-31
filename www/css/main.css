@@ -4430,8 +4430,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma,
- Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../images/background.jpg);
@@ -4505,8 +4504,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio'
- 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -4602,6 +4600,10 @@ main {
     font-weight: 900; }
 
 .resume1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  background: #7ff2da;
+  color: #c4f260;
   /***********************************
   * =Main Info
   ***********************************/
@@ -4621,11 +4623,6 @@ main {
     box-sizing: border-box; }
   .resume1 *, .resume1 *:before, .resume1 *:after {
     box-sizing: inherit; }
-  .resume1 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
-    background: #f2ca71;
-    color: #323232; }
   .resume1 img {
     max-width: 100%; }
   .resume1 .icon {
@@ -4635,7 +4632,7 @@ main {
     height: 1em;
     overflow: visible; }
   .resume1 a {
-    color: #323232;
+    color: #f23546;
     text-decoration: none; }
   .resume1 a:hover {
     text-decoration: underline; }
@@ -4643,7 +4640,7 @@ main {
     max-width: 960px;
     margin: 40px auto;
     padding: 32px;
-    background: white;
+    background: rgba(49, 4, 8, 0.98);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
   .resume1 section {
     display: grid;
@@ -4755,11 +4752,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage'
- 'bio'
- 'job1'
- 'job2'
- 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
