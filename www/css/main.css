@@ -4586,10 +4586,6 @@ main {
   margin-top: 1rem; }
   .resume a {
     padding: 0.4rem; }
-    .resume a:hover {
-      background: #4f651c;
-      color: #fff;
-      transition: all 0.5s ease-out; }
   .resume .button.resume::after {
     padding: 0 0 15px 15px;
     border: none;
@@ -4597,7 +4593,44 @@ main {
     margin: 5px;
     content: "\f56d";
     font-family: "Font Awesome 5 Free";
-    font-weight: 900; }
+    font-weight: 900;
+    z-index: 10;
+    -webkit-transition: opacity 2s;
+    /* Safari */
+    transition: opacity 2s; }
+  .resume .hide {
+    opacity: 0; }
+  .resume #button3, .resume #button2 {
+    -webkit-transition: -webkit-transform 2s;
+    /* Safari */
+    transition: transform 2s; }
+  .resume #button1 {
+    z-index: 10;
+    -webkit-transition: opacity 2s;
+    /* Safari */
+    transition: opacity 2s; }
+  .resume .animateToRight {
+    -webkit-transform: translate(100px);
+    /* Safari */
+    transform: translate(100px); }
+  .resume .animateToLeft {
+    -webkit-transform: translate(-100px);
+    /* Safari */
+    transform: translate(-100px); }
+  .resume button {
+    padding: 0.4rem;
+    border: none;
+    text-align: center;
+    margin: 5px;
+    color: #444;
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    border-radius: 2px; }
+    .resume button:hover {
+      background: #4f651c;
+      color: #fff; }
 
 .resume1 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -4605,20 +4638,20 @@ main {
   background: #7ff2da;
   color: #c4f260;
   /***********************************
-  * =Main Info
-  ***********************************/
+    * =Main Info
+    ***********************************/
   /***********************************
-  * =Experience
-  ***********************************/
+    * =Experience
+    ***********************************/
   /***********************************
-  * =Skills
-  ***********************************/
+    * =Skills
+    ***********************************/
   /***********************************
-  * =Interests
-  ***********************************/
+    * =Interests
+    ***********************************/
   /***********************************
-  * =References
-  ***********************************/ }
+    * =References
+    ***********************************/ }
   .resume1 html {
     box-sizing: border-box; }
   .resume1 *, .resume1 *:before, .resume1 *:after {

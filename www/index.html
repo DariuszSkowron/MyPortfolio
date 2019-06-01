@@ -53,14 +53,10 @@
         Novice Java Developer, Lead Project Engineer & Mechanical Constructor
     </h2>
 
-<!--    <button-->
-<!--               class="btn-resume">Download Resume-->
-
-<!--    </button>-->
     <div class="resume">
-        <a href="#!" class="button resume" id="button1">Download Resume</a>
-        <a  class="button lang" id="button2">Polish</a>
-        <a class="button lang" id="button3">English</a>
+        <a href="#!" class="button resume" id="button1">Download Resume Polish</a>
+        <button id="button2">Polish</button>
+        <button id="button3">English</button>
     </div>
 
     <div class="icons">
@@ -81,10 +77,13 @@
 <script>
     $(function(){
         $('#button1').on('click',function(){
-            $('#button2').hide(230);
-            $('#button3').hide(230);
+            $('#button2').addClass('animateToLeft');
+            $('#button3').addClass('animateToRight');
+            $('#button1').addClass('hide');
         });
     });
+
+
 </script>
 </body>
 
