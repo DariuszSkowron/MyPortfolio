@@ -4584,20 +4584,24 @@ main {
 
 .resume {
   margin-top: 1rem; }
-  .resume a {
-    padding: 0.4rem; }
   .resume .button.resume::after {
-    padding: 0 0 15px 15px;
+    display: inline-block;
     border: none;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
+    padding: 5px;
     content: "\f56d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    z-index: 10;
-    -webkit-transition: opacity 2s;
-    /* Safari */
-    transition: opacity 2s; }
+    z-index: 10; }
+  .resume .icon-rotates {
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear; }
+  .resume .icon-rotates.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .resume .hide {
     opacity: 0; }
   .resume #button3, .resume #button2 {
@@ -4612,12 +4616,25 @@ main {
   .resume .animateToRight {
     -webkit-transform: translate(100px);
     /* Safari */
-    transform: translate(100px); }
+    transform: translate(100px);
+    opacity: 0.5; }
+  .resume #nav {
+    position: absolute;
+    left: 14%;
+    background: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .resume #nav.goLeft {
+    left: 23%;
+    opacity: 0; }
   .resume .animateToLeft {
-    -webkit-transform: translate(-100px);
+    -webkit-transform: translate(50px);
     /* Safari */
-    transform: translate(-100px); }
-  .resume button {
+    transform: translate(50px);
+    opacity: 1; }
+  .resume button, .resume .button-hidden {
     padding: 0.4rem;
     border: none;
     text-align: center;
@@ -4628,9 +4645,11 @@ main {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
     border-radius: 2px; }
-    .resume button:hover {
+    .resume button:hover, .resume .button-hidden:hover {
       background: #4f651c;
       color: #fff; }
+  .resume .button-hidden {
+    left: 0; }
 
 .resume1 {
   font-family: 'Source Sans Pro', sans-serif;

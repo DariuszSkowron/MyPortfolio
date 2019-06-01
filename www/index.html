@@ -54,9 +54,11 @@
     </h2>
 
     <div class="resume">
-        <a href="#!" class="button resume" id="button1">Download Resume Polish</a>
+        <button id="button1">Download Resume <i class="fa fa-chevron-right rotate"></i></button>
+        <a id="nav">
         <button id="button2">Polish</button>
         <button id="button3">English</button>
+        </a>
     </div>
 
     <div class="icons">
@@ -75,13 +77,30 @@
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-    $(function(){
-        $('#button1').on('click',function(){
-            $('#button2').addClass('animateToLeft');
-            $('#button3').addClass('animateToRight');
-            $('#button1').addClass('hide');
+    // $(function(){
+    //     $('#button1').on('click',function(){
+    //         $('#button2').addClass('animateToLeft');
+    //         $('#button3').addClass('animateToRight');
+    //         $('#button1').addClass('hide');
+    //     });
+    // });
+    //
+    //
+    // $('#button1').click(function(){
+    //     if($(this).css("transform") == 'none') {
+    //         $(this).children().css('transform', 'rotate(180deg)');
+    //     } else {
+    //         $(this).children().css('transform', 'none');
+    //     }
+    // });
+
+
+    $(function () {
+        $("#button1").on('click', function () {
+            $('#nav').toggleClass('goLeft');
         });
     });
+
 
 
 </script>

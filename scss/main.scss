@@ -233,21 +233,30 @@ body {
 .resume {
   margin-top: 1rem;
 
-  a {
-    padding: 0.4rem;
-  }
 
   .button.resume::after {
-    padding: 0 0 15px 15px;
+    display: inline-block;
     border: none;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
+    padding: 5px;
     content: "\f56d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     z-index: 10;
-    -webkit-transition: opacity 2s; /* Safari */
-    transition: opacity 2s;
+
+  }
+
+  .icon-rotates{
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+  }
+
+  .icon-rotates.rotate{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
   }
 
   .hide {
@@ -268,11 +277,28 @@ body {
   .animateToRight {
     -webkit-transform: translate(100px); /* Safari */
     transform: translate(100px);
+    opacity: 0.5;
+
+  }
+
+  #nav {
+    position: absolute;
+    left: 14%;
+    background: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #nav.goLeft {
+    left: 23%;
+    opacity: 0;
   }
 
   .animateToLeft {
-    -webkit-transform: translate(-100px); /* Safari */
-    transform: translate(-100px);
+    -webkit-transform: translate(50px); /* Safari */
+    transform: translate(50px);
+    opacity: 1;
   }
 
 
@@ -296,6 +322,12 @@ body {
       background: $secondary-color;
       color: set-text-color($secondary-color);
     }
+
+
+  }
+  .button-hidden{
+    @extend button;
+    left: 0;
   }
   }
 
