@@ -54,7 +54,7 @@
     </h2>
 
     <div class="resume">
-        <button id="button1">Download Resume <i class="fa fa-chevron-right rotate"></i></button>
+        <button id="button1">Download Resume <i class="fa fa-chevron-left rotate"></i></button>
         <a id="nav">
         <button id="button2">Polish</button>
         <button id="button3">English</button>
@@ -101,6 +101,9 @@
         });
     });
 
+    $("#button1").click(function(){
+        $('.rotate').toggleClass("down")  ;
+    })
 
 
 </script>

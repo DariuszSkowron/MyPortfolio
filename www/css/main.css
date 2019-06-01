@@ -4594,6 +4594,14 @@ main {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     z-index: 10; }
+  .resume .rotate {
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .resume .rotate.down {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .resume .icon-rotates {
     -moz-transition: all 2s linear;
     -webkit-transition: all 2s linear;
@@ -4627,8 +4635,10 @@ main {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .resume #nav.goLeft {
-    left: 23%;
-    opacity: 0; }
+    left: 5%;
+    opacity: 0;
+    pointer-events: none;
+    cursor: not-allowed; }
   .resume .animateToLeft {
     -webkit-transform: translate(50px);
     /* Safari */
