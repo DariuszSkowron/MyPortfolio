@@ -301,6 +301,8 @@ body {
   #nav.goRight {
     left: 14%;
     opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
     //opacity: 0;
     //pointer-events: none;
     //cursor: not-allowed;
@@ -327,26 +329,19 @@ body {
       background: $secondary-color;
       color: set-text-color($secondary-color);
     }
-
-
-  }
-  .button-hidden{
-    @extend button;
-    left: 0;
   }
   }
 
-
-  .resume1 {
+  .resume-page {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
     background: $primary-color;
-    color: set-text-color($primary-color);
+    color: set-text-color($resume-color);
 
 
-    html {
-      box-sizing: border-box;
-    }
+    //html {
+    //  box-sizing: border-box;
+    //}
 
     *, *:before, *:after {
       box-sizing: inherit;
@@ -367,7 +362,7 @@ body {
     }
 
     a {
-      color: set-text-color($primary-color);
+      color: set-text-color($resume-color);
       text-decoration: none;
     }
 
@@ -379,7 +374,7 @@ body {
       max-width: 960px;
       margin: 40px auto;
       padding: 32px;
-      background: rgba(49, 4, 8, 0.98);
+      background: #ffffff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -388,7 +383,8 @@ body {
       grid-template-columns: 1fr 4fr;
       grid-gap: 20px;
       padding: 24px 0;
-      border-bottom: 1px solid lightgrey;
+      //border-bottom: 1px solid lightgrey;
+      border-bottom: $secondary-color 1px solid;
     }
 
     section:last-child {
@@ -444,7 +440,8 @@ body {
     .job {
       padding-bottom: 24px;
       margin-bottom: 24px;
-      border-bottom: 1px solid lightgrey;
+      //border-bottom: 1px solid lightgrey;
+      border-bottom: $secondary-color 1px solid;
     }
 
     .job:last-child {
