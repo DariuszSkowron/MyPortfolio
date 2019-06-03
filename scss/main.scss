@@ -328,6 +328,7 @@ body {
     font-family: "Segoe UI", Tahoma,
     Geneva, Verdana, sans-serif;
     line-height: 1.4;
+    cursor: pointer;
 
     //background: rgba(lighten($secondary-color, 4), 0.5);
     border-radius: 2px;
@@ -342,6 +343,69 @@ body {
   .button-hidden{
     @extend button;
     left: 0;
+  }
+
+
+  ///////////////
+
+
+  .btn{
+    display: block;
+    position: absolute;
+    float: left;
+    width: 141px;
+    height: 0;
+    cursor: pointer;
+  }
+  .btn:nth-child(1){
+    border-bottom: 30px solid #c74523;
+    border-right: 20px solid transparent;
+    left: 0px;
+    z-index: 1;
+  }
+  .btn:nth-child(1):hover{
+    border-bottom: 30px solid #fff;
+    color: #c74523;
+  }
+  .btn:nth-child(2){
+    border-left: 20px solid transparent;
+    border-top: 30px solid #c74523;
+    right: 0px;
+    z-index: 2;
+  }
+  .btn:nth-child(2):hover{
+    border-top: 30px solid #fff;
+    color: #c74523;
+  }
+
+  .btn:nth-child(2):before{
+    border-right: 2px solid #fff;
+    content: "";
+    height: 40px;
+    position: absolute;
+    right: 150px;
+    top: -35px;
+    transform: rotate(-34deg) translateZ(0px);
+  }
+  .btn span{
+    position: relative;
+    float: left;
+    top: 7px;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  .btn:hover span{
+    color: #c74523;
+  }
+  .btn:nth-child(2) span{
+    top: -23px;
+
   }
   }
 

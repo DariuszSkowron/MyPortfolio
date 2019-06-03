@@ -4654,12 +4654,60 @@ main {
     font-size: 1.2rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
+    cursor: pointer;
     border-radius: 2px; }
     .resume button:hover, .resume .button-hidden:hover {
       background: #4f651c;
       color: #fff; }
   .resume .button-hidden {
     left: 0; }
+  .resume .btn, .resume .btn-dark, .resume .btn-light {
+    display: block;
+    position: absolute;
+    float: left;
+    width: 141px;
+    height: 0;
+    cursor: pointer; }
+  .resume .btn:nth-child(1), .resume .btn-dark:nth-child(1), .resume .btn-light:nth-child(1) {
+    border-bottom: 30px solid #c74523;
+    border-right: 20px solid transparent;
+    left: 0px;
+    z-index: 1; }
+  .resume .btn:nth-child(1):hover, .resume .btn-dark:nth-child(1):hover, .resume .btn-light:nth-child(1):hover {
+    border-bottom: 30px solid #fff;
+    color: #c74523; }
+  .resume .btn:nth-child(2), .resume .btn-dark:nth-child(2), .resume .btn-light:nth-child(2) {
+    border-left: 20px solid transparent;
+    border-top: 30px solid #c74523;
+    right: 0px;
+    z-index: 2; }
+  .resume .btn:nth-child(2):hover, .resume .btn-dark:nth-child(2):hover, .resume .btn-light:nth-child(2):hover {
+    border-top: 30px solid #fff;
+    color: #c74523; }
+  .resume .btn:nth-child(2):before, .resume .btn-dark:nth-child(2):before, .resume .btn-light:nth-child(2):before {
+    border-right: 2px solid #fff;
+    content: "";
+    height: 40px;
+    position: absolute;
+    right: 150px;
+    top: -35px;
+    transform: rotate(-34deg) translateZ(0px); }
+  .resume .btn span, .resume .btn-dark span, .resume .btn-light span {
+    position: relative;
+    float: left;
+    top: 7px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px; }
+  .resume .btn:hover span, .resume .btn-dark:hover span, .resume .btn-light:hover span {
+    color: #c74523; }
+  .resume .btn:nth-child(2) span, .resume .btn-dark:nth-child(2) span, .resume .btn-light:nth-child(2) span {
+    top: -23px; }
 
 .resume1 {
   font-family: 'Source Sans Pro', sans-serif;
