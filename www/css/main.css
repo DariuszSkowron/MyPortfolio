@@ -4438,7 +4438,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: '';
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -4621,28 +4621,19 @@ main {
     -webkit-transition: opacity 2s;
     /* Safari */
     transition: opacity 2s; }
-  .resume .animateToRight {
-    -webkit-transform: translate(100px);
-    /* Safari */
-    transform: translate(100px);
-    opacity: 0.5; }
   .resume #nav {
     position: absolute;
-    left: 14%;
+    left: 5%;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-  .resume #nav.goLeft {
-    left: 5%;
+    transition: all 0.5s ease;
     opacity: 0;
     pointer-events: none;
     cursor: not-allowed; }
-  .resume .animateToLeft {
-    -webkit-transform: translate(50px);
-    /* Safari */
-    transform: translate(50px);
+  .resume #nav.goRight {
+    left: 14%;
     opacity: 1; }
   .resume button, .resume .button-hidden {
     padding: 0.4rem;
@@ -4661,53 +4652,6 @@ main {
       color: #fff; }
   .resume .button-hidden {
     left: 0; }
-  .resume .btn, .resume .btn-dark, .resume .btn-light {
-    display: block;
-    position: absolute;
-    float: left;
-    width: 141px;
-    height: 0;
-    cursor: pointer; }
-  .resume .btn:nth-child(1), .resume .btn-dark:nth-child(1), .resume .btn-light:nth-child(1) {
-    border-bottom: 30px solid #c74523;
-    border-right: 20px solid transparent;
-    left: 0px;
-    z-index: 1; }
-  .resume .btn:nth-child(1):hover, .resume .btn-dark:nth-child(1):hover, .resume .btn-light:nth-child(1):hover {
-    border-bottom: 30px solid #fff;
-    color: #c74523; }
-  .resume .btn:nth-child(2), .resume .btn-dark:nth-child(2), .resume .btn-light:nth-child(2) {
-    border-left: 20px solid transparent;
-    border-top: 30px solid #c74523;
-    right: 0px;
-    z-index: 2; }
-  .resume .btn:nth-child(2):hover, .resume .btn-dark:nth-child(2):hover, .resume .btn-light:nth-child(2):hover {
-    border-top: 30px solid #fff;
-    color: #c74523; }
-  .resume .btn:nth-child(2):before, .resume .btn-dark:nth-child(2):before, .resume .btn-light:nth-child(2):before {
-    border-right: 2px solid #fff;
-    content: "";
-    height: 40px;
-    position: absolute;
-    right: 150px;
-    top: -35px;
-    transform: rotate(-34deg) translateZ(0px); }
-  .resume .btn span, .resume .btn-dark span, .resume .btn-light span {
-    position: relative;
-    float: left;
-    top: 7px;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin: 0px;
-    padding: 0px; }
-  .resume .btn:hover span, .resume .btn-dark:hover span, .resume .btn-light:hover span {
-    color: #c74523; }
-  .resume .btn:nth-child(2) span, .resume .btn-dark:nth-child(2) span, .resume .btn-light:nth-child(2) span {
-    top: -23px; }
 
 .resume1 {
   font-family: 'Source Sans Pro', sans-serif;
