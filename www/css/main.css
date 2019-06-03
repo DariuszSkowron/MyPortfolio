@@ -4664,8 +4664,8 @@ main {
 .resume1 {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
-  background: #7ff2da;
-  color: #c4f260;
+  background: #444;
+  color: #fff;
   /***********************************
     * =Main Info
     ***********************************/
@@ -4686,7 +4686,9 @@ main {
   .resume1 *, .resume1 *:before, .resume1 *:after {
     box-sizing: inherit; }
   .resume1 img {
-    max-width: 100%; }
+    max-width: 100%;
+    border-radius: 50%;
+    border: #4f651c 3px solid; }
   .resume1 .icon {
     fill: currentColor;
     display: inline-block;
@@ -4694,7 +4696,7 @@ main {
     height: 1em;
     overflow: visible; }
   .resume1 a {
-    color: #f23546;
+    color: #fff;
     text-decoration: none; }
   .resume1 a:hover {
     text-decoration: underline; }
@@ -4716,7 +4718,7 @@ main {
     font-weight: bold;
     font-size: 18px; }
   .resume1 img.avatar {
-    width: 130px; }
+    width: 150px; }
   .resume1 .my-name {
     font-size: 48px;
     line-height: 1; }

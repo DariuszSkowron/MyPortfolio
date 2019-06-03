@@ -351,8 +351,8 @@ body {
   .resume1 {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
-    background: #7ff2da;
-    color: #c4f260;
+    background: $primary-color;
+    color: set-text-color($primary-color);
 
 
     html {
@@ -365,6 +365,8 @@ body {
 
     img {
       max-width: 100%;
+      border-radius: 50%;
+      border: $secondary-color 3px solid;
     }
 
     .icon {
@@ -376,7 +378,7 @@ body {
     }
 
     a {
-      color: #f23546;
+      color: set-text-color($primary-color);
       text-decoration: none;
     }
 
@@ -414,7 +416,8 @@ body {
     ***********************************/
 
     img.avatar {
-      width: 130px;
+      width: 150px;
+
     }
 
     .my-name {
@@ -425,7 +428,7 @@ body {
     .my-title {
       font-size: 24px;
       font-weight: 300;
-      color: #4f651c;
+      color: $secondary-color;
     }
 
     .links {
