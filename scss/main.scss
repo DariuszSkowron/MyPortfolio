@@ -231,9 +231,32 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
+
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+#social-footer {
+  text-align: center;
+  padding: 1rem;
+  //background: darken($primary-color, 10);
+  //color: set-text-color($primary-color);
+  height: 50px;
+
+  align-items: center;
+  text-align: center;
+
+
+  a {
+    padding: 5rem;
+
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
 }
 
 .resume {
@@ -538,7 +561,6 @@ main {
   .icons {
   //margin-top: 1rem;
     position: center;
-    bottom: 100px;
   //right: 35px;
   cursor: pointer;
     align-items: center;

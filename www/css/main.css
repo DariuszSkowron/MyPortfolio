@@ -4575,6 +4575,18 @@ main {
   color: #fff;
   height: 60px; }
 
+#social-footer {
+  text-align: center;
+  padding: 1rem;
+  height: 50px;
+  align-items: center;
+  text-align: center; }
+  #social-footer a {
+    padding: 5rem; }
+    #social-footer a:hover {
+      color: #4f651c;
+      transition: all 0.5s ease-out; }
+
 .resume {
   margin-top: 1rem; }
   .resume .button.resume::after {
@@ -4768,7 +4780,6 @@ main {
 
 .icons {
   position: center;
-  bottom: 100px;
   cursor: pointer;
   align-items: center;
   text-align: center; }
