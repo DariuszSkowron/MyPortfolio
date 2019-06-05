@@ -4459,7 +4459,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.5rem;
     background: rgba(73, 73, 73, 0.5); }
 
 a {
@@ -4490,7 +4490,10 @@ main {
     background-color: #4f651c;
     color: #ffffff; }
   main .icons {
-    margin-top: 1rem; }
+    position: absolute;
+    z-index: 3;
+    bottom: 80px;
+    cursor: pointer; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -4504,7 +4507,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -4546,7 +4549,7 @@ main {
   text-align: justify;
   vertical-align: middle; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 3px #fff solid;
     padding: 5rem 2.5rem;
     margin-bottom: 7rem;
@@ -4659,20 +4662,20 @@ main {
   background: #444;
   color: #000;
   /***********************************
-    * =Main Info
-    ***********************************/
+  * =Main Info
+  ***********************************/
   /***********************************
-    * =Experience
-    ***********************************/
+  * =Experience
+  ***********************************/
   /***********************************
-    * =Skills
-    ***********************************/
+  * =Skills
+  ***********************************/
   /***********************************
-    * =Interests
-    ***********************************/
+  * =Interests
+  ***********************************/
   /***********************************
-    * =References
-    ***********************************/ }
+  * =References
+  ***********************************/ }
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
   .resume-page img {
@@ -4772,6 +4775,16 @@ main {
     .resume-page .interests-container img {
       margin-right: 32px;
       margin-bottom: 16px; } }
+
+.icons {
+  align-items: center;
+  bottom: 80px;
+  cursor: pointer; }
+  .icons a {
+    padding: 0.4rem; }
+    .icons a:hover {
+      color: #4f651c;
+      transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1171px) {
   .projects {
