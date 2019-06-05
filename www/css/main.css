@@ -4489,16 +4489,6 @@ main {
   main .button:hover {
     background-color: #4f651c;
     color: #ffffff; }
-  main .icons {
-    position: absolute;
-    z-index: 3;
-    bottom: 80px;
-    cursor: pointer; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #4f651c;
-        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -4777,11 +4767,13 @@ main {
       margin-bottom: 16px; } }
 
 .icons {
+  position: center;
+  bottom: 100px;
+  cursor: pointer;
   align-items: center;
-  bottom: 80px;
-  cursor: pointer; }
+  text-align: center; }
   .icons a {
-    padding: 0.4rem; }
+    padding: 1rem; }
     .icons a:hover {
       color: #4f651c;
       transition: all 0.5s ease-out; }

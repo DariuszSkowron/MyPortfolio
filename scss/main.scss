@@ -83,25 +83,27 @@ main {
   }
 
 
-  .icons {
-    //margin-top: 1rem;
-    position: absolute;
-    z-index: 3;
-    //right: 35px;
-    bottom: 80px;
-    cursor: pointer;
-
-
-    a {
-      padding: 0.4rem;
-
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
-    }
-  }
+  //.icons {
+  //  //margin-top: 1rem;
+  //  position: absolute;
+  //
+  //  z-index: 3;
+  //
+  //  //right: 35px;
+  //  bottom: 80px;
+  //  cursor: pointer;
+  //
+  //
+  //  a {
+  //    padding: 0.4rem;
+  //
+  //
+  //    &:hover {
+  //      color: $secondary-color;
+  //      @include easeOut();
+  //    }
+  //  }
+  //}
 
   &#home {
     overflow: hidden;
@@ -535,14 +537,16 @@ main {
 
   .icons {
   //margin-top: 1rem;
-  align-items: center;
+    position: center;
+    bottom: 100px;
   //right: 35px;
-  bottom: 80px;
   cursor: pointer;
+    align-items: center;
+    text-align: center;
 
 
   a {
-    padding: 0.4rem;
+    padding: 1rem;
 
 
     &:hover {
