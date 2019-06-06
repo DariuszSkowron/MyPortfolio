@@ -3,12 +3,34 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .resume {
+    #nav {
+      position: absolute;
+      left: 5%;
+    }
+    #nav.goRight {
+      left: 17rem;
+    }
+  }
 }
 
 //Desktops & Laptops
 @include mediaLg{
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .resume {
+    #nav {
+      position: absolute;
+      left: 5%;
+    }
+
+
+    #nav.goRight {
+      left: 17rem;
+    }
   }
 }
 
@@ -65,6 +87,14 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .resume {
+    #nav.goRight {
+    align-items: center;
+    text-align: center;
+    }
+  }
+
 }
 
 //Smartphones

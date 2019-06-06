@@ -6,7 +6,6 @@ $fa-font-path: "webfonts";
 @import "solid.scss";
 @import "brands.scss";
 @import "regular.scss";
-@import "flag-icon.scss";
 
 
 * {
@@ -313,8 +312,8 @@ main {
   }
 
   #nav {
-    position: absolute;
-    left: 5%;
+    //position: absolute;
+    //left: 5%;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -326,7 +325,7 @@ main {
   }
 
   #nav.goRight {
-    left: 14%;
+    //left: 14%;
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
