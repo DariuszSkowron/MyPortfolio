@@ -6,6 +6,7 @@ $fa-font-path: "webfonts";
 @import "solid.scss";
 @import "brands.scss";
 @import "regular.scss";
+@import "flag-icon.scss";
 
 
 * {
@@ -239,17 +240,13 @@ main {
 
 #social-footer {
   text-align: center;
-  padding: 1rem;
   //background: darken($primary-color, 10);
   //color: set-text-color($primary-color);
   height: 50px;
 
-  align-items: center;
-  text-align: center;
-
 
   a {
-    padding: 5rem;
+    padding: 1rem;
 
 
     &:hover {
