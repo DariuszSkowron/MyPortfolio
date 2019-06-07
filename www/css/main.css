@@ -4476,7 +4476,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 70px); }
   main .button {
     margin-top: 1rem;
     color: #444;
@@ -4577,9 +4577,8 @@ main {
 
 #social-footer {
   text-align: center;
-  align-items: center;
   padding: 1rem;
-  height: 50px; }
+  height: 59px; }
   #social-footer a {
     padding: 1rem; }
     #social-footer a:hover {
