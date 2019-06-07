@@ -4588,8 +4588,6 @@ main {
 
 .resume {
   margin-top: 1rem; }
-  .resume i {
-    padding: -2rem; }
   .resume .button.resume::after {
     display: inline-block;
     border: none;
@@ -4628,6 +4626,8 @@ main {
     /* Safari */
     transition: opacity 2s; }
   .resume #nav {
+    min-height: 5rem;
+    z-index: 2;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -4637,6 +4637,7 @@ main {
     pointer-events: none;
     cursor: not-allowed; }
   .resume #nav.goRight {
+    z-index: 2;
     opacity: 1;
     pointer-events: auto;
     cursor: pointer; }

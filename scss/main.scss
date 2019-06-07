@@ -260,14 +260,6 @@ main {
 .resume {
   margin-top: 1rem;
 
-  i {
-    padding: -2rem;
-  }
-
-  #xd{
-
-  }
-
   .button.resume::after {
     display: inline-block;
     border: none;
@@ -323,6 +315,8 @@ main {
   #nav {
     //position: absolute;
     //left: 5%;
+    min-height: 5rem;
+    z-index: 2;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -334,6 +328,7 @@ main {
   }
 
   #nav.goRight {
+    z-index: 2;
     //left: 14%;
     opacity: 1;
     pointer-events: auto;
