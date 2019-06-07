@@ -4790,20 +4790,24 @@ main {
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
-  .resume #nav {
-    position: absolute;
-    left: 5%; }
-  .resume #nav.goRight {
-    left: 17rem; } }
+  .resume {
+    display: flex; }
+    .resume #nav {
+      position: absolute;
+      left: 5%; }
+    .resume #nav.goRight {
+      left: 17rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
-  .resume #nav {
-    position: absolute;
-    left: 5%; }
-  .resume #nav.goRight {
-    left: 17rem; } }
+  .resume {
+    display: flex; }
+    .resume #nav {
+      position: absolute;
+      left: 5%; }
+    .resume #nav.goRight {
+      left: 17rem; } }
 
 @media screen and (max-width: 768px) {
   main {

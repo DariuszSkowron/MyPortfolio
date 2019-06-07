@@ -5,6 +5,7 @@
   }
 
   .resume {
+    display:flex;
     #nav {
       position: absolute;
       left: 5%;
@@ -22,6 +23,7 @@
   }
 
   .resume {
+    display:flex;
     #nav {
       position: absolute;
       left: 5%;
@@ -115,23 +117,8 @@
   }
 
   .resume {
-    //position: center;
-    #nav-button{
-      //position: center;
-    }
-
-    #nav {
-      //bottom: -1rem;
-      //align-items: center;
-      //align-content: center;
-    }
-
-
     #nav.goRight {
       padding: 1rem;
-      //padding: 2rem;
-      //align-items: center;
-      //text-align: center;
     }
   }
 }
