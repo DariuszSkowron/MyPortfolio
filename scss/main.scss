@@ -239,6 +239,8 @@ main {
 
 #social-footer {
   text-align: center;
+  align-items: center;
+  padding: 1rem;
   //background: darken($primary-color, 10);
   //color: set-text-color($primary-color);
   height: 50px;
@@ -258,6 +260,13 @@ main {
 .resume {
   margin-top: 1rem;
 
+  i {
+    padding: -2rem;
+  }
+
+  #xd{
+
+  }
 
   .button.resume::after {
     display: inline-block;

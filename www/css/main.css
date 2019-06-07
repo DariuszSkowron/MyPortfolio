@@ -4577,6 +4577,8 @@ main {
 
 #social-footer {
   text-align: center;
+  align-items: center;
+  padding: 1rem;
   height: 50px; }
   #social-footer a {
     padding: 1rem; }
@@ -4586,6 +4588,8 @@ main {
 
 .resume {
   margin-top: 1rem; }
+  .resume i {
+    padding: -2rem; }
   .resume .button.resume::after {
     display: inline-block;
     border: none;
@@ -4831,8 +4835,7 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .resume #nav.goRight {
-    align-items: center;
-    text-align: center; } }
+    padding: 1rem; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -4843,4 +4846,6 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .resume #nav.goRight {
+    padding: 1rem; } }

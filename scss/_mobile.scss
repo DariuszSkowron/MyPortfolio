@@ -90,8 +90,7 @@
 
   .resume {
     #nav.goRight {
-    align-items: center;
-    text-align: center;
+      padding: 1rem;
     }
   }
 
@@ -113,5 +112,26 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .resume {
+    //position: center;
+    #nav-button{
+      //position: center;
+    }
+
+    #nav {
+      //bottom: -1rem;
+      //align-items: center;
+      //align-content: center;
+    }
+
+
+    #nav.goRight {
+      padding: 1rem;
+      //padding: 2rem;
+      //align-items: center;
+      //text-align: center;
+    }
   }
 }
