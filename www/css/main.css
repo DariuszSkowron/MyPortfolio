@@ -4476,7 +4476,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 70px); }
+  min-height: calc(100vh - 60px); }
   main .button {
     margin-top: 1rem;
     color: #444;
@@ -4576,9 +4576,10 @@ main {
   height: 60px; }
 
 #social-footer {
+  height: 60px;
   text-align: center;
-  padding: 1rem;
-  height: 59px; }
+  display: block;
+  background: #5e5e5e; }
   #social-footer a {
     padding: 1rem; }
     #social-footer a:hover {
@@ -4777,10 +4778,10 @@ main {
       margin-bottom: 16px; } }
 
 .icons {
-  position: center;
-  cursor: pointer;
-  align-items: center;
-  text-align: center; }
+  text-align: center;
+  max-height: 45px;
+  padding: 10px;
+  cursor: pointer; }
   .icons a {
     padding: 1rem; }
     .icons a:hover {
