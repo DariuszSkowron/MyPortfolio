@@ -5894,71 +5894,86 @@ main {
     content: "\f56d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    z-index: 10; }
-  .resume .arrow::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f054";
-    font-weight: 600;
     z-index: 10;
-    padding: 4px 2px 4px 2px; }
-  .resume .rotate {
-    -moz-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear; }
-  .resume .rotate.down {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-  .resume .icon-rotates {
-    -moz-transition: all 2s linear;
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear; }
-  .resume .icon-rotates.rotate {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-  .resume .hide {
-    opacity: 0; }
-  .resume #button3, .resume #button2 {
-    -webkit-transition: -webkit-transform 2s;
-    /* Safari */
-    transition: transform 2s; }
-  .resume #button1 {
-    z-index: 10;
-    -webkit-transition: opacity 2s;
-    /* Safari */
-    transition: opacity 2s; }
-  .resume #nav {
-    min-height: 5rem;
-    z-index: 2;
-    background: none;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    opacity: 0;
-    pointer-events: none;
-    cursor: not-allowed; }
-  .resume #nav.goRight {
-    z-index: 2;
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer; }
-  .resume button {
-    padding: 0.4rem;
-    border: none;
-    text-align: center;
-    margin: 5px;
-    color: #444;
-    background-color: white;
-    font-size: 1.2rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
-    cursor: pointer;
-    border-radius: 2px; }
-    .resume button:hover {
+    transition-duration: 2s; }
+    .resume .button.resume::before:hover {
       background: #4f651c;
       color: #fff; }
+
+.arrow::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  font-weight: 600;
+  z-index: 10;
+  padding: 4px 2px 4px 2px; }
+
+.rotate {
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.rotate.down {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.icon-rotates {
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear; }
+
+.icon-rotates.rotate {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.hide {
+  opacity: 0; }
+
+#button3, #button2 {
+  -webkit-transition: -webkit-transform 2s;
+  /* Safari */
+  transition: transform 2s; }
+
+#button1 {
+  z-index: 10;
+  -webkit-transition: opacity 2s;
+  /* Safari */
+  transition: opacity 2s; }
+
+#nav {
+  min-height: 5rem;
+  z-index: 2;
+  background: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  cursor: not-allowed; }
+
+#nav.goRight {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer; }
+
+button {
+  padding: 0.4rem;
+  border: none;
+  text-align: center;
+  margin: 5px;
+  color: #444;
+  background-color: white;
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  cursor: pointer;
+  border-radius: 2px; }
+  button:hover {
+    background: #4f651c;
+    color: #fff; }
 
 .resume-page {
   font-family: 'Source Sans Pro', sans-serif;

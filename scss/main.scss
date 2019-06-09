@@ -287,6 +287,18 @@ main {
     font-weight: 900;
     z-index: 10;
 
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+
+    transition-duration: 2s;
+
+    //&hover {
+    //  background-color: $secondary-color;
+    //  color: #ffffff;
+    //}
+  }
     //a{
     //  padding: 2rem;
     //  color: #4f651c;
@@ -398,7 +410,6 @@ main {
   }
 
 
-}
 
 .resume-page {
   font-family: 'Source Sans Pro', sans-serif;
