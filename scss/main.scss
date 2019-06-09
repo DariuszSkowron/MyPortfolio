@@ -6,7 +6,7 @@ $fa-font-path: "webfonts";
 @import "solid.scss";
 @import "brands.scss";
 @import "regular.scss";
-
+@import "flag-icon.scss";
 
 * {
   box-sizing: border-box;
@@ -269,6 +269,7 @@ main {
   .button.resume::before {
     //color: $primary-color;
     //background-color: white;
+    //min-height: 50px;
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 10px;
@@ -293,13 +294,20 @@ main {
 
   }
 
-  i{
-    min-width: 20px;
-    padding-top: 4px;
-    padding-left: 5px;
-    padding-right: 3px;
-    padding-bottom: 4px;
-  }
+
+    .arrow::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f054";
+      font-weight: 600;
+      z-index: 10;
+      //min-width: 20px;
+      padding: 4px 2px 4px 2px;
+      //padding-top: 4px;
+      //padding-left: 2px;
+      //padding-right: 2px;
+      //padding-bottom: 4px;
+    }
+
 
   .rotate {
     -moz-transition: all 0.2s linear;
