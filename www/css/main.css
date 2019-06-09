@@ -4587,6 +4587,7 @@ main {
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 10px;
+    padding-top: 1px;
     border: none;
     text-align: center;
     align-items: center;
@@ -4595,9 +4596,11 @@ main {
     font-weight: 900;
     z-index: 10; }
   .resume i {
+    min-width: 20px;
     padding-top: 4px;
     padding-left: 5px;
-    padding-right: 3px; }
+    padding-right: 3px;
+    padding-bottom: 4px; }
   .resume .rotate {
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -4797,7 +4800,7 @@ main {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 17rem; } }
+      left: 18.5rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -4808,7 +4811,7 @@ main {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 17rem; } }
+      left: 18.5rem; } }
 
 @media screen and (max-width: 768px) {
   main {
