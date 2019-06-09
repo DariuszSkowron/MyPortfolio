@@ -3,12 +3,36 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .resume {
+    display:flex;
+    #nav {
+      position: absolute;
+      left: 5%;
+    }
+    #nav.goRight {
+      left: 18.5rem;
+    }
+  }
 }
 
 //Desktops & Laptops
 @include mediaLg{
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .resume {
+    display:flex;
+    #nav {
+      position: absolute;
+      left: 5%;
+    }
+
+
+    #nav.goRight {
+      left: 18.5rem;
+    }
   }
 }
 
@@ -65,6 +89,13 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .resume {
+    #nav.goRight {
+      padding: 1rem;
+    }
+  }
+
 }
 
 //Smartphones
@@ -84,4 +115,25 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .resume {
+    #nav.goRight {
+      padding: 1rem;
+    }
+  }
 }
+
+//@mixin vh-fix {
+//  @media (max-device-aspect-ratio: 3/4) {
+//    height: calc(100vw * 1.333 - 9%);
+//  }
+//  @media (max-device-aspect-ratio: 2/3) {
+//    height: calc(100vw * 1.5 - 9%);
+//  }
+//  @media (max-device-aspect-ratio: 10/16) {
+//    height: calc(100vw * 1.6 - 9%);
+//  }
+//  @media (max-device-aspect-ratio: 9/16) {
+//    height: calc(100vw * 1.778 - 9%);
+//  }
+//}

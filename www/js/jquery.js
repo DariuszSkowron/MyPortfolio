@@ -1,7 +1,7 @@
 
 $(function () {
     $("#button1").on('click', function () {
-        $('#nav').toggleClass('goLeft');
+        $('#nav').toggleClass('goRight');
     });
 });
 
