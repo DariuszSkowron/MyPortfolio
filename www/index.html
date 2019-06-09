@@ -9,9 +9,12 @@
 <!--          crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/main.css">
     <title>Dariusz Skowron website</title>
-
 </head>
+
 <body id="bg-img">
+<!--<div id="bg-img">-->
+
+
 <header>
 
     <div class="menu-btn">
@@ -65,8 +68,8 @@
         </div>
     </div>
     <span class="flag-icon flag-icon-gr flag-icon-squared"></span>
-
 </main>
+
 <footer id="social-footer">
     <div class="icons">
         <a href="https://www.facebook.com/darek.skowron.to.mistrz">
@@ -80,11 +83,21 @@
         </a>
     </div>
 </footer>
-
+<!--</div>-->
 </body>
 <script src="js/main.js"></script>
 <script src="js/buttons.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/jquery.js"></script>
+<script>
+    var bg = $("#bg-img:after");
+
+    function resizeBackground() {
+        bg.height($(window).height() + 60);
+    }
+
+    $(window).resize(resizeBackground);
+    resizeBackground();
+</script>
 
 </html>
