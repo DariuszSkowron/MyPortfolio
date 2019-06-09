@@ -236,7 +236,6 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
@@ -247,36 +246,56 @@ main {
   text-align: center;
   display: block;
   //display: inline-block;
-  background: lighten($primary-color, 10);
+  background: rgba((lighten($primary-color, 10)), 0.6);
+
   //background: darken($primary-color, 10);
   //color: set-text-color($primary-color);
 
-
-  a {
-    padding: 1rem;
-
-
-    &:hover {
-      color: $secondary-color;
-      @include easeOut();
-    }
-  }
+  //
+  //a {
+  //  padding: 1rem;
+  //
+  //
+  //  &:hover {
+  //    color: $secondary-color;
+  //    @include easeOut();
+  //  }
+  //}
 }
 
 .resume {
   margin-top: 1rem;
 
-  .button.resume::after {
-    display: inline-block;
+  .button.resume::before {
+    //color: $primary-color;
+    //background-color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
     border: none;
     text-align: center;
-    margin: 10px;
-    padding: 5px;
+    align-items: center;
+    //margin: 5px;
+    //display: inline-block;
+
+    //text-align: inherit;
+    //align-items: center;
     content: "\f56d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     z-index: 10;
 
+    //a{
+    //  padding: 2rem;
+    //  color: #4f651c;
+    //}
+
+  }
+
+  i{
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 3px;
   }
 
   .rotate {
@@ -366,6 +385,8 @@ main {
       color: set-text-color($secondary-color);
     }
   }
+
+
 }
 
 .resume-page {
@@ -566,8 +587,8 @@ main {
 
   .icons {
     text-align: center;
-    max-height: 45px;
-    padding: 10px;
+    max-height: 60px;
+    padding: 12px;
   //right: 35px;
   cursor: pointer;
 
