@@ -5985,9 +5985,7 @@ main {
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
   .resume-page img {
-    max-width: 100%;
-    border-radius: 50%;
-    border: #4f651c 3px solid; }
+    max-width: 100%; }
   .resume-page .icon {
     fill: currentColor;
     display: inline-block;
@@ -6017,7 +6015,9 @@ main {
     font-weight: bold;
     font-size: 18px; }
   .resume-page img.avatar {
-    width: 150px; }
+    width: 150px;
+    border-radius: 50%;
+    border: #4f651c 3px solid; }
   .resume-page .my-name {
     font-size: 48px;
     line-height: 1; }
@@ -6048,6 +6048,20 @@ main {
     margin-bottom: 20px;
     font-size: 18px; }
   .resume-page .job-company {
+    font-weight: bold;
+    line-height: 1.2; }
+  .resume-page .education {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: #4f651c 1px solid; }
+  .resume-page .education:last-child {
+    border-bottom: none; }
+  .resume-page .education-title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px; }
+  .resume-page .education-school {
     font-weight: bold;
     line-height: 1.2; }
   .resume-page .skills-container {
