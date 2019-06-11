@@ -5734,7 +5734,6 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background: url(../images/background.jpg);
-    background-attachment: scroll;
     background-size: cover; }
     body#bg-img:after {
       content: '';
@@ -6097,6 +6096,8 @@ main {
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
+  body#bg-img {
+    background-attachment: fixed; }
   .resume {
     display: flex; }
     .resume #nav {
@@ -6110,6 +6111,8 @@ main {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
+  body#bg-img {
+    background-attachment: fixed; }
   .resume {
     display: flex; }
     .resume #nav {
@@ -6127,6 +6130,8 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+  body#bg-img {
+    background-attachment: scroll; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -6162,6 +6167,8 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  body#bg-img {
+    background-attachment: scroll; }
   .projects {
     grid-template-columns: 1fr; }
   .resume #nav.goRight {
