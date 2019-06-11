@@ -13,6 +13,9 @@
     #nav.goRight {
       left: 18.5rem;
     }
+    .arrow::before {
+      content: "\f054";
+    }
   }
 }
 
@@ -32,6 +35,10 @@
 
     #nav.goRight {
       left: 18.5rem;
+    }
+
+    .arrow::before {
+      content: "\f054";
     }
   }
 }
@@ -94,6 +101,9 @@
     #nav.goRight {
       padding: 1rem;
     }
+    .arrow::before {
+      content: "\f078";
+    }
   }
 
 }
@@ -119,6 +129,9 @@
   .resume {
     #nav.goRight {
       padding: 1rem;
+    }
+    .arrow::before {
+      content: "\f078";
     }
   }
 }

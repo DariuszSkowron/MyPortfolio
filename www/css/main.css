@@ -5901,7 +5901,6 @@ main {
       color: #fff; }
   .resume .arrow::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f054";
     font-weight: 600;
     z-index: 10;
     padding: 4px 2px 4px 2px; }
@@ -6104,7 +6103,9 @@ main {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 18.5rem; } }
+      left: 18.5rem; }
+    .resume .arrow::before {
+      content: "\f054"; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -6115,7 +6116,9 @@ main {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 18.5rem; } }
+      left: 18.5rem; }
+    .resume .arrow::before {
+      content: "\f054"; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -6147,7 +6150,9 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .resume #nav.goRight {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .resume .arrow::before {
+    content: "\f078"; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6160,4 +6165,6 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .resume #nav.goRight {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .resume .arrow::before {
+    content: "\f078"; } }
