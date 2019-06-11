@@ -5924,6 +5924,7 @@ main {
   .resume .hide {
     opacity: 0; }
   .resume #button3, .resume #button2 {
+    z-index: 10;
     -webkit-transition: -webkit-transform 2s;
     /* Safari */
     transition: transform 2s; }
@@ -5934,7 +5935,6 @@ main {
     transition: opacity 2s; }
   .resume #nav {
     min-height: 5rem;
-    z-index: 2;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -5944,7 +5944,6 @@ main {
     pointer-events: none;
     cursor: not-allowed; }
   .resume #nav.goRight {
-    z-index: 2;
     opacity: 1;
     pointer-events: auto;
     cursor: pointer; }

@@ -349,6 +349,7 @@ main {
   }
 
   #button3, #button2 {
+    z-index: 10;
     -webkit-transition: -webkit-transform 2s; /* Safari */
     transition: transform 2s;
 
@@ -364,7 +365,7 @@ main {
     //position: absolute;
     //left: 5%;
     min-height: 5rem;
-    z-index: 2;
+    //z-index: 2;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -376,7 +377,7 @@ main {
   }
 
   #nav.goRight {
-    z-index: 2;
+    //z-index: 2;
     //left: 14%;
     opacity: 1;
     pointer-events: auto;
