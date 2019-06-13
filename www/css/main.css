@@ -6073,11 +6073,16 @@ main {
     margin-left: 20px;
     list-style-type: disc; }
   .resume-page .interests-container {
-    display: flex;
-    justify-content: space-between; }
-  .resume-page .interests-container img {
-    height: 35px;
-    opacity: 0.75; }
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+  .resume-page td {
+    text-align: center; }
+  .resume-page .interest-title {
+    text-align: center; }
+  .resume-page .interest-title {
+    text-align: center; }
   .resume-page .reference {
     font-size: 18px; }
   .resume-page .reference-details {
