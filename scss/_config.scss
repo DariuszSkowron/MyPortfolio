@@ -14,7 +14,7 @@ $background-opacity: 0.9;
   @if $show-home-image {
     &#bg-img {
       background: $home-image;
-      background-attachment: scroll;
+      //background-attachment: scroll;
       background-size: cover;
 
 

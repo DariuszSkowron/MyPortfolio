@@ -5734,7 +5734,6 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background: url(../images/background.jpg);
-    background-attachment: scroll;
     background-size: cover; }
     body#bg-img:after {
       content: '';
@@ -5901,7 +5900,6 @@ main {
       color: #fff; }
   .resume .arrow::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f054";
     font-weight: 600;
     z-index: 10;
     padding: 4px 2px 4px 2px; }
@@ -5924,6 +5922,7 @@ main {
   .resume .hide {
     opacity: 0; }
   .resume #button3, .resume #button2 {
+    z-index: 10;
     -webkit-transition: -webkit-transform 2s;
     /* Safari */
     transition: transform 2s; }
@@ -5934,7 +5933,6 @@ main {
     transition: opacity 2s; }
   .resume #nav {
     min-height: 5rem;
-    z-index: 2;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -5944,7 +5942,6 @@ main {
     pointer-events: none;
     cursor: not-allowed; }
   .resume #nav.goRight {
-    z-index: 2;
     opacity: 1;
     pointer-events: auto;
     cursor: pointer; }
@@ -5988,9 +5985,7 @@ main {
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
   .resume-page img {
-    max-width: 100%;
-    border-radius: 50%;
-    border: #4f651c 3px solid; }
+    max-width: 100%; }
   .resume-page .icon {
     fill: currentColor;
     display: inline-block;
@@ -6020,7 +6015,9 @@ main {
     font-weight: bold;
     font-size: 18px; }
   .resume-page img.avatar {
-    width: 150px; }
+    width: 150px;
+    border-radius: 50%;
+    border: #4f651c 3px solid; }
   .resume-page .my-name {
     font-size: 48px;
     line-height: 1; }
@@ -6053,6 +6050,20 @@ main {
   .resume-page .job-company {
     font-weight: bold;
     line-height: 1.2; }
+  .resume-page .education {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: #4f651c 1px solid; }
+  .resume-page .education:last-child {
+    border-bottom: none; }
+  .resume-page .education-title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px; }
+  .resume-page .education-school {
+    font-weight: bold;
+    line-height: 1.2; }
   .resume-page .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -6062,11 +6073,16 @@ main {
     margin-left: 20px;
     list-style-type: disc; }
   .resume-page .interests-container {
-    display: flex;
-    justify-content: space-between; }
-  .resume-page .interests-container img {
-    height: 35px;
-    opacity: 0.75; }
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+  .resume-page td {
+    text-align: center; }
+  .resume-page .interest-title {
+    text-align: center; }
+  .resume-page .interest-title {
+    text-align: center; }
   .resume-page .reference {
     font-size: 18px; }
   .resume-page .reference-details {
@@ -6099,24 +6115,32 @@ main {
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
+  body#bg-img {
+    background-attachment: fixed; }
   .resume {
     display: flex; }
     .resume #nav {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 18.5rem; } }
+      left: 18.5rem; }
+    .resume .arrow::before {
+      content: "\f054"; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
+  body#bg-img {
+    background-attachment: fixed; }
   .resume {
     display: flex; }
     .resume #nav {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 18.5rem; } }
+      left: 18.5rem; }
+    .resume .arrow::before {
+      content: "\f054"; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -6125,6 +6149,8 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+  body#bg-img {
+    background-attachment: scroll; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -6148,7 +6174,9 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .resume #nav.goRight {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .resume .arrow::before {
+    content: "\f078"; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6158,7 +6186,11 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  body#bg-img {
+    background-attachment: scroll; }
   .projects {
     grid-template-columns: 1fr; }
   .resume #nav.goRight {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .resume .arrow::before {
+    content: "\f078"; } }
