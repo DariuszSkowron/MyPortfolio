@@ -6145,7 +6145,6 @@ main {
     margin: 10px 0 20px 0; }
   .resume-page .link-item {
     flex-wrap: wrap;
-    justify-content: space-evenly;
     display: flex;
     align-items: flex-start;
     flex: 1; }
@@ -6248,6 +6247,8 @@ main {
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
+  .resume-page .link-item {
+    justify-content: space-evenly; }
   body#bg-img {
     background-attachment: fixed; }
   .resume {
@@ -6263,6 +6264,8 @@ main {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
+  .resume-page .link-item {
+    justify-content: space-evenly; }
   body#bg-img {
     background-attachment: fixed; }
   .resume {
