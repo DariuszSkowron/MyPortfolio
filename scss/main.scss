@@ -578,7 +578,7 @@ main {
 
   .skills-container ul {
     margin-left: 20px;
-    list-style-type: disc;
+    list-style-type: square;
   }
 
   /***********************************
@@ -586,11 +586,11 @@ main {
   ***********************************/
 
   .interests-container {
-    padding-left: 2rem;
+    //padding-left: 2rem;
     //margin-left: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 35px;
+    grid-gap: 5px;
     //text-align: left;
 
     ul {
@@ -598,6 +598,7 @@ main {
       display: inline-block;
       list-style-type: none;
       text-align: center;
+      color: rgba($secondary-color, 0.6);
       //text-align: center;
     }
 
@@ -609,6 +610,7 @@ main {
 
     .title {
       //display: inline-block;
+      color: set-text-color($resume-color);
       text-align: center;
     }
 

@@ -6183,17 +6183,18 @@ main {
     margin-bottom: 24px; }
   .resume-page .skills-container ul {
     margin-left: 20px;
-    list-style-type: disc; }
+    list-style-type: square; }
   .resume-page .interests-container {
-    padding-left: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 35px; }
+    grid-gap: 5px; }
     .resume-page .interests-container ul {
       display: inline-block;
       list-style-type: none;
-      text-align: center; }
+      text-align: center;
+      color: rgba(79, 101, 28, 0.6); }
     .resume-page .interests-container .title {
+      color: #000;
       text-align: center; }
   .resume-page table {
     border-collapse: collapse;
