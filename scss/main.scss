@@ -287,13 +287,14 @@ main {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     z-index: 10;
+     transition-duration: 0.4s;
 
     &:hover {
       background: $secondary-color;
       color: set-text-color($secondary-color);
+      @include easeOut();
     }
 
-    transition-duration: 0.2s;
 
     //&hover {
     //  background-color: $secondary-color;
@@ -401,7 +402,7 @@ main {
     Geneva, Verdana, sans-serif;
     line-height: 1.4;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
 
     //background: rgba(lighten($secondary-color, 4), 0.5);
     border-radius: 2px;
@@ -410,6 +411,7 @@ main {
     &:hover {
       background: $secondary-color;
       color: set-text-color($secondary-color);
+      @include easeOut();
     }
   }
 }
@@ -585,18 +587,56 @@ main {
 
   .interests-container {
     padding-left: 2rem;
+    //margin-left: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    //text-align: left;
+
+    ul {
+      //text-align: left;
+      display: inline-block;
+      list-style-type: none;
+      text-align: center;
+      //text-align: center;
+    }
+
+
+    //.icons {
+    //  display: inline-block;
+    //  text-align: left;
+    //}
+
+    .title {
+      //display: inline-block;
+      text-align: center;
+    }
+
+
+  }
+
+
+
     //align-self: center;
     //display: flex;
     //justify-content: space-between;
+
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 3rem;
+    border: 1px solid black;
   }
     //span + span {
     //  padding-left: 10rem;
     //}
+
+  th{
+    text-align: left;
+  }
+
   td{
-    text-align: center;
+    text-align: left;
     //padding-left: 7rem;
 
 

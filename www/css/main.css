@@ -145,7 +145,7 @@
 
 .eupopup-closebutton:hover,
 .eupopup-closebutton:active {
-  color: #4f651c;
+  color: rgba(157, 200, 57, 0.5);
   text-decoration: none; }
 
 .eupopup-head {
@@ -161,12 +161,12 @@
   padding: 7px 0 5px 0; }
 
 .eupopup-button_1 {
-  color: #4f651c;
+  color: rgba(157, 200, 57, 0.5);
   font-weight: bold;
   font-size: 14px; }
 
 .eupopup-button_2 {
-  color: #4f651c;
+  color: rgba(157, 200, 57, 0.5);
   font-weight: normal;
   font-size: 12px; }
 
@@ -6004,10 +6004,11 @@ main {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     z-index: 10;
-    transition-duration: 0.2s; }
+    transition-duration: 0.4s; }
     .resume .button.resume::before:hover {
       background: #4f651c;
-      color: #fff; }
+      color: #fff;
+      transition: all 0.5s ease-out; }
   .resume .arrow::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -6066,11 +6067,12 @@ main {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     border-radius: 2px; }
     .resume button:hover {
       background: #4f651c;
-      color: #fff; }
+      color: #fff;
+      transition: all 0.5s ease-out; }
 
 .resume-page {
   font-family: 'Source Sans Pro', sans-serif;
@@ -6185,10 +6187,23 @@ main {
   .resume-page .interests-container {
     padding-left: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px; }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px; }
+    .resume-page .interests-container ul {
+      display: inline-block;
+      list-style-type: none;
+      text-align: center; }
+    .resume-page .interests-container .title {
+      text-align: center; }
+  .resume-page table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 3rem;
+    border: 1px solid black; }
+  .resume-page th {
+    text-align: left; }
   .resume-page td {
-    text-align: center; }
+    text-align: left; }
   .resume-page .interest-title {
     text-align: center; }
   .resume-page .interest-title {
