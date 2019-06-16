@@ -6092,7 +6092,7 @@ main {
   * =Interests
   ***********************************/
   /***********************************
-  * =References
+  * =Clause
   ***********************************/ }
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
@@ -6123,6 +6123,9 @@ main {
     border-bottom: #4f651c 1px solid; }
   .resume-page section:last-child {
     border-bottom: none; }
+  .resume-page .section-clause {
+    display: grid;
+    grid-template-columns: 1fr; }
   .resume-page .section-title {
     font-weight: bold;
     font-size: 18px; }
@@ -6209,6 +6212,9 @@ main {
     text-align: center; }
   .resume-page .interest-title {
     text-align: center; }
+  .resume-page .clause-text {
+    font-size: 0.7rem;
+    color: #c1c1c1; }
   .resume-page .reference {
     font-size: 18px; }
   .resume-page .reference-details {
@@ -6216,13 +6222,14 @@ main {
   @media only screen and (max-width: 768px) {
     .resume-page section {
       grid-template-columns: 1fr; }
+    .resume-page img.avatar {
+      align-content: center; }
     .resume-page .links, .resume-page .job-title-container {
       flex-direction: column; }
     .resume-page .skills-container {
       grid-template-columns: 1fr 1fr; }
     .resume-page .interests-container {
-      flex-wrap: wrap;
-      justify-content: flex-start; }
+      grid-template-columns: 1fr 1fr; }
     .resume-page .interests-container img {
       margin-right: 32px;
       margin-bottom: 16px; } }

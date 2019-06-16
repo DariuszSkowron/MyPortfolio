@@ -467,8 +467,21 @@ main {
     border-bottom: $secondary-color 1px solid;
   }
 
+  //.section-last-title{
+  //  @extend .section-title;
+  //  border-bottom: none;
+  //  border-top: none;
+  //  font-weight: bold;
+  //  font-size: 18px;
+  //}
+
   section:last-child {
     border-bottom: none;
+  }
+
+  .section-clause{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .section-title {
@@ -669,9 +682,15 @@ main {
 
 
   /***********************************
-  * =References
+  * =Clause
   ***********************************/
 
+  .clause-text{
+    //font-weight: bold;
+    font-size: 0.7rem;
+    color: darken(lightgray, 7);
+
+  }
   .reference {
     font-size: 18px;
   }
@@ -685,6 +704,10 @@ main {
       grid-template-columns: 1fr;
     }
 
+    img.avatar {
+      align-content: center;
+    }
+
     .links, .job-title-container {
       flex-direction: column;
     }
@@ -694,8 +717,9 @@ main {
     }
 
     .interests-container {
-      flex-wrap: wrap;
-      justify-content: flex-start;
+      grid-template-columns: 1fr 1fr;
+      //flex-wrap: wrap;
+      //justify-content: flex-start;
     }
 
     .interests-container img {
