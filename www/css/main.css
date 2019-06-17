@@ -6218,20 +6218,6 @@ main {
     font-size: 18px; }
   .resume-page .reference-details {
     margin-bottom: 20px; }
-  @media only screen and (max-width: 768px) {
-    .resume-page section {
-      grid-template-columns: 1fr; }
-    .resume-page img.avatar {
-      align-content: center; }
-    .resume-page .links, .resume-page .job-title-container {
-      flex-direction: column; }
-    .resume-page .skills-container {
-      grid-template-columns: 1fr 1fr; }
-    .resume-page .interests-container {
-      grid-template-columns: 1fr 1fr; }
-    .resume-page .interests-container img {
-      margin-right: 32px;
-      margin-bottom: 16px; } }
 
 .icons {
   text-align: center;
@@ -6312,7 +6298,20 @@ main {
   .resume #nav.goRight {
     padding: 1rem; }
   .resume .arrow::before {
-    content: "\f078"; } }
+    content: "\f078"; }
+  section {
+    grid-template-columns: 1fr; }
+  .resume-page img.avatar {
+    align-content: center; }
+  .resume-page .links, .resume-page .job-title-container {
+    flex-direction: column; }
+  .resume-page .skills-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container img {
+    margin-right: 32px;
+    margin-bottom: 16px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6329,4 +6328,15 @@ main {
   .resume #nav.goRight {
     padding: 1rem; }
   .resume .arrow::before {
-    content: "\f078"; } }
+    content: "\f078"; }
+  .resume-page img.avatar {
+    align-content: center; }
+  .resume-page .links, .resume-page .job-title-container {
+    flex-direction: column; }
+  .resume-page .skills-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container img {
+    margin-right: 32px;
+    margin-bottom: 16px; } }

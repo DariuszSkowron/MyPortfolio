@@ -133,6 +133,37 @@
     }
   }
 
+  section {
+    grid-template-columns: 1fr;
+  }
+
+
+  //Resume
+  .resume-page {
+    img.avatar {
+      align-content: center;
+    }
+
+    .links, .job-title-container {
+      flex-direction: column;
+    }
+
+    .skills-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .interests-container {
+      grid-template-columns: 1fr 1fr;
+      //flex-wrap: wrap;
+      //justify-content: flex-start;
+    }
+
+    .interests-container img {
+      margin-right: 32px;
+      margin-bottom: 16px;
+    }
+  }
+
 }
 
 //Smartphones
@@ -166,6 +197,34 @@
       content: "\f078";
     }
   }
+
+  //Resume
+  .resume-page {
+    img.avatar {
+      align-content: center;
+    }
+
+    .links, .job-title-container {
+      flex-direction: column;
+    }
+
+    .skills-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .interests-container {
+      grid-template-columns: 1fr 1fr;
+      //flex-wrap: wrap;
+      //justify-content: flex-start;
+    }
+
+    .interests-container img {
+      margin-right: 32px;
+      margin-bottom: 16px;
+    }
+  }
+
+
 }
 
 //@mixin vh-fix {

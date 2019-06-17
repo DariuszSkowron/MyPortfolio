@@ -699,34 +699,34 @@ main {
     margin-bottom: 20px;
   }
 
-  @media only screen and (max-width: 768px) {
-    section {
-      grid-template-columns: 1fr;
-    }
-
-    img.avatar {
-      align-content: center;
-    }
-
-    .links, .job-title-container {
-      flex-direction: column;
-    }
-
-    .skills-container {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .interests-container {
-      grid-template-columns: 1fr 1fr;
-      //flex-wrap: wrap;
-      //justify-content: flex-start;
-    }
-
-    .interests-container img {
-      margin-right: 32px;
-      margin-bottom: 16px;
-    }
-  }
+  //@media only screen and (max-width: 768px) {
+  //  section {
+  //    grid-template-columns: 1fr;
+  //  }
+  //
+  //  img.avatar {
+  //    align-content: center;
+  //  }
+  //
+  //  .links, .job-title-container {
+  //    flex-direction: column;
+  //  }
+  //
+  //  .skills-container {
+  //    grid-template-columns: 1fr 1fr;
+  //  }
+  //
+  //  .interests-container {
+  //    grid-template-columns: 1fr 1fr;
+  //    //flex-wrap: wrap;
+  //    //justify-content: flex-start;
+  //  }
+  //
+  //  .interests-container img {
+  //    margin-right: 32px;
+  //    margin-bottom: 16px;
+  //  }
+  //}
 
 }
 
@@ -745,6 +745,7 @@ main {
     &:hover {
       color: $secondary-color;
       @include easeOut();
+
     }
   }
 }
