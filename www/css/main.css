@@ -145,7 +145,7 @@
 
 .eupopup-closebutton:hover,
 .eupopup-closebutton:active {
-  color: #4f651c;
+  color: rgba(157, 200, 57, 0.5);
   text-decoration: none; }
 
 .eupopup-head {
@@ -161,12 +161,12 @@
   padding: 7px 0 5px 0; }
 
 .eupopup-button_1 {
-  color: #4f651c;
+  color: rgba(157, 200, 57, 0.5);
   font-weight: bold;
   font-size: 14px; }
 
 .eupopup-button_2 {
-  color: #4f651c;
+  color: rgba(157, 200, 57, 0.5);
   font-weight: normal;
   font-size: 12px; }
 
@@ -6004,10 +6004,11 @@ main {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     z-index: 10;
-    transition-duration: 0.2s; }
+    transition-duration: 0.4s; }
     .resume .button.resume::before:hover {
       background: #4f651c;
-      color: #fff; }
+      color: #fff;
+      transition: all 0.5s ease-out; }
   .resume .arrow::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -6066,11 +6067,12 @@ main {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     border-radius: 2px; }
     .resume button:hover {
       background: #4f651c;
-      color: #fff; }
+      color: #fff;
+      transition: all 0.5s ease-out; }
 
 .resume-page {
   font-family: 'Source Sans Pro', sans-serif;
@@ -6090,7 +6092,7 @@ main {
   * =Interests
   ***********************************/
   /***********************************
-  * =References
+  * =Clause
   ***********************************/ }
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
@@ -6121,6 +6123,9 @@ main {
     border-bottom: #4f651c 1px solid; }
   .resume-page section:last-child {
     border-bottom: none; }
+  .resume-page .section-clause {
+    display: grid;
+    grid-template-columns: 1fr; }
   .resume-page .section-title {
     font-weight: bold;
     font-size: 18px; }
@@ -6140,7 +6145,6 @@ main {
     margin: 10px 0 20px 0; }
   .resume-page .link-item {
     flex-wrap: wrap;
-    justify-content: space-evenly;
     display: flex;
     align-items: flex-start;
     flex: 1; }
@@ -6181,35 +6185,39 @@ main {
     margin-bottom: 24px; }
   .resume-page .skills-container ul {
     margin-left: 20px;
-    list-style-type: disc; }
+    list-style-type: square; }
   .resume-page .interests-container {
-    padding-left: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px; }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px; }
+    .resume-page .interests-container ul {
+      display: inline-block;
+      list-style-type: none;
+      text-align: center;
+      color: rgba(79, 101, 28, 0.6); }
+    .resume-page .interests-container .title {
+      color: #000;
+      text-align: center; }
+  .resume-page table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 3rem;
+    border: 1px solid black; }
+  .resume-page th {
+    text-align: left; }
   .resume-page td {
-    text-align: center; }
+    text-align: left; }
   .resume-page .interest-title {
     text-align: center; }
   .resume-page .interest-title {
     text-align: center; }
+  .resume-page .clause-text {
+    font-size: 0.7rem;
+    color: #c1c1c1; }
   .resume-page .reference {
     font-size: 18px; }
   .resume-page .reference-details {
     margin-bottom: 20px; }
-  @media only screen and (max-width: 768px) {
-    .resume-page section {
-      grid-template-columns: 1fr; }
-    .resume-page .links, .resume-page .job-title-container {
-      flex-direction: column; }
-    .resume-page .skills-container {
-      grid-template-columns: 1fr 1fr; }
-    .resume-page .interests-container {
-      flex-wrap: wrap;
-      justify-content: flex-start; }
-    .resume-page .interests-container img {
-      margin-right: 32px;
-      margin-bottom: 16px; } }
 
 .icons {
   text-align: center;
@@ -6225,6 +6233,8 @@ main {
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
+  .resume-page .link-item {
+    justify-content: space-evenly; }
   body#bg-img {
     background-attachment: fixed; }
   .resume {
@@ -6240,6 +6250,8 @@ main {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
+  .resume-page .link-item {
+    justify-content: space-evenly; }
   body#bg-img {
     background-attachment: fixed; }
   .resume {
@@ -6286,7 +6298,20 @@ main {
   .resume #nav.goRight {
     padding: 1rem; }
   .resume .arrow::before {
-    content: "\f078"; } }
+    content: "\f078"; }
+  section {
+    grid-template-columns: 1fr; }
+  .resume-page img.avatar {
+    align-content: center; }
+  .resume-page .links, .resume-page .job-title-container {
+    flex-direction: column; }
+  .resume-page .skills-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container img {
+    margin-right: 32px;
+    margin-bottom: 16px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6303,4 +6328,15 @@ main {
   .resume #nav.goRight {
     padding: 1rem; }
   .resume .arrow::before {
-    content: "\f078"; } }
+    content: "\f078"; }
+  .resume-page img.avatar {
+    align-content: center; }
+  .resume-page .links, .resume-page .job-title-container {
+    flex-direction: column; }
+  .resume-page .skills-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container {
+    grid-template-columns: 1fr 1fr; }
+  .resume-page .interests-container img {
+    margin-right: 32px;
+    margin-bottom: 16px; } }

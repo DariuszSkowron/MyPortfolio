@@ -55,7 +55,7 @@
 }
 .eupopup-closebutton:hover,
 .eupopup-closebutton:active {
-  color: $secondary-color;
+  color: rgba((lighten($secondary-color, 25)), 0.5);
   text-decoration: none;
 }
 
@@ -75,13 +75,13 @@
 }
 
 .eupopup-button_1 {
-  color: $secondary-color;
+  color: rgba((lighten($secondary-color, 25)), 0.5);
   font-weight: bold;
   font-size: 14px;
 }
 
 .eupopup-button_2 {
-  color: $secondary-color;
+  color: rgba((lighten($secondary-color, 25)), 0.5);
   font-weight: normal;
   font-size: 12px;
 }
