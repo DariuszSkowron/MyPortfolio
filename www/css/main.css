@@ -6230,6 +6230,24 @@ main {
       color: #4f651c;
       transition: all 0.5s ease-out; }
 
+.button.resume::before {
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 1px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  content: "\f56d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  z-index: 10;
+  transition-duration: 0.4s; }
+  .button.resume::before:hover {
+    background: #4f651c;
+    color: #fff;
+    transition: all 0.5s ease-out; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
