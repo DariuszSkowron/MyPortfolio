@@ -10,13 +10,14 @@
 <body class="resume-page">
 <header>
     <div>
-        <a class="media" href="docs/resumeENG.pdf"><button>adsa</button></a>
+        <a class="media" href="docs/resumeENG.pdf" download><button>adsa</button></a>
         Print PDF
     </div>
 
     <button type="button" onclick="printPdf('docs/resumeENG.pdf')">
         Print PDF
     </button>
+    <button onclick="test()">Generate PDF</button>
 
 
 
@@ -52,7 +53,7 @@
     </nav>
 </header>
 
-<div class="container">
+<div id="cv" class="container">
     <section>
         <div>
             <div><img src="images/portrait150.png" class="avatar"></div>
@@ -257,6 +258,8 @@
 </div>
 </body>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<script src="js/html2pdf.bundle.min.js"></script>
 <script>
     printPdf = function (url) {
         var iframe = this._printIframe;
@@ -274,6 +277,20 @@
         }
 
         iframe.src = url;
+    }
+</script>
+<script>
+    function test() {
+        // Get the element.
+        var element = document.getElementById('cv');
+
+        // Generate the PDF.
+        html2pdf().from(element).set({
+            margin: 1,
+            filename: 'test.pdf',
+            html2canvas: { scale: 2 },
+            jsPDF: {orientation: 'portrait', unit: 'in', format: 'letter', compressPDF: true}
+        }).save();
     }
 </script>
 </html>
