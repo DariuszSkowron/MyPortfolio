@@ -10,15 +10,14 @@
 <body class="resume-page">
 <header>
     <div>
-    <button class="button resume" onclick="printJS('docs/printjs.pdf')">
-        Print Resume
+        <a class="media" href="docs/resumeENG.pdf"><button>adsa</button></a>
+        Print PDF
+    </div>
+
+    <button type="button" onclick="printPdf('docs/resumeENG.pdf')">
+        Print PDF
     </button>
-    </div>
-    <div>
-        <button class="button resume" onclick="printJS('docs/printjs.pdf')">
-            Download Resume
-        </button>
-    </div>
+
 
 
     <div class="menu-btn">
@@ -258,4 +257,23 @@
 </div>
 </body>
 <script src="js/main.js"></script>
+<script>
+    printPdf = function (url) {
+        var iframe = this._printIframe;
+        if (!this._printIframe) {
+            iframe = this._printIframe = document.createElement('iframe');
+            document.body.appendChild(iframe);
+
+            iframe.style.display = 'none';
+            iframe.onload = function() {
+                setTimeout(function() {
+                    iframe.focus();
+                    iframe.contentWindow.print();
+                }, 1);
+            };
+        }
+
+        iframe.src = url;
+    }
+</script>
 </html>
