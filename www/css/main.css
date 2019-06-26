@@ -6222,6 +6222,40 @@ main {
     font-size: 18px; }
   .resume-page .reference-details {
     margin-bottom: 20px; }
+  .resume-page .button.downloadResume::before, .resume-page .button.printResume::before {
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 1px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    content: "\f56d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    z-index: 10;
+    transition-duration: 0s; }
+    .resume-page .button.downloadResume::before:hover, .resume-page .button.printResume::before:hover {
+      background: #4f651c;
+      color: #fff; }
+  .resume-page .button.printResume::before {
+    content: "\f02f"; }
+  .resume-page button {
+    padding: 0.4rem;
+    border: none;
+    text-align: center;
+    margin: 5px;
+    color: #444;
+    background-color: rgba(157, 200, 57, 0.5);
+    font-size: 1.2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 2px; }
+    .resume-page button:hover {
+      background: #4f651c;
+      color: #fff; }
 
 .icons {
   text-align: center;
@@ -6233,24 +6267,6 @@ main {
     .icons a:hover {
       color: #4f651c;
       transition: all 0.5s ease-out; }
-
-.button.resume::before {
-  border-radius: 5px;
-  padding-left: 5px;
-  padding-right: 10px;
-  padding-top: 1px;
-  border: none;
-  text-align: center;
-  align-items: center;
-  content: "\f56d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  z-index: 10;
-  transition-duration: 0.4s; }
-  .button.resume::before:hover {
-    background: #4f651c;
-    color: #fff;
-    transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1171px) {
   .projects {
