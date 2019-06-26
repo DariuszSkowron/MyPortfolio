@@ -771,10 +771,10 @@ main {
   }
 
 
-  .menu-downloadButton {
+  .menu-printButton {
     position: absolute;
     z-index: 3;
-    right: 5px;
+    right: 0px;
     top: 100px;
     cursor: pointer;
     @include easeOut;
@@ -782,9 +782,10 @@ main {
     -webkit-transform: rotate(-90deg);
   }
 
-  .menu-printButton{
-    @extend .menu-downloadButton;
-    top: 150px;
+  .menu-downloadButton{
+    @extend .menu-printButton;
+    top: 220px;
+    right: -19px;
   }
 }
 

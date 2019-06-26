@@ -6259,17 +6259,18 @@ main {
     .resume-page button:hover {
       background: #4f651c;
       color: #fff; }
-  .resume-page .menu-downloadButton, .resume-page .menu-printButton {
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
     position: absolute;
     z-index: 3;
-    right: 5px;
+    right: 0px;
     top: 100px;
     cursor: pointer;
     transition: all 0.5s ease-out;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg); }
-  .resume-page .menu-printButton {
-    top: 150px; }
+  .resume-page .menu-downloadButton {
+    top: 220px;
+    right: -19px; }
 
 .icons {
   text-align: center;
