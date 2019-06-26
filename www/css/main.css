@@ -5,19 +5,21 @@
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
-  .menu-btn .btn-line {
+  .menu-btn .btn-line, .menu-btn .btn-lineResume {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
+  .menu-btn .btn-lineResume {
+    background-color: rgba(157, 200, 57, 0.5); }
   .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
+    .menu-btn.close .btn-line:nth-child(1), .menu-btn.close .btn-lineResume:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
+    .menu-btn.close .btn-line:nth-child(2), .menu-btn.close .btn-lineResume:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
+    .menu-btn.close .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
 .menu {
@@ -6252,10 +6254,22 @@ main {
     line-height: 1.4;
     cursor: pointer;
     transition-duration: 0.5s;
+    writing-mode: vertical-rl;
     border-radius: 2px; }
     .resume-page button:hover {
       background: #4f651c;
       color: #fff; }
+  .resume-page .menu-downloadButton, .resume-page .menu-printButton {
+    position: absolute;
+    z-index: 3;
+    right: 5px;
+    top: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); }
+  .resume-page .menu-printButton {
+    top: 150px; }
 
 .icons {
   text-align: center;

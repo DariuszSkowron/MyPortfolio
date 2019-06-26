@@ -15,6 +15,11 @@
     @include easeOut;
   }
 
+  .btn-lineResume{
+    @extend .btn-line;
+    background-color: rgba((lighten($secondary-color, 25)), 0.5);
+  }
+
     //Rotate into X with menu lines
   &.close {
     transform: rotate(180deg);
