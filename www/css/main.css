@@ -6120,9 +6120,10 @@ main {
     grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
     padding: 24px 0;
-    border-bottom: #4f651c 1px solid; }
+    border-bottom: #4f651c 1.5px solid; }
   .resume-page section:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    border-top: none; }
   .resume-page .section-clause {
     display: grid;
     grid-template-columns: 1fr; }
@@ -6150,11 +6151,13 @@ main {
     align-items: flex-start;
     flex: 1; }
   .resume-page .job {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     border-bottom: #4f651c 1px solid; }
   .resume-page .job:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
   .resume-page .job-title-container {
     display: flex;
     justify-content: space-between;
@@ -6164,11 +6167,13 @@ main {
     font-weight: bold;
     line-height: 1.2; }
   .resume-page .education {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     border-bottom: #4f651c 1px solid; }
   .resume-page .education:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
   .resume-page .education-title-container {
     display: flex;
     justify-content: space-between;

@@ -464,7 +464,7 @@ main {
     grid-gap: 20px;
     padding: 24px 0;
     //border-bottom: 1px solid lightgrey;
-    border-bottom: $secondary-color 1px solid;
+    border-bottom: $secondary-color 1.5px solid;
   }
 
   //.section-last-title{
@@ -477,6 +477,7 @@ main {
 
   section:last-child {
     border-bottom: none;
+    border-top: none;
   }
 
   .section-clause{
@@ -530,14 +531,16 @@ main {
   ***********************************/
 
   .job {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     //border-bottom: 1px solid lightgrey;
     border-bottom: $secondary-color 1px solid;
   }
 
   .job:last-child {
     border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .job-title-container {
@@ -554,14 +557,16 @@ main {
 
   //School
   .education {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     //border-bottom: 1px solid lightgrey;
     border-bottom: $secondary-color 1px solid;
   }
 
   .education:last-child {
     border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .education-title-container {
