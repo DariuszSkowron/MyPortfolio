@@ -9,17 +9,12 @@
 </head>
 <body class="resume-page">
 <header>
-    <div>
-        <a class="media" href="docs/resumeENG.pdf" download><button>adsa</button></a>
-        Print PDF
-    </div>
-
+<div>
     <button type="button" onclick="printPdf('docs/resumeENG.pdf')">
         Print PDF
     </button>
     <button onclick="test()">Generate PDF</button>
-
-
+</div>
 
     <div class="menu-btn">
         <div class="btn-line"></div>
@@ -163,8 +158,6 @@
                     <li>German - A2</li>
                 </ul>
             </div> <!-- end skills-container -->
-
-            <p>My level of advance in English allows me to communicate with clients, work with documentation, and deliver programming code in understandable form</p>
         </div>
     </section>
 
@@ -190,8 +183,6 @@
                     <li>Node</li>
                 </ul>
             </div> <!-- end skills-container -->
-
-            <p>With support of documentation and knowledge avaible on the internet I am able to solve problems encountered while projecting the web services </p>
         </div>
     </section>
     <section>
@@ -258,8 +249,14 @@
 </div>
 </body>
 <script src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>-->
 <script src="js/html2pdf.bundle.min.js"></script>
+<!--<script src="es6-promise.auto.min.js"></script>-->
+<!--<script src="jspdf.min.js"></script>-->
+<!--<script src="html2canvas.min.js"></script>-->
+<!--<script src="html2pdf.min.js"></script>-->
+<!--<script src="http://mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>-->
 <script>
     printPdf = function (url) {
         var iframe = this._printIframe;
@@ -286,11 +283,44 @@
 
         // Generate the PDF.
         html2pdf().from(element).set({
-            margin: 1,
-            filename: 'test.pdf',
-            html2canvas: { scale: 1 },
-            jsPDF: {orientation: 'portrait', unit: 'in', format: 'a4', compressPDF: false}
+            margin: [-10,0,0,0],
+            filename: 'DariuszSkowron-CV-ENG.pdf',
+            html2canvas: { scale: 10 },
+            // jsPDF: {orientation: 'p', unit: 'mm', format: [350, 250], compressPDF: true}
+            jsPDF: {orientation: 'p', unit: 'mm', format: 'a4', compressPDF: true}
         }).save();
     }
 </script>
+
+<!--<script>-->
+<!--    var doc = new jsPDF();-->
+<!--    var specialElementHandlers = {-->
+<!--        '#lol': function (element, renderer) {-->
+<!--            return true;-->
+<!--        }-->
+<!--    };-->
+
+<!--    $('#cmd').click(function () {-->
+<!--        doc.fromHTML($('#cv').html(), 15, 15, {-->
+<!--            'width': 170,-->
+<!--            'elementHandlers': specialElementHandlers-->
+<!--        });-->
+<!--        doc.save('sample-file.pdf');-->
+<!--    });-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    function print(quality = 1) {-->
+<!--        const filename  = 'ThisIsYourPDFFilename.pdf';-->
+
+<!--        html2canvas(document.querySelector('#nodeToRenderAsPDF'),-->
+<!--            {scale: quality}-->
+<!--        ).then(canvas => {-->
+<!--            let pdf = new jsPDF('p', 'mm', 'a4');-->
+<!--            pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 211, 298);-->
+<!--            pdf.save(filename);-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+
 </html>

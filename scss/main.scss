@@ -516,6 +516,7 @@ main {
   }
 
   .link-item {
+    font-size: 11px;
     flex-wrap: wrap;
     //justify-content: space-evenly;
     display: flex;
@@ -523,9 +524,6 @@ main {
     flex: 1;
   }
 
-  .link-item svg {
-    margin-right: 6px;
-  }
 
   /***********************************
   * =Experience
