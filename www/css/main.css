@@ -6266,7 +6266,9 @@ main {
     right: 28px; }
   .resume-page span.rotated {
     writing-mode: vertical-rl;
-    text-orientation: upright; }
+    text-orientation: upright;
+    text-align: center;
+    font-family: monospace; }
 
 .icons {
   text-align: center;
