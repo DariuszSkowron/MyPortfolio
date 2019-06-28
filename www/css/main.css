@@ -6258,17 +6258,19 @@ main {
     position: absolute;
     z-index: 3;
     right: 28px;
-    top: 80px;
+    top: 60px;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 250px;
+    top: 195px;
     right: 28px; }
   .resume-page span.rotated {
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-align: center;
     font-family: monospace; }
+  .resume-page i.buttonIcon {
+    padding-bottom: 5px; }
 
 .icons {
   text-align: center;

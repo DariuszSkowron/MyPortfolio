@@ -772,18 +772,14 @@ main {
     position: absolute;
     z-index: 3;
     right: 28px;
-    top: 80px;
+    top: 60px;
     cursor: pointer;
     @include easeOut;
-    //transform: rotate(-90deg);
-    //-webkit-transform: rotate(-90deg);
-      //writing-mode: vertical-rl;
-      //text-orientation: sideways;
   }
 
   .menu-downloadButton{
     @extend .menu-printButton;
-    top: 250px;
+    top: 195px;
     right: 28px;
   }
 
@@ -794,8 +790,10 @@ main {
     //white-space: pre-line;
     text-align: center;
     font-family: monospace;
-    
+  }
 
+  i.buttonIcon{
+    padding-bottom: 5px;
   }
 
 }
