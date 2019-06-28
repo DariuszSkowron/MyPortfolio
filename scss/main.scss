@@ -716,14 +716,12 @@ main {
     border: none;
     text-align: center;
     align-items: center;
+
     //margin: 5px;
     //display: inline-block;
 
     //text-align: inherit;
     //align-items: center;
-    content: "\f56d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
     z-index: 10;
     transition-duration: 0s;
 
@@ -736,13 +734,12 @@ main {
 
   .button.printResume::before {
     @extend .button.downloadResume;
-    content: "\f02f";
-
 
   }
 
   button {
     padding: 0.4rem;
+
     border: none;
     text-align: center;
     margin: 5px;
@@ -752,7 +749,7 @@ main {
     font-size: 1.2rem;
     font-family: "Segoe UI", Tahoma,
     Geneva, Verdana, sans-serif;
-    line-height: 1.4;
+    line-height: 0.8;
     cursor: pointer;
     transition-duration: 0.5s;
     //transform: rotate(-90deg);
@@ -774,19 +771,28 @@ main {
   .menu-printButton {
     position: absolute;
     z-index: 3;
-    right: 0px;
-    top: 100px;
+    right: 28px;
+    top: 80px;
     cursor: pointer;
     @include easeOut;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
+    //transform: rotate(-90deg);
+    //-webkit-transform: rotate(-90deg);
+      //writing-mode: vertical-rl;
+      //text-orientation: sideways;
   }
 
   .menu-downloadButton{
     @extend .menu-printButton;
-    top: 220px;
-    right: -19px;
+    top: 250px;
+    right: 28px;
   }
+
+  span.rotated{
+    //display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
 }
 
 

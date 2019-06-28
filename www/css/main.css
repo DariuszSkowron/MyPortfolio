@@ -6232,16 +6232,11 @@ main {
     border: none;
     text-align: center;
     align-items: center;
-    content: "\f56d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
     z-index: 10;
     transition-duration: 0s; }
     .resume-page .button.downloadResume::before:hover, .resume-page .button.printResume::before:hover {
       background: #4f651c;
       color: #fff; }
-  .resume-page .button.printResume::before {
-    content: "\f02f"; }
   .resume-page button {
     padding: 0.4rem;
     border: none;
@@ -6251,7 +6246,7 @@ main {
     background-color: rgba(157, 200, 57, 0.5);
     font-size: 1.2rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
+    line-height: 0.8;
     cursor: pointer;
     transition-duration: 0.5s;
     writing-mode: vertical-rl;
@@ -6262,15 +6257,16 @@ main {
   .resume-page .menu-printButton, .resume-page .menu-downloadButton {
     position: absolute;
     z-index: 3;
-    right: 0px;
-    top: 100px;
+    right: 28px;
+    top: 80px;
     cursor: pointer;
-    transition: all 0.5s ease-out;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); }
+    transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 220px;
-    right: -19px; }
+    top: 250px;
+    right: 28px; }
+  .resume-page span.rotated {
+    writing-mode: vertical-rl;
+    text-orientation: upright; }
 
 .icons {
   text-align: center;

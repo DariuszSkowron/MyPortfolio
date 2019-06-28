@@ -9,13 +9,17 @@
 </head>
 <body class="resume-page">
 <header>
+    <!--            <span class="rotated"><i class="fas fa-print"></i>Print</span>-->
     <div class="menu-printButton">
         <button class="button printResume" type="button" onclick="printPdf('docs/resumeENG.pdf')">
-            Print
+            <span class="rotated"><i class="fas fa-print"></i>Print</span>
         </button>
+
     </div>
     <div class="menu-downloadButton">
-        <button class="button downloadResume" onclick="generatePdf()">Download</button>
+        <button class="button downloadResume" onclick="generatePdf()">
+           <span class="rotated"><i class="fas fa-download"></i>Download</span>
+        </button>
     </div>
     <div class="menu-btn">
         <div class="btn-lineResume"></div>
@@ -59,7 +63,6 @@
         </div>
         <div>
             <div class="my-name">Dariusz Skowron</div>
-
             <div class="my-title">Intern Java Developer</div>
 
             <div class="links">
