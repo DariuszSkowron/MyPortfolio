@@ -451,8 +451,13 @@ main {
   }
 
   .container {
+    align-self: center;
     max-width: 960px;
+    //text-align: center;
+    //align-content: center;
     margin: 40px auto;
+    //margin: auto;
+    //margin-right: 40px;
     padding: 32px;
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

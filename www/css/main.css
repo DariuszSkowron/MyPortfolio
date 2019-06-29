@@ -6112,6 +6112,7 @@ main {
   .resume-page a:hover {
     text-decoration: underline; }
   .resume-page .container {
+    align-self: center;
     max-width: 960px;
     margin: 40px auto;
     padding: 32px;
@@ -6344,7 +6345,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
@@ -6364,9 +6365,7 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; }
-  .menu-btnResume {
-    right: 5px; } }
+    margin-bottom: 16px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6394,6 +6393,10 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px; } }
+
+@media screen and (max-width: 1100px) {
   .menu-btnResume {
-    right: 5px; } }
+    right: 5px; }
+  .resume-page .container {
+    margin-right: 40px; } }

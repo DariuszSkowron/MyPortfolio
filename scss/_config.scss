@@ -49,6 +49,13 @@ $background-opacity: 0.9;
 }
 
 //Media Query Mixins
+
+@mixin mediaResume{
+  @media screen and (max-width: 1100px){
+    @content;
+  }
+}
+
 @mixin mediaSm {
   @media screen and (max-width: 500px){
     @content;
