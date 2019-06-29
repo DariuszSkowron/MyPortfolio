@@ -464,7 +464,7 @@ main {
     grid-gap: 20px;
     padding: 24px 0;
     //border-bottom: 1px solid lightgrey;
-    border-bottom: $secondary-color 1px solid;
+    border-bottom: $secondary-color 1.5px solid;
   }
 
   //.section-last-title{
@@ -477,9 +477,10 @@ main {
 
   section:last-child {
     border-bottom: none;
+    border-top: none;
   }
 
-  .section-clause{
+  .section-clause {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -530,14 +531,16 @@ main {
   ***********************************/
 
   .job {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     //border-bottom: 1px solid lightgrey;
     border-bottom: $secondary-color 1px solid;
   }
 
   .job:last-child {
     border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .job-title-container {
@@ -554,14 +557,16 @@ main {
 
   //School
   .education {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     //border-bottom: 1px solid lightgrey;
     border-bottom: $secondary-color 1px solid;
   }
 
   .education:last-child {
     border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .education-title-container {
@@ -629,42 +634,44 @@ main {
   }
 
 
+  //align-self: center;
+  //display: flex;
+  //justify-content: space-between;
 
-    //align-self: center;
-    //display: flex;
-    //justify-content: space-between;
-
-  table{
+  table {
     border-collapse: collapse;
     width: 100%;
     padding-left: 3rem;
     border: 1px solid black;
   }
-    //span + span {
-    //  padding-left: 10rem;
-    //}
 
-  th{
+  //span + span {
+  //  padding-left: 10rem;
+  //}
+
+  th {
     text-align: left;
   }
 
-  td{
+  td {
     text-align: left;
     //padding-left: 7rem;
 
 
-  //padding-left: 80px;
+    //padding-left: 80px;
   }
+
   //td {
   //  text-align: center;
   //  //padding-left: 40px;
   //  vertical-align: middle;
   //}
 
-    .interest-title{
-      text-align: center;
-    }
-  .interest-title{
+  .interest-title {
+    text-align: center;
+  }
+
+  .interest-title {
     text-align: center;
   }
 
@@ -683,12 +690,13 @@ main {
   * =Clause
   ***********************************/
 
-  .clause-text{
+  .clause-text {
     //font-weight: bold;
     font-size: 0.7rem;
     color: darken(lightgray, 7);
 
   }
+
   .reference {
     font-size: 18px;
   }
@@ -697,36 +705,99 @@ main {
     margin-bottom: 20px;
   }
 
-  //@media only screen and (max-width: 768px) {
-  //  section {
-  //    grid-template-columns: 1fr;
-  //  }
-  //
-  //  img.avatar {
-  //    align-content: center;
-  //  }
-  //
-  //  .links, .job-title-container {
-  //    flex-direction: column;
-  //  }
-  //
-  //  .skills-container {
-  //    grid-template-columns: 1fr 1fr;
-  //  }
-  //
-  //  .interests-container {
-  //    grid-template-columns: 1fr 1fr;
-  //    //flex-wrap: wrap;
-  //    //justify-content: flex-start;
-  //  }
-  //
-  //  .interests-container img {
-  //    margin-right: 32px;
-  //    margin-bottom: 16px;
-  //  }
-  //}
+  .button.downloadResume::before {
+    //color: $primary-color;
+    //background-color: white;
+    //min-height: 50px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 1px;
+    border: none;
+    text-align: center;
+    align-items: center;
+
+    //margin: 5px;
+    //display: inline-block;
+
+    //text-align: inherit;
+    //align-items: center;
+    z-index: 10;
+    transition-duration: 0s;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      //@include easeOut();
+    }
+  }
+
+  .button.printResume::before {
+    @extend .button.downloadResume;
+
+  }
+
+  button {
+    padding: 0.4rem;
+
+    border: none;
+    text-align: center;
+    margin: 5px;
+
+    color: $primary-color;
+    background-color: rgba((lighten($secondary-color, 25)), 0.5);
+    font-size: 1.2rem;
+    font-family: "Segoe UI", Tahoma,
+    Geneva, Verdana, sans-serif;
+    line-height: 0.8;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    //transform: rotate(-90deg);
+    //-webkit-transform: rotate(-90deg);
+    writing-mode: vertical-rl;
+
+    //background: rgba(lighten($secondary-color, 4), 0.5);
+    border-radius: 2px;
+    //border: 4px solid $secondary-color;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      //@include easeOut();
+    }
+  }
+
+
+  .menu-printButton {
+    position: absolute;
+    z-index: 3;
+    right: 28px;
+    top: 60px;
+    cursor: pointer;
+    @include easeOut;
+  }
+
+  .menu-downloadButton{
+    @extend .menu-printButton;
+    top: 195px;
+    right: 28px;
+  }
+
+  span.rotated{
+    //display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    //white-space: pre-line;
+    text-align: center;
+    font-family: monospace;
+  }
+
+  i.buttonIcon{
+    padding-bottom: 5px;
+  }
 
 }
+
 
   .icons {
     text-align: center;
@@ -745,35 +816,6 @@ main {
       @include easeOut();
 
     }
-  }
-}
-
-.button.resume::before {
-  //color: $primary-color;
-  //background-color: white;
-  //min-height: 50px;
-  border-radius: 5px;
-  padding-left: 5px;
-  padding-right: 10px;
-  padding-top: 1px;
-  border: none;
-  text-align: center;
-  align-items: center;
-  //margin: 5px;
-  //display: inline-block;
-
-  //text-align: inherit;
-  //align-items: center;
-  content: "\f56d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  z-index: 10;
-  transition-duration: 0.4s;
-
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-    @include easeOut();
   }
 }
 

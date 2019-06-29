@@ -1,23 +1,25 @@
-.menu-btn {
+.menu-btn, .menu-btnResume {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
-  .menu-btn .btn-line {
+  .menu-btn .btn-line, .menu-btnResume .btn-line, .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
-  .menu-btn.close {
+  .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
+    background-color: rgba(157, 200, 57, 0.5); }
+  .menu-btn.close, .close.menu-btnResume {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
+    .menu-btn.close .btn-line:nth-child(1), .close.menu-btnResume .btn-line:nth-child(1), .menu-btn.close .btn-lineResume:nth-child(1), .close.menu-btnResume .btn-lineResume:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
+    .menu-btn.close .btn-line:nth-child(2), .close.menu-btnResume .btn-line:nth-child(2), .menu-btn.close .btn-lineResume:nth-child(2), .close.menu-btnResume .btn-lineResume:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
+    .menu-btn.close .btn-line:nth-child(3), .close.menu-btnResume .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3), .close.menu-btnResume .btn-lineResume:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
 .menu {
@@ -6120,9 +6122,10 @@ main {
     grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
     padding: 24px 0;
-    border-bottom: #4f651c 1px solid; }
+    border-bottom: #4f651c 1.5px solid; }
   .resume-page section:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    border-top: none; }
   .resume-page .section-clause {
     display: grid;
     grid-template-columns: 1fr; }
@@ -6150,11 +6153,13 @@ main {
     align-items: flex-start;
     flex: 1; }
   .resume-page .job {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     border-bottom: #4f651c 1px solid; }
   .resume-page .job:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
   .resume-page .job-title-container {
     display: flex;
     justify-content: space-between;
@@ -6164,11 +6169,13 @@ main {
     font-weight: bold;
     line-height: 1.2; }
   .resume-page .education {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     border-bottom: #4f651c 1px solid; }
   .resume-page .education:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
   .resume-page .education-title-container {
     display: flex;
     justify-content: space-between;
@@ -6217,6 +6224,53 @@ main {
     font-size: 18px; }
   .resume-page .reference-details {
     margin-bottom: 20px; }
+  .resume-page .button.downloadResume::before, .resume-page .button.printResume::before {
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 1px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    z-index: 10;
+    transition-duration: 0s; }
+    .resume-page .button.downloadResume::before:hover, .resume-page .button.printResume::before:hover {
+      background: #4f651c;
+      color: #fff; }
+  .resume-page button {
+    padding: 0.4rem;
+    border: none;
+    text-align: center;
+    margin: 5px;
+    color: #444;
+    background-color: rgba(157, 200, 57, 0.5);
+    font-size: 1.2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.8;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    writing-mode: vertical-rl;
+    border-radius: 2px; }
+    .resume-page button:hover {
+      background: #4f651c;
+      color: #fff; }
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+    position: absolute;
+    z-index: 3;
+    right: 28px;
+    top: 60px;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+  .resume-page .menu-downloadButton {
+    top: 195px;
+    right: 28px; }
+  .resume-page span.rotated {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    font-family: monospace; }
+  .resume-page i.buttonIcon {
+    padding-bottom: 5px; }
 
 .icons {
   text-align: center;
@@ -6228,24 +6282,6 @@ main {
     .icons a:hover {
       color: #4f651c;
       transition: all 0.5s ease-out; }
-
-.button.resume::before {
-  border-radius: 5px;
-  padding-left: 5px;
-  padding-right: 10px;
-  padding-top: 1px;
-  border: none;
-  text-align: center;
-  align-items: center;
-  content: "\f56d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  z-index: 10;
-  transition-duration: 0.4s; }
-  .button.resume::before:hover {
-    background: #4f651c;
-    color: #fff;
-    transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -6328,7 +6364,9 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .menu-btnResume {
+    right: 5px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6356,4 +6394,6 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .menu-btnResume {
+    right: 5px; } }

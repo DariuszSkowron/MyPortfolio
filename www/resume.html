@@ -4,46 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dariusz Skowron Resume Eng Ver</title>
+    <title>Dariusz Skowron's Resume English Version </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="resume-page">
 <header>
-<div>
-    <button type="button" onclick="printPdf('docs/resumeENG.pdf')">
-        Print PDF
-    </button>
-    <button onclick="test()">Generate PDF</button>
-</div>
+    <!--            <span class="rotated"><i class="fas fa-print"></i>Print</span>-->
+    <div class="menu-printButton">
+        <button class="button printResume" type="button" onclick="printPdf('docs/resumeENG.pdf')">
+            <span class="rotated"><i class="fas fa-print buttonIcon"></i>Print</span>
+        </button>
 
-    <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+    </div>
+    <div class="menu-downloadButton">
+        <button class="button downloadResume" onclick="generatePdf()">
+           <span class="rotated"><i class="fas fa-download buttonIcon"></i>Download</span>
+        </button>
+    </div>
+    <div class="menu-btnResume">
+        <div class="btn-lineResume"></div>
+        <div class="btn-lineResume"></div>
+        <div class="btn-lineResume"></div>
     </div>
 
     <nav class="menu">
         <div class="menu-branding">
             <div class="portrait"></div>
         </div>
-        <ul class ="menu-nav">
+        <ul class="menu-nav">
             <li class="nav-item current">
                 <a href="index.html" class="nav-link">
                     Home
                 </a>
-            </li> <li class="nav-item">
-            <a href="about.html" class="nav-link">
-                Resume
-            </a>
-        </li> <li class="nav-item">
-            <a href="work.html" class="nav-link">
-                My Recent Projects
-            </a>
-        </li> <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-                Contact Me
-            </a>
-        </li>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    Resume
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="work.html" class="nav-link">
+                    My Recent Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    Contact Me
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -55,7 +63,6 @@
         </div>
         <div>
             <div class="my-name">Dariusz Skowron</div>
-
             <div class="my-title">Intern Java Developer</div>
 
             <div class="links">
@@ -126,49 +133,58 @@
         <div class="section-title">Education</div>
         <div>
             <div class="education">
-        <div class="education-title-container">
-            <div>
-                <div class="education-school">AGH University Of Science And Technology</div>
-                <div class="education-title">Master of Science Engineering (M.Sc.Eng.)</div>
-            </div>
-            <div>
-                Jul 2017 - Jun 2018
-            </div>
-        </div>
-    </div>
-            <div class="education">
                 <div class="education-title-container">
                     <div>
                         <div class="education-school">AGH University Of Science And Technology</div>
                         <div class="education-title">Master of Science Engineering (M.Sc.Eng.)</div>
+                        <div>Mechanical Engineering</div>
+                    </div>
+                    <div>
+                        Feb 2017 - Jun 2018
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <div class="education-title-container">
+                    <div>
+                        <div class="education-school">AGH University Of Science And Technology</div>
+                        <div class="education-title">Bachelor of Science Engineering (B.Sc.Eng.)</div>
+                        <div>Mechanical Engineering</div>
                     </div>
                     <div>
                         Jul 2017 - Jun 2018
                     </div>
                 </div>
             </div>
-</div>
+        </div>
     </section>
     <section>
         <div class="section-title">Languages</div>
         <div>
             <div class="skills-container">
                 <ul>
+                    <li>Polish - Native</li>
+                </ul>
+                <ul>
                     <li>English - C1</li>
+                </ul>
+                <ul>
                     <li>German - A2</li>
                 </ul>
-            </div> <!-- end skills-container -->
+            </div>
         </div>
     </section>
 
     <section>
-        <div class="section-title">Skills (Technologies??)</div>
+        <div class="section-title">Technologies</div>
         <div>
             <div class="skills-container">
                 <ul>
                     <li>Java</li>
                     <li>SQL</li>
-                    <li>HTML/CSS/Bootstrap</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
                 </ul>
 
                 <ul>
@@ -182,7 +198,7 @@
                     <li>Gradle</li>
                     <li>Node</li>
                 </ul>
-            </div> <!-- end skills-container -->
+            </div>
         </div>
     </section>
     <section>
@@ -191,29 +207,33 @@
             <div class="skills-container">
                 <ul>
                     <li>Driving licence cat. B</li>
+                </ul>
+                <ul>
                     <li>Microsoft Office</li>
+                </ul>
+                <ul>
                     <li>Teamwork</li>
                 </ul>
-            </div> <!-- end skills-container -->
+            </div>
         </div>
     </section>
 
     <section>
         <div class="section-title">Interests</div>
         <div class="interests-container">
-                <ul>
-                    <li><i class="fab fa-bitcoin fa-3x" title="powerlifting"></i>
+            <ul>
+                <li><i class="fab fa-bitcoin fa-3x" title="powerlifting"></i>
                     <div class="title">Cryptocurrencies</div>
-                    </li>
-                </ul>
-                <ul>
-                    <li><i class="fas fa-dumbbell fa-3x"></i>
+                </li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-dumbbell fa-3x"></i>
                     <div class="title">Powerliftig</div>
-                    </li>
-                </ul>
+                </li>
+            </ul>
             <ul>
                 <li><i class="fas fa-tools fa-3x"></i>
-                <div class="title">DIY</div>
+                    <div class="title">DIY</div>
                 </li>
             </ul>
             <ul>
@@ -221,106 +241,38 @@
                     <div class="title">E-sport</div>
                 </li>
             </ul>
-            </div>
+        </div>
 
 
+        <!--            <table>-->
+        <!--                <tr>-->
+        <!--                    <td><i class="fab fa-bitcoin fa-3x" title="powerlifting"></i>-->
+        <!--                        <div class="interest-title">Powerlifting</div></td>-->
+        <!--                    <td><i class="fas fa-dumbbell fa-3x"></i>-->
+        <!--                        <div class="interests-title">Powerlifting</div></td>-->
+        <!--                    <td><i class="fas fa-tools fa-3x"></i>-->
+        <!--                        <div class="interest-title">Powerlifting</div></td>-->
+        <!--                </tr>-->
+        <!--            </table>-->
 
-<!--            <table>-->
-<!--                <tr>-->
-<!--                    <td><i class="fab fa-bitcoin fa-3x" title="powerlifting"></i>-->
-<!--                        <div class="interest-title">Powerlifting</div></td>-->
-<!--                    <td><i class="fas fa-dumbbell fa-3x"></i>-->
-<!--                        <div class="interests-title">Powerlifting</div></td>-->
-<!--                    <td><i class="fas fa-tools fa-3x"></i>-->
-<!--                        <div class="interest-title">Powerlifting</div></td>-->
-<!--                </tr>-->
-<!--            </table>-->
-
-<!--        </div>-->
+        <!--        </div>-->
     </section>
-<section class="section-clause">
-<!--    <div class="section-title">Interests</div>-->
-    <div class="clause-text">
-    I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item
-    1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal
-    data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)
-    </div>
-</section>
+    <section class="section-clause">
+        <!--    <div class="section-title">Interests</div>-->
+        <div class="clause-text">
+            I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws
+            2018, item
+            1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of
+            personal
+            data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)
+        </div>
+    </section>
 </div>
 </body>
+
 <script src="js/main.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>-->
 <script src="js/html2pdf.bundle.min.js"></script>
-<!--<script src="es6-promise.auto.min.js"></script>-->
-<!--<script src="jspdf.min.js"></script>-->
-<!--<script src="html2canvas.min.js"></script>-->
-<!--<script src="html2pdf.min.js"></script>-->
-<!--<script src="http://mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>-->
-<script>
-    printPdf = function (url) {
-        var iframe = this._printIframe;
-        if (!this._printIframe) {
-            iframe = this._printIframe = document.createElement('iframe');
-            document.body.appendChild(iframe);
-
-            iframe.style.display = 'none';
-            iframe.onload = function() {
-                setTimeout(function() {
-                    iframe.focus();
-                    iframe.contentWindow.print();
-                }, 1);
-            };
-        }
-
-        iframe.src = url;
-    }
-</script>
-<script>
-    function test() {
-        // Get the element.
-        var element = document.getElementById('cv');
-
-        // Generate the PDF.
-        html2pdf().from(element).set({
-            margin: [-10,0,0,0],
-            filename: 'DariuszSkowron-CV-ENG.pdf',
-            html2canvas: { scale: 10 },
-            // jsPDF: {orientation: 'p', unit: 'mm', format: [350, 250], compressPDF: true}
-            jsPDF: {orientation: 'p', unit: 'mm', format: 'a4', compressPDF: true}
-        }).save();
-    }
-</script>
-
-<!--<script>-->
-<!--    var doc = new jsPDF();-->
-<!--    var specialElementHandlers = {-->
-<!--        '#lol': function (element, renderer) {-->
-<!--            return true;-->
-<!--        }-->
-<!--    };-->
-
-<!--    $('#cmd').click(function () {-->
-<!--        doc.fromHTML($('#cv').html(), 15, 15, {-->
-<!--            'width': 170,-->
-<!--            'elementHandlers': specialElementHandlers-->
-<!--        });-->
-<!--        doc.save('sample-file.pdf');-->
-<!--    });-->
-<!--</script>-->
-
-<!--<script>-->
-<!--    function print(quality = 1) {-->
-<!--        const filename  = 'ThisIsYourPDFFilename.pdf';-->
-
-<!--        html2canvas(document.querySelector('#nodeToRenderAsPDF'),-->
-<!--            {scale: quality}-->
-<!--        ).then(canvas => {-->
-<!--            let pdf = new jsPDF('p', 'mm', 'a4');-->
-<!--            pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 211, 298);-->
-<!--            pdf.save(filename);-->
-<!--        });-->
-<!--    }-->
-<!--</script>-->
+<script src="js/generateResume.js" type="text/javascript"></script>
+<script src="js/printResume.js" type="text/javascript"></script>
 
 </html>
