@@ -1,25 +1,25 @@
-.menu-btn {
+.menu-btn, .menu-btnResume {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
-  .menu-btn .btn-line, .menu-btn .btn-lineResume {
+  .menu-btn .btn-line, .menu-btnResume .btn-line, .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
-  .menu-btn .btn-lineResume {
+  .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
     background-color: rgba(157, 200, 57, 0.5); }
-  .menu-btn.close {
+  .menu-btn.close, .close.menu-btnResume {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1), .menu-btn.close .btn-lineResume:nth-child(1) {
+    .menu-btn.close .btn-line:nth-child(1), .close.menu-btnResume .btn-line:nth-child(1), .menu-btn.close .btn-lineResume:nth-child(1), .close.menu-btnResume .btn-lineResume:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2), .menu-btn.close .btn-lineResume:nth-child(2) {
+    .menu-btn.close .btn-line:nth-child(2), .close.menu-btnResume .btn-line:nth-child(2), .menu-btn.close .btn-lineResume:nth-child(2), .close.menu-btnResume .btn-lineResume:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3) {
+    .menu-btn.close .btn-line:nth-child(3), .close.menu-btnResume .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3), .close.menu-btnResume .btn-lineResume:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
 .menu {
@@ -6364,7 +6364,9 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .menu-btnResume {
+    right: 5px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6392,4 +6394,6 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .menu-btnResume {
+    right: 5px; } }

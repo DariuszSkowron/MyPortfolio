@@ -15,6 +15,7 @@
     @include easeOut;
   }
 
+
   .btn-lineResume{
     @extend .btn-line;
     background-color: rgba((lighten($secondary-color, 25)), 0.5);
@@ -42,6 +43,12 @@
     }
   }
 }
+
+.menu-btnResume{
+  @extend .menu-btn;
+  //right: 5px;
+}
+
 
 //Menu Overlay
 .menu {
