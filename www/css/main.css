@@ -6399,4 +6399,8 @@ main {
   .menu-btnResume {
     right: 5px; }
   .resume-page .container {
-    margin-right: 40px; } }
+    margin-right: 40px; }
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+    right: 3px; }
+  .resume-page .menu-downloadButton {
+    right: 3px; } }
