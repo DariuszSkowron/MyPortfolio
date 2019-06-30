@@ -6403,6 +6403,14 @@ main {
     right: 5px; }
   .resume-page .container {
     margin-right: 40px; }
+  .resume-page .section-title {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -1px;
+    text-align: left;
+    top: 50px;
+    font-family: monospace; }
   .resume-page .menu-printButton, .resume-page .menu-downloadButton {
     right: 0px; }
   .resume-page .menu-downloadButton {
