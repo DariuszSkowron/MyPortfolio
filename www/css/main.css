@@ -6396,11 +6396,12 @@ main {
     margin-bottom: 16px; } }
 
 @media screen and (max-width: 1100px) {
-  .menu-btnResume {
+  .menu-btn, .menu-btnResume {
+    top: -5px;
     right: 5px; }
   .resume-page .container {
     margin-right: 40px; }
   .resume-page .menu-printButton, .resume-page .menu-downloadButton {
-    right: 3px; }
+    right: -2px; }
   .resume-page .menu-downloadButton {
-    right: 3px; } }
+    right: -2px; } }

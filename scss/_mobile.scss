@@ -238,7 +238,8 @@
 }
 
 @include mediaResume {
-  .menu-btnResume {
+  .menu-btn {
+    top: -5px;
     right: 5px;
   }
   .resume-page {
@@ -247,11 +248,11 @@
     }
 
     .menu-printButton {
-      right: 3px;
+      right: -2px;
     }
 
     .menu-downloadButton{
-      right: 3px;
+      right: -2px;
     }
 
   }
