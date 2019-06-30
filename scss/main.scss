@@ -455,7 +455,7 @@ main {
     max-width: 960px;
     //text-align: center;
     //align-content: center;
-    margin: 40px auto;
+    margin: 35px auto;
     //margin: auto;
     //margin-right: 40px;
     padding: 32px;
@@ -744,14 +744,13 @@ main {
 
   button {
     padding: 0.4rem;
-
     border: none;
     text-align: center;
     margin: 5px;
 
     color: $primary-color;
     background-color: rgba((lighten($secondary-color, 25)), 0.5);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: "Segoe UI", Tahoma,
     Geneva, Verdana, sans-serif;
     line-height: 0.8;
@@ -776,16 +775,16 @@ main {
   .menu-printButton {
     position: absolute;
     z-index: 3;
-    right: 28px;
-    top: 60px;
+    right: 30px;
+    top: 25px;
     cursor: pointer;
     @include easeOut;
   }
 
   .menu-downloadButton{
     @extend .menu-printButton;
-    top: 195px;
-    right: 28px;
+    top: 130px;
+    right: 30px;
   }
 
   span.rotated{

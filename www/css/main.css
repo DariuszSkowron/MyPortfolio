@@ -22,6 +22,9 @@
     .menu-btn.close .btn-line:nth-child(3), .close.menu-btnResume .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3), .close.menu-btnResume .btn-lineResume:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
+.menu-btnResume {
+  top: 0; }
+
 .menu {
   position: fixed;
   top: 0;
@@ -6114,7 +6117,7 @@ main {
   .resume-page .container {
     align-self: center;
     max-width: 960px;
-    margin: 40px auto;
+    margin: 35px auto;
     padding: 32px;
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
@@ -6245,7 +6248,7 @@ main {
     margin: 5px;
     color: #444;
     background-color: rgba(157, 200, 57, 0.5);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 0.8;
     cursor: pointer;
@@ -6258,13 +6261,13 @@ main {
   .resume-page .menu-printButton, .resume-page .menu-downloadButton {
     position: absolute;
     z-index: 3;
-    right: 28px;
-    top: 60px;
+    right: 30px;
+    top: 25px;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 195px;
-    right: 28px; }
+    top: 130px;
+    right: 30px; }
   .resume-page span.rotated {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -6396,12 +6399,11 @@ main {
     margin-bottom: 16px; } }
 
 @media screen and (max-width: 1100px) {
-  .menu-btn, .menu-btnResume {
-    top: -5px;
+  .menu-btnResume {
     right: 5px; }
   .resume-page .container {
     margin-right: 40px; }
   .resume-page .menu-printButton, .resume-page .menu-downloadButton {
-    right: -2px; }
+    right: 0px; }
   .resume-page .menu-downloadButton {
-    right: -2px; } }
+    right: 0px; } }
