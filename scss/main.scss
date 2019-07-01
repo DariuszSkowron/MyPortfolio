@@ -177,13 +177,14 @@ main {
 
 //Contact Page
 .boxes {
-  display: flex;
+  left: 0;
+  display: inline-block;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 5rem;
-  text-align: justify;
-  vertical-align: middle;
+  text-align: left;
+  //vertical-align: px;
 
   //i {
   //  align-items: center;
@@ -193,21 +194,32 @@ main {
   div {
     font-size: 1.5rem;
     border: 3px #fff solid;
-    padding: 5rem 2.5rem;
+    padding: 1rem 2.5rem;
+
     margin-bottom: 7rem;
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      //padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
-
       span {
         color: set-text-color($secondary-color)
       }
     }
   }
 }
+
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  //border-bottom: 1px solid lightgrey;
+  border-bottom: $secondary-color 1.5px solid;
+}
+
 
 //Button Styles
 .btn {
@@ -366,7 +378,7 @@ main {
   #nav {
     //position: absolute;
     //left: 5%;
-    min-height: 5rem;
+    min-height: 6rem;
     //z-index: 2;
     background: none;
     -webkit-transition: all 0.5s ease;
