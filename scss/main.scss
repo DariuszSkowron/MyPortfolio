@@ -178,11 +178,11 @@ main {
 //Contact Page
 .boxes {
   left: 0;
-  display: inline-block;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 5rem;
+  display: block;
+  //flex-wrap: wrap;
+
+  //align-items: center;
+  margin-top: 2rem;
   text-align: left;
   //vertical-align: px;
 
@@ -194,7 +194,7 @@ main {
   div {
     font-size: 1.5rem;
     border: 3px #fff solid;
-    padding: 1rem 2.5rem;
+    padding: 1rem;
 
     margin-bottom: 7rem;
     @include easeOut;
@@ -210,6 +210,38 @@ main {
   }
 }
 
+.sendMessage{
+  left: 0;
+  display: block;
+  //flex-wrap: wrap;
+
+  //align-items: center;
+  margin-top: 2rem;
+  text-align: left;
+
+  input{
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1rem;
+
+    margin-bottom: 7rem;
+    @include easeOut;
+
+    &:hover {
+      //padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color)
+      }
+    }
+  }
+}
+
+.actions{
+  list-style-type: none;
+}
+
 
 .contact {
   display: grid;
@@ -217,7 +249,7 @@ main {
   grid-gap: 20px;
   padding: 24px 0;
   //border-bottom: 1px solid lightgrey;
-  border-bottom: $secondary-color 1.5px solid;
+  //border-bottom: $secondary-color 1.5px solid;
 }
 
 

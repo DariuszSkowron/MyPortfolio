@@ -5946,16 +5946,13 @@ main {
 
 .boxes {
   left: 0;
-  display: inline-block;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 5rem;
+  display: block;
+  margin-top: 2rem;
   text-align: left; }
   .boxes div {
     font-size: 1.5rem;
     border: 3px #fff solid;
-    padding: 1rem 2.5rem;
+    padding: 1rem;
     margin-bottom: 7rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
@@ -5964,12 +5961,31 @@ main {
       .boxes div:hover span {
         color: #fff; }
 
+.sendMessage {
+  left: 0;
+  display: block;
+  margin-top: 2rem;
+  text-align: left; }
+  .sendMessage input {
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1rem;
+    margin-bottom: 7rem;
+    transition: all 0.5s ease-out; }
+    .sendMessage input:hover {
+      background: #4f651c;
+      color: #fff; }
+      .sendMessage input:hover span {
+        color: #fff; }
+
+.actions {
+  list-style-type: none; }
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  padding: 24px 0;
-  border-bottom: #4f651c 1.5px solid; }
+  padding: 24px 0; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
