@@ -84,11 +84,11 @@
 
         <h1>Or just contact me by formular</h1>
         <div class="border"></div>
-        <form class="contact-form" action="index.html" method="post">
-            <input type="text" class="contact-form-text" placeholder="Your name">
-            <input type="email" class="contact-form-text" placeholder="Your email">
-            <input type="text" class="contact-form-text" placeholder="Your phone">
-            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com">
+            <input id="name" name="name" type="text" class="contact-form-text" placeholder="Your name">
+            <input id="email" name="email" type="email" class="contact-form-text" placeholder="Your email">
+            <textarea id="message" name="message" class="contact-form-text" placeholder="Your message"></textarea>
+
             <input type="submit" class="contact-form-btn" value="Send">
         </form>
     </div>
