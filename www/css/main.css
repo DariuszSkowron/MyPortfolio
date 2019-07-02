@@ -22,6 +22,9 @@
     .menu-btn.close .btn-line:nth-child(3), .close.menu-btnResume .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3), .close.menu-btnResume .btn-lineResume:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
+.menu-btnResume {
+  top: 0; }
+
 .menu {
   position: fixed;
   top: 0;
@@ -5942,25 +5945,47 @@ main {
       transition: all 0.5s ease-out; }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 5rem;
-  text-align: justify;
-  vertical-align: middle; }
+  left: 0;
+  display: block;
+  margin-top: 2rem;
+  text-align: left; }
   .boxes div {
     font-size: 1.5rem;
     border: 3px #fff solid;
-    padding: 5rem 2.5rem;
+    padding: 1rem;
     margin-bottom: 7rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #4f651c;
       color: #fff; }
       .boxes div:hover span {
         color: #fff; }
+
+.sendMessage {
+  left: 0;
+  display: block;
+  margin-top: 2rem;
+  text-align: left; }
+  .sendMessage input {
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1rem;
+    margin-bottom: 7rem;
+    transition: all 0.5s ease-out; }
+    .sendMessage input:hover {
+      background: #4f651c;
+      color: #fff; }
+      .sendMessage input:hover span {
+        color: #fff; }
+
+.actions {
+  list-style-type: none; }
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 24px 0; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -6045,7 +6070,7 @@ main {
     /* Safari */
     transition: opacity 2s; }
   .resume #nav {
-    min-height: 5rem;
+    min-height: 6rem;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -6112,8 +6137,9 @@ main {
   .resume-page a:hover {
     text-decoration: underline; }
   .resume-page .container {
+    align-self: center;
     max-width: 960px;
-    margin: 40px auto;
+    margin: 35px auto;
     padding: 32px;
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
@@ -6244,7 +6270,7 @@ main {
     margin: 5px;
     color: #444;
     background-color: rgba(157, 200, 57, 0.5);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 0.8;
     cursor: pointer;
@@ -6257,13 +6283,13 @@ main {
   .resume-page .menu-printButton, .resume-page .menu-downloadButton {
     position: absolute;
     z-index: 3;
-    right: 28px;
-    top: 60px;
+    right: 30px;
+    top: 25px;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 195px;
-    right: 28px; }
+    top: 130px;
+    right: 30px; }
   .resume-page span.rotated {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -6344,7 +6370,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
@@ -6364,9 +6390,7 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; }
-  .menu-btnResume {
-    right: 5px; } }
+    margin-bottom: 16px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6376,6 +6400,24 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    min-height: 20vh;
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../images/portrait150.png");
+      width: 150px;
+      height: 150px; }
   body#bg-img {
     background-attachment: scroll; }
   .projects {
@@ -6394,6 +6436,22 @@ main {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px; } }
+
+@media screen and (max-width: 1100px) {
   .menu-btnResume {
-    right: 5px; } }
+    right: 5px; }
+  .resume-page .container {
+    margin-right: 40px; }
+  .resume-page .section-title {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -1px;
+    text-align: left;
+    top: 50px;
+    font-family: monospace; }
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+    right: 0px; }
+  .resume-page .menu-downloadButton {
+    right: 0px; } }

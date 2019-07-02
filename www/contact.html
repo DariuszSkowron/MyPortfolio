@@ -56,6 +56,7 @@
     <h2 class="sm-heading">
         You can reach me by using one of these...
     </h2>
+    <section class="contact">
     <div class="boxes">
         <div>
             <span
@@ -75,9 +76,26 @@
                     class="text-secondary">Address:</span>
             Cracow, Poland
         </div>
-
-
     </div>
+        <div class="sendMessage">
+            <h2 class="sm-heading">Or just write a message</h2>
+            <p>If you want to contact me in any cases, feel free to use contact form, the information will be delivered to me shortly</p>
+            <form method="post" action="#">
+                <div>
+                    <div>
+                    <div><input type="text" name="name" id="name" placeholder="Name" /></div>
+                    <div><input type="email" name="email" id="email" placeholder="Email" /></div>
+                    </div>
+                    <div><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+                    <div><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+                        <ul class="actions">
+                            <li><button><input type="submit" class="primary" value="Send Message" /></button></li>
+                            <li><button><input type="reset" value="Reset Form" /></button></li>
+                        </ul>
+                </div>
+            </form>
+        </div>
+    </section>
 </main>
 
 <footer id="main-footer">
