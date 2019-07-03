@@ -84,7 +84,7 @@
 
         <h1>Or just contact me by formular</h1>
         <div class="border"></div>
-        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="emptyInputs();"  target="dummyframe">
+        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="sendForm();" target="dummyframe">
             <input id="name" name="name" type="text" class="contact-form-text"  required placeholder="Your name" data-error="Enter your name" oninvalid="this.setCustomValidity('Enter user name Here')"
                    oninput="this.setCustomValidity('')"  />
             <input id="email" name="email" type="email" class="contact-form-text" placeholder="Your email" required>
@@ -92,7 +92,7 @@
 
             <input type="submit"  class="contact-form-btn" value="Send" >
 <!--            <input type="submit" onclick="validateForm()" class="contact-form-btn" value="Send" >-->
-<!--            onclick="setTimeout('emptyInputs()', 500); return false;"-->
+<!--            onclick="setTimeout('sendForm()', 500); return false;"-->
         </form>
     </div>
     </div>
@@ -157,7 +157,7 @@
 <!--        src="js/form-submission-handler.js"></script>-->
 
 <!--<script>-->
-<!--    function emptyInputs(){-->
+<!--    function sendForm(){-->
 <!--        document.getElementById('name').value="";-->
 <!--        document.getElementById('email').value="";-->
 <!--        document.getElementById('message').value="";-->
@@ -165,8 +165,17 @@
 <!--    </script>-->
 
 <script>
-    function emptyInputs(){
+    function sendForm(){
         alert('Thank you for your feedback, the information will be delivered to me shortly');
+        // document.getElementById('email').value="";
+        // document.getElementById('message').value="";
+        // document.getElementById('name').value="";
+        setTimeout(emptyInputs, 500);
+    }
+</script>
+<script>
+    function emptyInputs(){
+        // alert('Thank you for your feedback, the information will be delivered to me shortly');
         document.getElementById('email').value="";
         document.getElementById('message').value="";
         document.getElementById('name').value="";
