@@ -84,23 +84,20 @@
 
         <h1>Or just contact me by formular</h1>
         <div class="border"></div>
-        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="alert('Thank you for your feedback.');" target="dummyframe">
+        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="emptyInputs();"  target="dummyframe">
             <input id="name" name="name" type="text" class="contact-form-text"  required placeholder="Your name" data-error="Enter your name" oninvalid="this.setCustomValidity('Enter user name Here')"
                    oninput="this.setCustomValidity('')"  />
             <input id="email" name="email" type="email" class="contact-form-text" placeholder="Your email" required>
             <textarea id="message" name="message" class="contact-form-text" placeholder="Your message" required></textarea>
 
-            <input type="submit" onclick="setTimeout('emptyInputs()', 2000);" class="contact-form-btn" value="Send" >
+            <input type="submit"  class="contact-form-btn" value="Send" >
+<!--            <input type="submit" onclick="validateForm()" class="contact-form-btn" value="Send" >-->
+<!--            onclick="setTimeout('emptyInputs()', 500); return false;"-->
         </form>
     </div>
     </div>
 
-    <div class="thankyou_message" style="display:none;">
-        <h2><em>Thanks</em> for contacting us!
-            We will get back to you soon!</h2>
-    </div>
 
-    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
 <!--<main id="contact">-->
 <!--    <h1 class="lg-heading">-->
 <!--        Contact-->
@@ -159,13 +156,44 @@
 <!--<script data-cfasync="false" type="text/javascript"-->
 <!--        src="js/form-submission-handler.js"></script>-->
 
+<!--<script>-->
+<!--    function emptyInputs(){-->
+<!--        document.getElementById('name').value="";-->
+<!--        document.getElementById('email').value="";-->
+<!--        document.getElementById('message').value="";-->
+<!--    }-->
+<!--    </script>-->
+
 <script>
     function emptyInputs(){
-        document.getElementById('name').value="";
+        alert('Thank you for your feedback, the information will be delivered to me shortly');
         document.getElementById('email').value="";
         document.getElementById('message').value="";
+        document.getElementById('name').value="";
     }
-    </script>
+</script>
+
+<!--<script>-->
+<!--function validateForm()-->
+<!--{-->
+<!--// Validate Title-->
+<!--var name = document.getElementById('name');-->
+<!--if (name=="" || name==null) {-->
+<!--alert("Please enter only alphanumeric values for your advertisement title");-->
+<!--return false;-->
+<!--}-->
+
+<!--// Validate Email-->
+<!--var email = document.getElementById('email');-->
+<!--if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {-->
+<!--alert("Please enter a valid email");-->
+<!--return false;-->
+<!--}-->
+<!--return true;-->
+<!--}-->
+<!--</script>-->
 </body>
 
+
 </html>
+<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
