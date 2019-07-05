@@ -175,16 +175,100 @@ main {
   }
 }
 
-//Contact Page
-.boxes {
-  left: 0;
-  display: block;
-  //flex-wrap: wrap;
+////Contact Page
+//.boxes {
+//  left: 0;
+//  display: block;
+//  //flex-wrap: wrap;
+//
+//  //align-items: center;
+//  margin-top: 2rem;
+//  text-align: left;
+//  //vertical-align: px;
+//
+//  //i {
+//  //  align-items: center;
+//  //  vertical-align: middle;
+//  //}
+//
+//  div {
+//    font-size: 1.5rem;
+//    border: 3px #fff solid;
+//    padding: 1rem;
+//
+//    margin-bottom: 7rem;
+//    @include easeOut;
+//
+//    &:hover {
+//      //padding: 0.5rem 1.5rem;
+//      background: $secondary-color;
+//      color: set-text-color($secondary-color);
+//      span {
+//        color: set-text-color($secondary-color)
+//      }
+//    }
+//  }
+//}
+//
+//.sendMessage{
+//  left: 0;
+//  display: block;
+//  //flex-wrap: wrap;
+//
+//  //align-items: center;
+//  margin-top: 2rem;
+//  text-align: left;
+//
+//  input{
+//    font-size: 1.5rem;
+//    border: 3px #fff solid;
+//    padding: 1rem;
+//
+//    margin-bottom: 7rem;
+//    @include easeOut;
+//
+//    &:hover {
+//      //padding: 0.5rem 1.5rem;
+//      background: $secondary-color;
+//      color: set-text-color($secondary-color);
+//      span {
+//        color: set-text-color($secondary-color)
+//      }
+//    }
+//  }
+//}
+//
+//.actions{
+//  list-style-type: none;
+//}
+//
+//
+//.contact {
+//  display: grid;
+//  grid-template-columns: 1fr 1fr;
+//  grid-gap: 20px;
+//  padding: 24px 0;
+//  //border-bottom: 1px solid lightgrey;
+//  //border-bottom: $secondary-color 1.5px solid;
+//}
 
-  //align-items: center;
-  margin-top: 2rem;
-  text-align: left;
-  //vertical-align: px;
+//Contact Page
+.contactItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.boxes {
+  display: flex;
+  //display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: justify;
+  vertical-align: center;
 
   //i {
   //  align-items: center;
@@ -192,17 +276,18 @@ main {
   //}
 
   div {
-    font-size: 1.5rem;
+    min-width: 400px;
+    font-size: 1.2rem;
     border: 3px #fff solid;
-    padding: 1rem;
-
-    margin-bottom: 7rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
       //padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
+
       span {
         color: set-text-color($secondary-color)
       }
@@ -210,46 +295,58 @@ main {
   }
 }
 
-.sendMessage{
-  left: 0;
+.contact-section{
+  padding: 4rem 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 200px;
+  height: 10px;
+  background: $secondary-color;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
   display: block;
-  //flex-wrap: wrap;
-
-  //align-items: center;
-  margin-top: 2rem;
-  text-align: left;
-
-  input{
-    font-size: 1.5rem;
-    border: 3px #fff solid;
-    padding: 1rem;
-
-    margin-bottom: 7rem;
-    @include easeOut;
-
-    &:hover {
-      //padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color)
-      }
-    }
-  }
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
 }
-
-.actions{
-  list-style-type: none;
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px rgba((lighten($secondary-color, 25)), 0.5);;
 }
-
-
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 24px 0;
-  //border-bottom: 1px solid lightgrey;
-  //border-bottom: $secondary-color 1.5px solid;
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: rgba((lighten($secondary-color, 25)), 0.5);
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: $secondary-color;
 }
 
 

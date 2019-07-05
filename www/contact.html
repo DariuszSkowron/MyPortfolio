@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-          crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Contact Me</title>
 </head>
@@ -56,12 +53,12 @@
     <h2 class="sm-heading">
         You can reach me by using one of these...
     </h2>
-    <section class="contact">
+    <div class="contactItems">
     <div class="boxes">
         <div>
             <span
-                class="text-secondary">E-mail:</span>
-           dariusz.skowron@gmail.com
+                    class="text-secondary">E-mail:</span>
+            dariusz.skowron@gmail.com
 
         </div>
 
@@ -73,29 +70,77 @@
 
         <div>
             <span
-                    class="text-secondary">Address:</span>
+                    class="text-secondary"><i class="fas fa-map-marker-alt"></i></span>
             Cracow, Poland
         </div>
+
+
     </div>
-        <div class="sendMessage">
-            <h2 class="sm-heading">Or just write a message</h2>
-            <p>If you want to contact me in any cases, feel free to use contact form, the information will be delivered to me shortly</p>
-            <form method="post" action="#">
-                <div>
-                    <div>
-                    <div><input type="text" name="name" id="name" placeholder="Name" /></div>
-                    <div><input type="email" name="email" id="email" placeholder="Email" /></div>
-                    </div>
-                    <div><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-                    <div><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-                        <ul class="actions">
-                            <li><button><input type="submit" class="primary" value="Send Message" /></button></li>
-                            <li><button><input type="reset" value="Reset Form" /></button></li>
-                        </ul>
-                </div>
-            </form>
-        </div>
-    </section>
+
+    <div class="contact-section">
+        <h1>Write a message to me</h1>
+        <div class="border"></div>
+        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="sendForm();" target="dummyframe">
+            <input id="name" name="name" type="text" class="contact-form-text"  required placeholder="Your name" data-error="Enter your name" oninvalid="this.setCustomValidity('Enter user name Here')"
+                   oninput="this.setCustomValidity('')"  />
+            <input id="email" name="email" type="email" class="contact-form-text" placeholder="Your email" required>
+            <textarea id="message" name="message" class="contact-form-text" placeholder="Your message" required></textarea>
+
+            <input type="submit"  class="contact-form-btn" value="Send" >
+        </form>
+    </div>
+    </div>
+
+
+<!--<main id="contact">-->
+<!--    <h1 class="lg-heading">-->
+<!--        Contact-->
+<!--        <span class="text-secondary">Me</span>-->
+<!--    </h1>-->
+<!--    <h2 class="sm-heading">-->
+<!--        You can reach me by using one of these...-->
+<!--    </h2>-->
+<!--    <section class="contact">-->
+<!--    <div class="boxes">-->
+<!--        <div>-->
+<!--            <span-->
+<!--                class="text-secondary">E-mail:</span>-->
+<!--           dariusz.skowron@gmail.com-->
+
+<!--        </div>-->
+
+<!--        <div>-->
+<!--            <span-->
+<!--                    class="text-secondary"></i>Phone:</span>-->
+<!--            (+48) 534 635 177-->
+<!--        </div>-->
+
+<!--        <div>-->
+<!--            <span-->
+<!--                    class="text-secondary">Address:</span>-->
+<!--            Cracow, Poland-->
+<!--        </div>-->
+<!--    </div>-->
+<!--        <div class="sendMessage">-->
+<!--            <h2 class="sm-heading">Or just write a message</h2>-->
+<!--            <p>If you want to contact me in any cases, feel free to use contact form, the information will be delivered to me shortly</p>-->
+<!--            <form method="post" action="#">-->
+<!--                <div>-->
+<!--                    <div>-->
+<!--                    <div><input type="text" name="name" id="name" placeholder="Name" /></div>-->
+<!--                    <div><input type="email" name="email" id="email" placeholder="Email" /></div>-->
+<!--                    </div>-->
+<!--                    <div><input type="text" name="subject" id="subject" placeholder="Subject" /></div>-->
+<!--                    <div><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>-->
+<!--                        <ul class="actions">-->
+<!--                            <li><button><input type="submit" class="primary" value="Send Message" /></button></li>-->
+<!--                            <li><button><input type="reset" value="Reset Form" /></button></li>-->
+<!--                        </ul>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </section>-->
+    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 </main>
 
 <footer id="main-footer">
@@ -103,6 +148,52 @@
 </footer>
 
 <script src="js/main.js"></script>
+<!--<script data-cfasync="false" type="text/javascript"-->
+<!--        src="js/form-submission-handler.js"></script>-->
+
+<!--<script>-->
+<!--    function sendForm(){-->
+<!--        document.getElementById('name').value="";-->
+<!--        document.getElementById('email').value="";-->
+<!--        document.getElementById('message').value="";-->
+<!--    }-->
+<!--    </script>-->
+
+<script>
+    function sendForm(){
+        alert('Thank you for your feedback, the information will be delivered to me shortly');
+        setTimeout(emptyInputs, 500);
+    }
+</script>
+
+<script>
+    function emptyInputs(){
+        document.getElementById('email').value="";
+        document.getElementById('message').value="";
+        document.getElementById('name').value="";
+    }
+</script>
+
+<!--<script>-->
+<!--function validateForm()-->
+<!--{-->
+<!--// Validate Title-->
+<!--var name = document.getElementById('name');-->
+<!--if (name=="" || name==null) {-->
+<!--alert("Please enter only alphanumeric values for your advertisement title");-->
+<!--return false;-->
+<!--}-->
+
+<!--// Validate Email-->
+<!--var email = document.getElementById('email');-->
+<!--if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {-->
+<!--alert("Please enter a valid email");-->
+<!--return false;-->
+<!--}-->
+<!--return true;-->
+<!--}-->
+<!--</script>-->
 </body>
+
 
 </html>

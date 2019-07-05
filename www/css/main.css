@@ -5944,16 +5944,26 @@ main {
       border-color: #4f651c;
       transition: all 0.5s ease-out; }
 
+.contactItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
 .boxes {
-  left: 0;
-  display: block;
-  margin-top: 2rem;
-  text-align: left; }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: justify;
+  vertical-align: center; }
   .boxes div {
-    font-size: 1.5rem;
+    min-width: 400px;
+    font-size: 1.2rem;
     border: 3px #fff solid;
-    padding: 1rem;
-    margin-bottom: 7rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       background: #4f651c;
@@ -5961,31 +5971,56 @@ main {
       .boxes div:hover span {
         color: #fff; }
 
-.sendMessage {
-  left: 0;
+.contact-section {
+  padding: 4rem 0; }
+
+.contact-section h1 {
+  text-align: center;
+  color: #ddd; }
+
+.border {
+  width: 200px;
+  height: 10px;
+  background: #4f651c;
+  margin: 40px auto; }
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden; }
+
+.contact-form-text {
   display: block;
-  margin-top: 2rem;
-  text-align: left; }
-  .sendMessage input {
-    font-size: 1.5rem;
-    border: 3px #fff solid;
-    padding: 1rem;
-    margin-bottom: 7rem;
-    transition: all 0.5s ease-out; }
-    .sendMessage input:hover {
-      background: #4f651c;
-      color: #fff; }
-      .sendMessage input:hover span {
-        color: #fff; }
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s; }
 
-.actions {
-  list-style-type: none; }
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px rgba(157, 200, 57, 0.5); }
 
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 24px 0; }
+textarea.contact-form-text {
+  resize: none;
+  height: 120px; }
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: rgba(157, 200, 57, 0.5);
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s; }
+
+.contact-form-btn:hover {
+  background: #4f651c; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
