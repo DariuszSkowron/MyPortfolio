@@ -5958,10 +5958,13 @@ main {
   margin-top: 3rem;
   text-align: justify;
   vertical-align: center; }
+  .boxes i {
+    padding-right: 10px;
+    padding-top: 10px; }
   .boxes div {
     min-width: 400px;
     font-size: 1.2rem;
-    border: 3px #fff solid;
+    border: 3px #4f651c solid;
     padding: 2rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
@@ -5979,7 +5982,7 @@ main {
   color: #ddd; }
 
 .border {
-  width: 200px;
+  width: 300px;
   height: 10px;
   background: #4f651c;
   margin: 40px auto; }
@@ -6000,7 +6003,8 @@ main {
   padding: 20px 40px;
   outline: none;
   color: #ddd;
-  transition: 0.5s; }
+  transition: 0.5s;
+  border: 3px #4f651c solid; }
 
 .contact-form-text:focus {
   box-shadow: 0 0 10px 4px rgba(157, 200, 57, 0.5); }
@@ -6075,7 +6079,7 @@ textarea.contact-form-text {
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
     z-index: 10;
-    padding: 4px 2px 4px 2px; }
+    padding: 4px 10px 4px 10px; }
   .resume .rotate {
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -6099,6 +6103,9 @@ textarea.contact-form-text {
     -webkit-transition: -webkit-transform 2s;
     /* Safari */
     transition: transform 2s; }
+    .resume #button3 span, .resume #button2 span {
+      padding-left: 20px;
+      padding-right: 20px; }
   .resume #button1 {
     z-index: 10;
     -webkit-transition: opacity 2s;
@@ -6357,7 +6364,7 @@ textarea.contact-form-text {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 18.5rem; }
+      left: 19.5rem; }
     .resume .arrow::before {
       content: "\f054"; } }
 

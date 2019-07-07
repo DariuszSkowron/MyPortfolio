@@ -55,22 +55,22 @@
     </h2>
     <div class="contactItems">
     <div class="boxes">
-        <div>
+        <div class="location">
             <span
-                    class="text-secondary">E-mail:</span>
+                    class="text-secondary"><i class="fas fa-envelope fa-2x"></i></span>
             dariusz.skowron@gmail.com
 
         </div>
 
         <div>
             <span
-                    class="text-secondary"></i>Phone:</span>
+                    class="text-secondary"><i class="fas fa-mobile-alt fa-2x"></i></span>
             (+48) 534 635 177
         </div>
 
         <div>
             <span
-                    class="text-secondary"><i class="fas fa-map-marker-alt"></i></span>
+                    class="text-secondary"><i class="fas fa-map-marker-alt fa-2x"></i></span>
             Cracow, Poland
         </div>
 
@@ -81,11 +81,12 @@
         <h1>Write a message to me</h1>
         <div class="border"></div>
         <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="sendForm();" target="dummyframe">
-            <input id="name" name="name" type="text" class="contact-form-text"  required placeholder="Your name" data-error="Enter your name" oninvalid="this.setCustomValidity('Enter user name Here')"
+            <input id="name" name="name" type="text" class="contact-form-text"  required placeholder="Name" data-error="Enter your name" oninvalid="this.setCustomValidity('Enter name or alias')"
                    oninput="this.setCustomValidity('')"  />
-            <input id="email" name="email" type="email" class="contact-form-text" placeholder="Your email" required>
-            <textarea id="message" name="message" class="contact-form-text" placeholder="Your message" required></textarea>
-
+            <input id="email" name="email" type="email" class="contact-form-text" placeholder="E-mail" required oninvalid="this.setCustomValidity('Enter proper form of email eg. example@gmail.com')"
+                   oninput="this.setCustomValidity('')">
+            <textarea id="message" name="message" class="contact-form-text" placeholder="Message" minlength="20" maxlength="500"  required oninvalid="this.setCustomValidity('Message has to be at least 20 letters long')"
+                      oninput="this.setCustomValidity('')"></textarea>
             <input type="submit"  class="contact-form-btn" value="Send" >
         </form>
     </div>

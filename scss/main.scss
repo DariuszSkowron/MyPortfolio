@@ -270,15 +270,23 @@ main {
   text-align: justify;
   vertical-align: center;
 
-  //i {
-  //  align-items: center;
-  //  vertical-align: middle;
-  //}
+  i {
+      //border-radius: 5px;
+      //padding-left: 20px;
+      padding-right: 10px;
+    padding-top: 10px;
+
+      //padding-top: 1px;
+      //border: none;
+      //text-align: center;
+      //align-items: center;
+      //content: "\f56d";
+  }
 
   div {
     min-width: 400px;
     font-size: 1.2rem;
-    border: 3px #fff solid;
+    border: 3px $secondary-color solid;
     padding: 2rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -303,7 +311,7 @@ main {
   color: #ddd;
 }
 .border{
-  width: 200px;
+  width: 300px;
   height: 10px;
   background: $secondary-color;
   margin: 40px auto;
@@ -314,6 +322,7 @@ main {
   margin: auto;
   padding: 0 10px;
   overflow: hidden;
+
 }
 
 .contact-form-text{
@@ -327,6 +336,7 @@ main {
   outline: none;
   color: #ddd;
   transition: 0.5s;
+  border: 3px $secondary-color solid;
 }
 .contact-form-text:focus{
   box-shadow: 0 0 10px 4px rgba((lighten($secondary-color, 25)), 0.5);;
@@ -387,22 +397,7 @@ textarea.contact-form-text{
   height: 60px;
   text-align: center;
   display: block;
-  //display: inline-block;
   background: rgba((lighten($primary-color, 10)), 0.6);
-
-  //background: darken($primary-color, 10);
-  //color: set-text-color($primary-color);
-
-  //
-  //a {
-  //  padding: 1rem;
-  //
-  //
-  //  &:hover {
-  //    color: $secondary-color;
-  //    @include easeOut();
-  //  }
-  //}
 }
 
 .resume {
@@ -455,7 +450,7 @@ textarea.contact-form-text{
     font-weight: 600;
     z-index: 10;
     //min-width: 20px;
-    padding: 4px 2px 4px 2px;
+    padding: 4px 10px 4px 10px;
     //padding-top: 4px;
     //padding-left: 2px;
     //padding-right: 2px;
@@ -496,6 +491,11 @@ textarea.contact-form-text{
     -webkit-transition: -webkit-transform 2s; /* Safari */
     transition: transform 2s;
 
+    span{
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
   }
 
   #button1 {
@@ -506,7 +506,6 @@ textarea.contact-form-text{
 
   #nav {
     //position: absolute;
-    //left: 5%;
     min-height: 6rem;
     //z-index: 2;
     background: none;
@@ -521,7 +520,6 @@ textarea.contact-form-text{
 
   #nav.goRight {
     //z-index: 2;
-    //left: 14%;
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
