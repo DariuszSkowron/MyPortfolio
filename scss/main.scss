@@ -286,7 +286,7 @@ main {
   div {
     min-width: 400px;
     font-size: 1.2rem;
-    border: 3px #fff solid;
+    border: 3px $secondary-color solid;
     padding: 2rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -311,7 +311,7 @@ main {
   color: #ddd;
 }
 .border{
-  width: 200px;
+  width: 300px;
   height: 10px;
   background: $secondary-color;
   margin: 40px auto;
@@ -322,6 +322,7 @@ main {
   margin: auto;
   padding: 0 10px;
   overflow: hidden;
+
 }
 
 .contact-form-text{
@@ -335,6 +336,7 @@ main {
   outline: none;
   color: #ddd;
   transition: 0.5s;
+  border: 3px $secondary-color solid;
 }
 .contact-form-text:focus{
   box-shadow: 0 0 10px 4px rgba((lighten($secondary-color, 25)), 0.5);;
@@ -492,7 +494,7 @@ textarea.contact-form-text{
     span{
       padding-left: 20px;
       padding-right: 20px;
-      
+
     }
   }
 
