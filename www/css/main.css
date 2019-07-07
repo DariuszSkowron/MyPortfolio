@@ -5959,8 +5959,7 @@ main {
   text-align: justify;
   vertical-align: center; }
   .boxes i {
-    padding-right: 10px;
-    padding-top: 10px; }
+    padding-right: 10px; }
   .boxes div {
     min-width: 400px;
     font-size: 1.2rem;
@@ -5973,6 +5972,8 @@ main {
       color: #fff; }
       .boxes div:hover span {
         color: #fff; }
+    .boxes div .text-secondary {
+      padding-top: 50px; }
 
 .contact-section {
   padding: 0rem 0; }
