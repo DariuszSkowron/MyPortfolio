@@ -5978,8 +5978,7 @@ main {
   padding: 4rem 0; }
 
 .contact-section h1 {
-  text-align: center;
-  color: #ddd; }
+  text-align: center; }
 
 .border {
   width: 300px;
@@ -5995,14 +5994,14 @@ main {
 
 .contact-form-text {
   display: block;
+  min-height: 70px;
   width: 100%;
   box-sizing: border-box;
   margin: 16px 0;
-  border: 0;
-  background: #111;
+  background: rgba(226, 239, 196, 0.6);
   padding: 20px 40px;
   outline: none;
-  color: #ddd;
+  color: #ffffff;
   transition: 0.5s;
   border: 3px #4f651c solid; }
 
@@ -6011,7 +6010,25 @@ main {
 
 textarea.contact-form-text {
   resize: none;
-  height: 120px; }
+  height: 120px;
+  color: #ffffff; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-animation: autofill 0s forwards;
+  animation: autofill 0s forwards; }
+
+@keyframes autofill {
+  100% {
+    background: rgba(226, 239, 196, 0.8);
+    color: inherit; } }
+
+@-webkit-keyframes autofill {
+  100% {
+    background: rgba(226, 239, 196, 0.8);
+    color: inherit; } }
 
 .contact-form-btn {
   float: right;
@@ -6021,7 +6038,8 @@ textarea.contact-form-text {
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.5s; }
+  transition: 0.5s;
+  width: 100%; }
 
 .contact-form-btn:hover {
   background: #4f651c; }

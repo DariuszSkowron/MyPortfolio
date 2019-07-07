@@ -308,7 +308,7 @@ main {
 }
 .contact-section h1{
   text-align: center;
-  color: #ddd;
+  //color: #ddd;
 }
 .border{
   width: 300px;
@@ -327,24 +327,60 @@ main {
 
 .contact-form-text{
   display: block;
+  min-height: 70px;
   width: 100%;
   box-sizing: border-box;
   margin: 16px 0;
-  border: 0;
-  background: #111;
+  background: rgba((lighten($secondary-color, 60)), 0.6);
   padding: 20px 40px;
   outline: none;
-  color: #ddd;
+  color: $resume-color;
   transition: 0.5s;
   border: 3px $secondary-color solid;
 }
 .contact-form-text:focus{
-  box-shadow: 0 0 10px 4px rgba((lighten($secondary-color, 25)), 0.5);;
+  box-shadow: 0 0 10px 4px rgba((lighten($secondary-color, 25)), 0.5);
 }
 textarea.contact-form-text{
   resize: none;
   height: 120px;
+  color: $resume-color;
 }
+//
+//input:invalid {
+//  background-color: #FFDDDD;
+//}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-animation: autofill 0s forwards;
+  animation: autofill 0s forwards;
+}
+
+@keyframes autofill {
+  100% {
+    background: rgba((lighten($secondary-color, 60)), 0.8);;
+    color: inherit;
+  }
+}
+
+@-webkit-keyframes autofill {
+  100% {
+    background: rgba((lighten($secondary-color, 60)), 0.8);;
+    color: inherit;
+  }
+}
+
+//input:valid {
+//  background-color: black;
+//}
+
+//input[type=text]:focus {
+//  background-color: rgba((lighten($secondary-color, 25)), 0.5);;
+//}
+
 .contact-form-btn{
   float: right;
   border: 0;
@@ -354,6 +390,7 @@ textarea.contact-form-text{
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  width: 100%;
 }
 .contact-form-btn:hover{
   background: $secondary-color;
