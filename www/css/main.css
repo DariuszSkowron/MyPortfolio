@@ -5955,7 +5955,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   text-align: justify;
   vertical-align: center; }
   .boxes i {
@@ -5975,7 +5975,7 @@ main {
         color: #fff; }
 
 .contact-section {
-  padding: 4rem 0; }
+  padding: 0rem 0; }
 
 .contact-section h1 {
   text-align: center; }
