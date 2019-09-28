@@ -9,6 +9,10 @@ $fa-font-path: "webfonts";
 @import "regular.scss";
 @import "flag-icon.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +20,21 @@ $fa-font-path: "webfonts";
 //div{
 //  @include background;
 //}
+
+::-webkit-scrollbar{
+  background: gray;
+  width:14px;
+}
+
+::-webkit-scrollbar-track{
+  //box-shadow: inset 0 0 10px #00000070;
+  //border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: $secondary-color;
+}
+
 
 body {
   @include background;

@@ -5837,8 +5837,18 @@ readers do not read off random characters that represent icons */
   .flag-icon-xk.flag-icon-squared {
     background-image: url(../images/flags/1x1/xk.svg); }
 
+html {
+  scroll-behavior: smooth; }
+
 * {
   box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  background: gray;
+  width: 14px; }
+
+::-webkit-scrollbar-thumb {
+  background: #4f651c; }
 
 body {
   background: #444;
