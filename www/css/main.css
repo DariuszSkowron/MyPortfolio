@@ -1,6 +1,7 @@
 .menu-btn, .menu-btnResume {
+  visibility: hidden;
   position: absolute;
-  z-index: 10;
+  z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -73,6 +74,8 @@
     width: 60%; } }
 
 @media screen and (max-width: 768px) {
+  .menu-btn, .menu-btnResume {
+    visibility: visible; }
   .menu-nav {
     position: fixed;
     right: 0px;
