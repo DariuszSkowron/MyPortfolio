@@ -5842,6 +5842,15 @@ readers do not read off random characters that represent icons */
 html {
   scroll-behavior: smooth; }
 
+#main > section {
+  border-top: solid 6px #51671d; }
+
+#main > section > .container {
+  padding: 6em 0 15em 0; }
+
+#main > section:first-child {
+  border-top: 5rem; }
+
 .portfolio-container {
   width: 100%;
   padding-right: 15px;
