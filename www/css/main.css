@@ -79,9 +79,9 @@
   .menu-nav {
     position: fixed;
     right: 0px;
-    height: 92vh;
+    padding-top: 7rem;
+    height: 50vh;
     background: #373737;
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -6017,7 +6017,8 @@ header {
   color: #4f651c; }
 
 main {
-  padding: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   min-height: calc(100vh - 60px); }
   main .button {
     margin-top: 1rem;

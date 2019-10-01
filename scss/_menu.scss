@@ -143,9 +143,10 @@
   .menu-nav{
     position: fixed;
     right: 0px;
-    height: 92vh;
+    padding-top: 7rem;
+    height: 50vh;
     background: darken($primary-color, 5);
-    display: flex;
+    //display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
