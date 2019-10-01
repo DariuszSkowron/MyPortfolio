@@ -1,6 +1,7 @@
 .menu-btn, .menu-btnResume {
+  visibility: hidden;
   position: absolute;
-  z-index: 10;
+  z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -33,7 +34,7 @@
   opacity: 0.9;
   background-color: #444; }
   .menu .logo {
-    color: #4f651c;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px; }
@@ -73,12 +74,14 @@
     width: 60%; } }
 
 @media screen and (max-width: 768px) {
+  .menu-btn, .menu-btnResume {
+    visibility: visible; }
   .menu-nav {
     position: fixed;
     right: 0px;
-    height: 92vh;
+    padding-top: 7rem;
+    height: 50vh;
     background: #373737;
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -5839,6 +5842,122 @@ readers do not read off random characters that represent icons */
 html {
   scroll-behavior: smooth; }
 
+#main > section {
+  border-top: solid 6px #51671d; }
+
+#main > section > .container {
+  padding: 6em 0 15em 0; }
+
+#main > section:first-child {
+  border-top: 5rem; }
+
+.portfolio-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px; }
+
+.btn-portfolio {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: #4f651c;
+  transition: all .2s ease; }
+  .btn-portfolio:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.thumbnail-overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 700;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  transition: all .2s ease;
+  background-color: #4f651c; }
+  .thumbnail-overlay:hover {
+    opacity: 1;
+    background-color: rgba(32, 150, 64, 0.85); }
+    .thumbnail-overlay:hover + img {
+      filter: blur(3px); }
+  .thumbnail-overlay__icons {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%); }
+  .thumbnail-overlay__hex {
+    width: 40px;
+    height: 46px;
+    margin: 0 10px;
+    line-height: 46px;
+    text-align: center;
+    color: #4f651c;
+    transition: all .2s ease;
+    background-repeat: no-repeat;
+    background-image: url(../images/rhomb.png); }
+    .thumbnail-overlay__hex:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.portfolio {
+  margin-top: -140px;
+  padding-top: 60px; }
+  .portfolio__item {
+    background-color: #444;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    flex: 1 1 100%;
+    display: flex;
+    padding: 40px 45px;
+    margin: 0 0 30px 0;
+    align-items: center;
+    color: rgba(79, 255, 155, 0.16); }
+  .portfolio__title {
+    display: flex;
+    align-items: center; }
+  .portfolio__content {
+    flex: 1 1 70%;
+    padding-right: 35px; }
+    .portfolio__content h2 {
+      margin: 0;
+      text-transform: uppercase; }
+    .portfolio__content p {
+      line-height: 24px;
+      margin: 30px 0; }
+  .portfolio__icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center; }
+    .portfolio__icons li {
+      margin: 0 0 0 10px; }
+  .portfolio__buttons a {
+    margin-right: 20px; }
+  .portfolio__buttons i {
+    margin-right: 10px; }
+  .portfolio__thumbnail {
+    flex: 1 1 30%;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px #e9edfc; }
+    .portfolio__thumbnail img {
+      display: block;
+      border-radius: 8px;
+      transition: all .2s ease; }
+
 * {
   box-sizing: border-box; }
 
@@ -5898,7 +6017,8 @@ header {
   color: #4f651c; }
 
 main {
-  padding: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   min-height: calc(100vh - 60px); }
   main .button {
     margin-top: 1rem;
@@ -6079,7 +6199,7 @@ input:-webkit-autofill:active {
   height: 60px; }
 
 #social-footer {
-  height: 60px;
+  height: 80px;
   text-align: center;
   display: block;
   background: rgba(94, 94, 94, 0.6); }
