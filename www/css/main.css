@@ -5842,6 +5842,26 @@ readers do not read off random characters that represent icons */
 html {
   scroll-behavior: smooth; }
 
+.portfolio-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px; }
+
+.btn-portfolio {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: #4f651c;
+  transition: all .2s ease; }
+  .btn-portfolio:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); }
+
 .img-fluid {
   max-width: 100%;
   height: auto; }
@@ -5858,7 +5878,7 @@ html {
   background-color: #4f651c; }
   .thumbnail-overlay:hover {
     opacity: 1;
-    background-color: rgba(84, 65, 150, 0.85); }
+    background-color: rgba(32, 150, 64, 0.85); }
     .thumbnail-overlay:hover + img {
       filter: blur(3px); }
   .thumbnail-overlay__icons {
@@ -5876,7 +5896,7 @@ html {
     color: #4f651c;
     transition: all .2s ease;
     background-repeat: no-repeat;
-    background-image: url(../images/polygon.png); }
+    background-image: url(../images/rhomb.png); }
     .thumbnail-overlay__hex:hover {
       transform: translateY(-3px);
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15); }
@@ -5893,7 +5913,7 @@ html {
     padding: 40px 45px;
     margin: 0 0 30px 0;
     align-items: center;
-    color: #06ffdd; }
+    color: rgba(79, 255, 155, 0.16); }
   .portfolio__title {
     display: flex;
     align-items: center; }
@@ -6169,7 +6189,7 @@ input:-webkit-autofill:active {
   height: 60px; }
 
 #social-footer {
-  height: 60px;
+  height: 80px;
   text-align: center;
   display: block;
   background: rgba(94, 94, 94, 0.6); }
