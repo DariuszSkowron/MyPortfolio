@@ -78,6 +78,7 @@
     visibility: visible; }
   .menu-nav {
     position: fixed;
+    top: 50px;
     right: 0px;
     padding-top: 8rem;
     height: 50vh;
@@ -90,7 +91,7 @@
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       visibility: visible;
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 50px, 0); }
   .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }

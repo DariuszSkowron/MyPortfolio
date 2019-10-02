@@ -142,6 +142,7 @@
 
   .menu-nav{
     position: fixed;
+    top: 50px;
     right: 0px;
     padding-top: 8rem;
     height: 50vh;
@@ -156,7 +157,7 @@
 
     &.show {
       visibility: visible;
-          transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 50px, 0);
         }
     //transform: translateX(100%);
 
