@@ -3,7 +3,7 @@
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 30px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line, .menu-btnResume .btn-line, .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
@@ -30,14 +30,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  opacity: 0.9;
+  height: 5rem;
   background-color: #444; }
   .menu .logo {
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 20px; }
+    font-size: 22px; }
   .menu-nav {
     display: flex;
     justify-content: space-around;
@@ -6445,8 +6444,6 @@ input:-webkit-autofill:active {
     padding-right: 10px;
     padding-top: 1px;
     border: none;
-    text-align: center;
-    align-items: center;
     z-index: 10;
     transition-duration: 0s; }
     .resume-page .button.downloadResume::before:hover, .resume-page .button.printResume::before:hover {
@@ -6464,21 +6461,25 @@ input:-webkit-autofill:active {
     line-height: 0.8;
     cursor: pointer;
     transition-duration: 0.5s;
-    writing-mode: vertical-rl;
     border-radius: 2px; }
     .resume-page button:hover {
       background: #4f651c;
       color: #fff; }
-  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton, .resume-page .menu-returnButton {
+    display: inline-block;
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 25px;
+    top: 150px;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 130px;
+    top: 255px;
     right: 30px; }
+  .resume-page .menu-returnButton {
+    top: -5px;
+    right: 30px;
+    flex-direction: column; }
   .resume-page span.rotated {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -6638,7 +6639,7 @@ input:-webkit-autofill:active {
     text-align: left;
     top: 50px;
     font-family: monospace; }
-  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton, .resume-page .menu-returnButton {
     right: 0px; }
   .resume-page .menu-downloadButton {
     right: 0px; } }
