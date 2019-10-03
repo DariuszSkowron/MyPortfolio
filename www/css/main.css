@@ -6349,7 +6349,10 @@ input:-webkit-autofill:active {
   .resume-page img.avatar {
     width: 150px;
     border-radius: 50%;
-    border: #4f651c 3px solid; }
+    border: white 2px solid;
+    -mox-box-shadow: 0 0 5px white;
+    -webkit-box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px white; }
   .resume-page .my-name {
     font-size: 48px;
     line-height: 1; }
@@ -6471,6 +6474,7 @@ input:-webkit-autofill:active {
     z-index: 3;
     right: 30px;
     top: 150px;
+    height: 12rem;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
