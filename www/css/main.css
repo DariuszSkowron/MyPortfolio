@@ -6250,7 +6250,7 @@ input:-webkit-autofill:active {
     /* Safari */
     transition: transform 2s; }
     .resume #button3 span, .resume #button2 span {
-      padding-left: 20px;
+      padding-left: 30px;
       padding-right: 20px; }
   .resume #button1 {
     z-index: 10;
@@ -6516,7 +6516,7 @@ input:-webkit-autofill:active {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 19.5rem; }
+      left: 25.5rem; }
     .resume .arrow::before {
       content: "\f054"; } }
 
