@@ -3,7 +3,7 @@
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 30px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line, .menu-btnResume .btn-line, .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
@@ -30,18 +30,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  opacity: 0.9;
+  height: 5rem;
   background-color: #444; }
   .menu .logo {
     color: white;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px; }
+    letter-spacing: 4px;
+    font-size: 22px; }
   .menu-nav {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 60%;
     list-style: none; }
   .menu .nav-item.current > a {
     color: #4f651c; }
@@ -79,9 +78,7 @@
   .menu-nav {
     position: fixed;
     top: 50px;
-    right: 0px;
-    padding-top: 8rem;
-    height: 50vh;
+    height: 40vh;
     background: #373737;
     flex-direction: column;
     align-items: center;
@@ -91,7 +88,7 @@
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       visibility: visible;
-      transform: translate3d(0, 50px, 0); }
+      transform: translate3d(0, 0, 0); }
   .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -6253,7 +6250,7 @@ input:-webkit-autofill:active {
     /* Safari */
     transition: transform 2s; }
     .resume #button3 span, .resume #button2 span {
-      padding-left: 20px;
+      padding-left: 30px;
       padding-right: 20px; }
   .resume #button1 {
     z-index: 10;
@@ -6352,7 +6349,10 @@ input:-webkit-autofill:active {
   .resume-page img.avatar {
     width: 150px;
     border-radius: 50%;
-    border: #4f651c 3px solid; }
+    border: white 2px solid;
+    -mox-box-shadow: 0 0 5px white;
+    -webkit-box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px white; }
   .resume-page .my-name {
     font-size: 48px;
     line-height: 1; }
@@ -6447,8 +6447,6 @@ input:-webkit-autofill:active {
     padding-right: 10px;
     padding-top: 1px;
     border: none;
-    text-align: center;
-    align-items: center;
     z-index: 10;
     transition-duration: 0s; }
     .resume-page .button.downloadResume::before:hover, .resume-page .button.printResume::before:hover {
@@ -6466,21 +6464,26 @@ input:-webkit-autofill:active {
     line-height: 0.8;
     cursor: pointer;
     transition-duration: 0.5s;
-    writing-mode: vertical-rl;
     border-radius: 2px; }
     .resume-page button:hover {
       background: #4f651c;
       color: #fff; }
-  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton, .resume-page .menu-returnButton {
+    display: inline-block;
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 25px;
+    top: 150px;
+    height: 12rem;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 130px;
+    top: 255px;
     right: 30px; }
+  .resume-page .menu-returnButton {
+    top: -5px;
+    right: 30px;
+    flex-direction: column; }
   .resume-page span.rotated {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -6513,7 +6516,7 @@ input:-webkit-autofill:active {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 19.5rem; }
+      left: 25.5rem; }
     .resume .arrow::before {
       content: "\f054"; } }
 
@@ -6530,7 +6533,7 @@ input:-webkit-autofill:active {
       position: absolute;
       left: 5%; }
     .resume #nav.goRight {
-      left: 18.5rem; }
+      left: 25.5rem; }
     .resume .arrow::before {
       content: "\f054"; } }
 
@@ -6640,7 +6643,7 @@ input:-webkit-autofill:active {
     text-align: left;
     top: 50px;
     font-family: monospace; }
-  .resume-page .menu-printButton, .resume-page .menu-downloadButton {
+  .resume-page .menu-printButton, .resume-page .menu-downloadButton, .resume-page .menu-returnButton {
     right: 0px; }
   .resume-page .menu-downloadButton {
     right: 0px; } }

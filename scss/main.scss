@@ -723,7 +723,7 @@ input:-webkit-autofill:active {
     transition: transform 2s;
 
     span{
-      padding-left: 20px;
+      padding-left: 30px;
       padding-right: 20px;
 
     }
@@ -872,7 +872,11 @@ input:-webkit-autofill:active {
   img.avatar {
     width: 150px;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: white 2px solid;
+    -mox-box-shadow: 0 0 5px white;
+    -webkit-box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px white;
+
   }
 
   .my-name {
@@ -1089,8 +1093,8 @@ input:-webkit-autofill:active {
     padding-right: 10px;
     padding-top: 1px;
     border: none;
-    text-align: center;
-    align-items: center;
+    //text-align: center;
+    //align-items: center;
 
     //margin: 5px;
     //display: inline-block;
@@ -1128,7 +1132,7 @@ input:-webkit-autofill:active {
     transition-duration: 0.5s;
     //transform: rotate(-90deg);
     //-webkit-transform: rotate(-90deg);
-    writing-mode: vertical-rl;
+    //writing-mode: vertical-rl;
 
     //background: rgba(lighten($secondary-color, 4), 0.5);
     border-radius: 2px;
@@ -1143,36 +1147,35 @@ input:-webkit-autofill:active {
 
 
   .menu-printButton {
+    display: inline-block;
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 25px;
+    top: 150px;
+    height: 12rem;
     cursor: pointer;
     @include easeOut;
   }
 
   .menu-downloadButton{
     @extend .menu-printButton;
-    top: 130px;
+    top: 255px;
     right: 30px;
   }
 
-  span.rotated{
-    //display: inline-block;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    //white-space: pre-line;
-    text-align: center;
-    font-family: monospace;
+  .menu-returnButton{
+    @extend .menu-printButton;
+    top: -5px;
+    right: 30px;
+    flex-direction: column;
   }
 
-  //span.leftAlign{
-  //  writing-mode: vertical-rl;
-  //  text-orientation: upright;
-  //  letter-spacing: -1px;
-  //
-  //}
-
+  span.rotated{
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      text-align: center;
+      font-family: monospace;
+  }
 
   i.buttonIcon{
     padding-bottom: 5px;
