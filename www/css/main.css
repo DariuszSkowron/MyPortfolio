@@ -6305,9 +6305,6 @@ input:-webkit-autofill:active {
   ***********************************/
   /***********************************
   * =Interests
-  ***********************************/
-  /***********************************
-  * =Clause
   ***********************************/ }
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
@@ -6473,12 +6470,12 @@ input:-webkit-autofill:active {
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 200px;
+    top: 180px;
     height: 12rem;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 305px;
+    top: 286px;
     right: 30px; }
   .resume-page .menu-returnButton {
     top: -5px;
