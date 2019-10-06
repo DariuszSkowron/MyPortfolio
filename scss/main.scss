@@ -1084,37 +1084,21 @@ input:-webkit-autofill:active {
     margin-bottom: 20px;
   }
 
-  .button.downloadResume::before {
-    //color: $primary-color;
-    //background-color: white;
-    //min-height: 50px;
+  .button.resume::before {
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 10px;
     padding-top: 1px;
     border: none;
-    //text-align: center;
-    //align-items: center;
-
-    //margin: 5px;
-    //display: inline-block;
-
-    //text-align: inherit;
-    //align-items: center;
     z-index: 10;
     transition-duration: 0s;
 
     &:hover {
       background: $secondary-color;
       color: set-text-color($secondary-color);
-      //@include easeOut();
     }
   }
 
-  .button.printResume::before {
-    @extend .button.downloadResume;
-
-  }
 
   button {
     padding: 0.4rem;
@@ -1151,7 +1135,7 @@ input:-webkit-autofill:active {
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 150px;
+    top: 200px;
     height: 12rem;
     cursor: pointer;
     @include easeOut;
@@ -1159,7 +1143,7 @@ input:-webkit-autofill:active {
 
   .menu-downloadButton{
     @extend .menu-printButton;
-    top: 255px;
+    top: 305px;
     right: 30px;
   }
 
