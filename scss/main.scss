@@ -16,7 +16,8 @@ html {
 #main > section {
   border-top: solid 6px lighten($secondary-color, 0.5); }
 #main > section > .container {
-  padding: 6em 0 15em 0; }
+  padding: 6em 4rem 15em 4rem;
+}
 #main > section:first-child {
   border-top: 5rem; }
 
