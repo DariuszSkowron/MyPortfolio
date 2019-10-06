@@ -5844,7 +5844,7 @@ html {
   border-top: solid 6px #51671d; }
 
 #main > section > .container {
-  padding: 6em 0 15em 0; }
+  padding: 6em 4rem 15em 4rem; }
 
 #main > section:first-child {
   border-top: 5rem; }
@@ -5855,6 +5855,12 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1170px; }
+
+.row {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
   max-width: 1170px; }
 
 .btn-portfolio {
@@ -5885,7 +5891,7 @@ html {
   background-color: #4f651c; }
   .thumbnail-overlay:hover {
     opacity: 1;
-    background-color: rgba(32, 150, 64, 0.85); }
+    background-color: #4e641c; }
     .thumbnail-overlay:hover + img {
       filter: blur(3px); }
   .thumbnail-overlay__icons {
@@ -5912,15 +5918,15 @@ html {
   margin-top: -140px;
   padding-top: 60px; }
   .portfolio__item {
-    background-color: #444;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    background-color: #464646;
+    box-shadow: 0px 0px 15px 0px rgba(31, 150, 98, 0.78);
     opacity: 0.9;
     flex: 1 1 100%;
     display: flex;
     padding: 40px 45px;
     margin: 0 0 30px 0;
     align-items: center;
-    color: rgba(79, 255, 155, 0.16); }
+    color: #ffffff; }
   .portfolio__title {
     display: flex;
     align-items: center; }
@@ -5950,7 +5956,7 @@ html {
     overflow: hidden;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0px 0px 15px 0px #e9edfc; }
+    box-shadow: 0px 0px 15px 0px #15966a; }
     .portfolio__thumbnail img {
       display: block;
       border-radius: 8px;
@@ -6015,8 +6021,6 @@ header {
   color: #4f651c; }
 
 main {
-  padding-left: 10rem;
-  padding-right: 10rem;
   min-height: calc(100vh - 60px); }
   main .button {
     margin-top: 1rem;
@@ -6305,9 +6309,6 @@ input:-webkit-autofill:active {
   ***********************************/
   /***********************************
   * =Interests
-  ***********************************/
-  /***********************************
-  * =Clause
   ***********************************/ }
   .resume-page *, .resume-page *:before, .resume-page *:after {
     box-sizing: inherit; }
@@ -6441,7 +6442,7 @@ input:-webkit-autofill:active {
     font-size: 18px; }
   .resume-page .reference-details {
     margin-bottom: 20px; }
-  .resume-page .button.downloadResume::before, .resume-page .button.printResume::before {
+  .resume-page .button.resume::before {
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 10px;
@@ -6449,7 +6450,7 @@ input:-webkit-autofill:active {
     border: none;
     z-index: 10;
     transition-duration: 0s; }
-    .resume-page .button.downloadResume::before:hover, .resume-page .button.printResume::before:hover {
+    .resume-page .button.resume::before:hover {
       background: #4f651c;
       color: #fff; }
   .resume-page button {
@@ -6473,12 +6474,12 @@ input:-webkit-autofill:active {
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 150px;
+    top: 180px;
     height: 12rem;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 255px;
+    top: 286px;
     right: 30px; }
   .resume-page .menu-returnButton {
     top: -5px;
@@ -6583,7 +6584,38 @@ input:-webkit-autofill:active {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .portfolio {
+    margin-top: -20px; }
+    .portfolio__item {
+      padding: 30px;
+      flex-direction: column; }
+    .portfolio__title {
+      display: flex;
+      flex-direction: column; }
+      .portfolio__title h2 {
+        font-size: 28px;
+        margin: 0 0 15px 0;
+        text-align: center; }
+    .portfolio__icons li {
+      margin: 0 5px; }
+    .portfolio__thumbnail {
+      order: 1;
+      flex: 0 1 auto;
+      margin: 0 0 30px 0; }
+      .portfolio__thumbnail img {
+        height: auto;
+        max-width: 100%;
+        display: initial; }
+    .portfolio__content {
+      order: 2;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      .portfolio__content p {
+        text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -6628,7 +6660,12 @@ input:-webkit-autofill:active {
     grid-template-columns: 1fr 1fr; }
   .resume-page .interests-container img {
     margin-right: 32px;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .portfolio__buttons {
+    display: flex;
+    flex-direction: column; }
+    .portfolio__buttons a {
+      margin: 0 0 10px 0; } }
 
 @media screen and (max-width: 1100px) {
   .menu-btnResume {

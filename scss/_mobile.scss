@@ -24,7 +24,6 @@
     }
 
     #nav.goRight {
-      //left: 19.5rem;
       left: 25.5rem;
     }
 
@@ -99,18 +98,14 @@
 
   .menu-nav {
     height: 75vh;
-    //transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    //min-height: 5vh;
-    //max-height: 25vh;
     height: 25vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      //display: block;
       background: url('../images/portrait150.png');
       width: 150px;
       height: 150px;
@@ -158,8 +153,6 @@
 
     .interests-container {
       grid-template-columns: 1fr 1fr;
-      //flex-wrap: wrap;
-      //justify-content: flex-start;
     }
 
     .interests-container img {
@@ -168,10 +161,57 @@
     }
   }
 
-  //.menu-btnResume {
-  //  right: 5px;
-  //}
 
+  .portfolio {
+    margin-top: -20px;
+
+    &__item {
+      padding: 30px;
+      flex-direction: column;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 28px;
+        margin: 0 0 15px 0;
+        text-align: center;
+      }
+    }
+
+    &__icons {
+      li {
+        margin: 0 5px;
+      }
+    }
+
+    &__thumbnail {
+      order: 1;
+      flex: 0 1 auto;
+      margin: 0 0 30px 0;
+
+      img {
+        height: auto;
+        max-width: 100%;
+        display: initial;
+      }
+    }
+
+    &__content {
+      order: 2;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
 }
 
 //Smartphones
@@ -201,7 +241,6 @@
 
   .menu-nav {
     height: 75vh;
-    //transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
@@ -236,6 +275,8 @@
     }
   }
 
+
+
   //Resume
   .resume-page {
     img.avatar {
@@ -252,8 +293,6 @@
 
     .interests-container {
       grid-template-columns: 1fr 1fr;
-      //flex-wrap: wrap;
-      //justify-content: flex-start;
     }
 
     .interests-container img {
@@ -262,11 +301,16 @@
     }
   }
 
-  //.menu-btnResume {
-  //  right: 5px;
-  //}
+  .portfolio {
+    &__buttons {
+      display: flex;
+      flex-direction: column;
 
-
+      a {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
 }
 
 @include mediaResume {
@@ -285,15 +329,9 @@
         letter-spacing: -1px;
       text-align: left;
       top: 50px;
-      //white-space: pre-line;
-      //text-align: center;
       font-family: monospace;
 
     }
-
-    //span.leftAlign{
-
-    //}
 
     .menu-printButton {
       right: 0px;
@@ -304,25 +342,4 @@
     }
 
   }
-
-
-
 }
-
-//@mixin vh-fix {
-//  @media (max-device-aspect-ratio: 3/4) {
-//    height: calc(100vw * 1.333 - 9%);
-//  }
-//  @media (max-device-aspect-ratio: 2/3) {
-//    height: calc(100vw * 1.5 - 9%);
-//  }
-//  @media (max-device-aspect-ratio: 10/16) {
-//    height: calc(100vw * 1.6 - 9%);
-//  }
-//  @media (max-device-aspect-ratio: 9/16) {
-//    height: calc(100vw * 1.778 - 9%);
-//  }
-//}
-
-
-

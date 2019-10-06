@@ -1,6 +1,5 @@
 /*Select DOM items*/
 const menuBtn = document.querySelector('.menu-btn, .menu-btnResume');
-// const menuBtn = document.querySelector('menu-btnResume');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
