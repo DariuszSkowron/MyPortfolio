@@ -5851,6 +5851,8 @@ html {
 
 .portfolio-container {
   width: 100%;
+  margin-top: -150px;
+  padding-bottom: 15em;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -5915,7 +5917,7 @@ html {
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15); }
 
 .portfolio {
-  margin-top: -140px;
+  margin-top: -250px;
   padding-top: 60px; }
   .portfolio__item {
     background-color: #464646;

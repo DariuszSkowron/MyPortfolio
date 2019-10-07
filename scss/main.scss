@@ -23,6 +23,8 @@ html {
 
 .portfolio-container {
   width: 100%;
+  margin-top: -150px;
+  padding-bottom: 15em;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -106,7 +108,7 @@ html {
 
 
 .portfolio {
-  margin-top: -140px;
+  margin-top: -250px;
   padding-top: 60px;
 
   &__item {
