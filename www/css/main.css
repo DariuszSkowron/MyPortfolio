@@ -5921,7 +5921,7 @@ html {
   padding-top: 60px; }
   .portfolio__item {
     background-color: #464646;
-    box-shadow: 0px 0px 15px 0px rgba(31, 150, 98, 0.78);
+    box-shadow: 0px 0px 15px 0px #4f651c;
     opacity: 0.9;
     flex: 1 1 100%;
     display: flex;
@@ -5958,7 +5958,7 @@ html {
     overflow: hidden;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0px 0px 15px 0px #15966a; }
+    box-shadow: 0px 0px 15px 0px #4f651c; }
     .portfolio__thumbnail img {
       display: block;
       border-radius: 8px;
@@ -6002,7 +6002,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
