@@ -4,42 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dariusz Skowron Resume Eng Ver</title>
+    <title>Dariusz Skowron's Resume English Version </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="resume-page">
 <header>
-
-    <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+    <div class="menu-returnButton">
+        <button class="button resume" id="backButton">
+            <span class="rotated"><i class="fas fa-chevron-circle-left"></i>Return home</span>
+        </button>
     </div>
-
-    <nav class="menu">
-        <div class="menu-branding">
-            <div class="portrait"></div>
-        </div>
-        <ul class ="menu-nav">
-            <li class="nav-item current">
-                <a href="index.html" class="nav-link">
-                    Home
-                </a>
-            </li> <li class="nav-item">
-            <a href="about.html" class="nav-link">
-                Resume
-            </a>
-        </li> <li class="nav-item">
-            <a href="work.html" class="nav-link">
-                My Recent Projects
-            </a>
-        </li> <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-                Contact Me
-            </a>
-        </li>
-        </ul>
-    </nav>
+    <div class="menu-printButton">
+        <button class="button resume" type="button" onclick="printPdf('docs/resumeENG.pdf')">
+            <span class="rotated"><i class="fas fa-print buttonIcon"></i>Print</span>
+        </button>
+    </div>
+    <div class="menu-downloadButton">
+        <button class="button resume" onclick="generatePdf()">
+            <span class="rotated"><i class="fas fa-download buttonIcon"></i>Download</span>
+        </button>
+    </div>
 </header>
 
 <div class="container">
@@ -220,24 +204,9 @@
                 </li>
             </ul>
             </div>
-
-
-
-<!--            <table>-->
-<!--                <tr>-->
-<!--                    <td><i class="fab fa-bitcoin fa-3x" title="powerlifting"></i>-->
-<!--                        <div class="interest-title">Powerlifting</div></td>-->
-<!--                    <td><i class="fas fa-dumbbell fa-3x"></i>-->
-<!--                        <div class="interests-title">Powerlifting</div></td>-->
-<!--                    <td><i class="fas fa-tools fa-3x"></i>-->
-<!--                        <div class="interest-title">Powerlifting</div></td>-->
-<!--                </tr>-->
-<!--            </table>-->
-
-<!--        </div>-->
     </section>
+
 <section class="section-clause">
-<!--    <div class="section-title">Interests</div>-->
     <div class="clause-text">
     I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item
     1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal
@@ -247,4 +216,5 @@
 </div>
 </body>
 <script src="js/main.js"></script>
+<script src="js/buttonResume.js" type="text/javascript"></script>
 </html>
