@@ -77,7 +77,7 @@
     visibility: visible; }
   .menu-nav {
     position: fixed;
-    top: 50px;
+    top: 56px;
     height: 40vh;
     background: #373737;
     flex-direction: column;
