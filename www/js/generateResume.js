@@ -6,8 +6,8 @@ function generatePdf() {
     html2pdf().from(element).set({
         margin: [-10,0,0,0],
         filename: 'DariuszSkowron-CV-ENG.pdf',
-        html2canvas: {windowWidth: 2000, scale: 10 },
+        html2canvas: {windowWidth: 2000, scale: 2 },
         // jsPDF: {orientation: 'p', unit: 'mm', format: [350, 250], compressPDF: true}
-        jsPDF: {orientation: 'p', unit: 'mm', format: 'a4', compressPDF: true}
+        jsPDF: {orientation: 'p', unit: 'mm', format: 'a4', compressPDF: false}
     }).save();
 }
