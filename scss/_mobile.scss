@@ -10,7 +10,6 @@
     }
   }
 
-
   body#bg-img {
     background-attachment: fixed;
   }
@@ -35,6 +34,15 @@
 
 //Desktops & Laptops
 @include mediaLg {
+  h1,
+  h2,
+  h3 {
+    &.lg-heading {
+      font-size: 25rem;
+    }
+  }
+
+
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -71,6 +79,14 @@
 
 //Tablets & Small Laptops
 @include mediaMd {
+  h1,
+  h2,
+  h3 {
+    &.lg-heading {
+      font-size: 1rem;
+    }
+  }
+
   main {
     align-items: center;
     text-align: center;

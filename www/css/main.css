@@ -118,7 +118,9 @@
   .menu-btn, .menu-btnResume {
     visibility: visible; }
   .menu-nav {
-    position: fixed;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
     top: 56px;
     height: 40vh;
     background: #373737;
@@ -6044,7 +6046,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 3.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -6065,7 +6067,7 @@ header {
   color: #4f651c; }
 
 main {
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 80px); }
   main .button {
     margin-top: 1rem;
     color: #444;
@@ -6566,6 +6568,10 @@ input:-webkit-autofill:active {
       content: "\f054"; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 25rem; }
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .resume-page .link-item {
@@ -6583,6 +6589,10 @@ input:-webkit-autofill:active {
       content: "\f054"; } }
 
 @media screen and (max-width: 768px) {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 1rem; }
   main {
     align-items: center;
     text-align: center; }
