@@ -236,7 +236,8 @@
                     <div class="contact-section">
                         <h1>Write a message to me</h1>
                         <div class="border"></div>
-                        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="from_email@example.com" onSubmit="sendForm();" target="dummyframe">
+                        <form id="gform" method="POST" class="contact-form" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" data-email="dariusz.skowron.website" onSubmit="sendForm();" target="dummyframe">
+<!--                        <form id="gform" method="POST" class="contact-form" target="dummyframe" onsubmit="sendForm()">-->
                             <input id="name" name="name" type="text" class="contact-form-text"  required placeholder="Name" data-error="Enter your name" oninvalid="this.setCustomValidity('Enter name or alias')"
                                    oninput="this.setCustomValidity('')"  />
                             <input id="email" name="email" type="email" class="contact-form-text" placeholder="E-mail" required oninvalid="this.setCustomValidity('Enter proper form of email eg. example@gmail.com')"
@@ -244,10 +245,11 @@
                             <textarea id="message" name="message" class="contact-form-text" placeholder="Message" minlength="20" maxlength="500"  required oninvalid="this.setCustomValidity('Message has to be at least 20 letters long')"
                                       oninput="this.setCustomValidity('')"></textarea>
                             <input type="submit"  class="contact-form-btn" value="Send" >
+                            <div id="success_message" class="contact-form-succes-info">KUPA</div>
                         </form>
-                    </div>
                 </div>
                 <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            </div>
             </div>
         </section>
     </div>
@@ -285,5 +287,62 @@
     $(window).resize(resizeBackground);
     resizeBackground();
 </script>
+
+<script>
+    function sendForm(){
+        // $('.hover_bkgr_fricc').show();
+        // alert('Thank you for your feedback, the information will be delivered to me shortly');
+        setTimeout(emptyInputs, 100);
+        setTimeout(function(){$('#success_message').fadeIn("slow");},
+            2000);
+        setTimeout(function(){
+            $('#success_message').fadeOut("slow");
+            }, 2000);
+        }
+</script>
+
+<script>
+    function emptyInputs(){
+        document.getElementById('email').value="";
+        document.getElementById('message').value="";
+        document.getElementById('name').value="";
+    }
+</script>
+
+<!--<script>-->
+<!--    $("#gform").submit(function(e){-->
+<!--        e.preventDefault();-->
+<!--        var my_inputs = {-->
+<!--            name: $("#name").val(),-->
+<!--            email: $("#email").val(),-->
+<!--            message: $("#message").val()-->
+<!--        }-->
+<!--        $.ajax({-->
+<!--            type: "POST",-->
+<!--            url: "https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec", // change it to your application specific url-->
+<!--            dataType: "jsonp",-->
+<!--            data: my_inputs,-->
+<!--            success: function(data, status){-->
+<!--                console.log(data);-->
+<!--                console.log(status);-->
+<!--                $('.hover_bkgr_fricc').show();-->
+<!--            },-->
+<!--            error: function(err){-->
+<!--                console.log(err);-->
+<!--            }-->
+<!--        });-->
+<!--        // for resetting the form-->
+<!--        $("#name").val("");-->
+<!--        $("#email").val("");-->
+<!--        $("#message").val("");-->
+<!--    });-->
+
+<script>
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+</script>
+
+
 
 </html>
