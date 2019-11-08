@@ -9,9 +9,9 @@ $fa-font-path: "webfonts";
 @import "regular.scss";
 @import "flag-icon.scss";
 
-html {
-  scroll-behavior: smooth;
-}
+//html {
+//  scroll-behavior: smooth;
+//}
 
 #main > section {
   border-top: solid 6px lighten($secondary-color, 0.5); }

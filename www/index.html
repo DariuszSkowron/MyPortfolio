@@ -285,7 +285,14 @@
 <script src="js/jquery.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-eu-cookie-law-popup.js"></script>
+<script src="js/smooth-scroll.polyfills.min.js"></script>
 
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 500,
+        speedAsDuration: true
+    });
+</script>
 
 <script>
     var bg = $("#bg-img:after");
@@ -371,29 +378,6 @@
         $('.hover_bkgr_fricc').hide();
     });
 </script>
-
-
-<script>
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
-    });
-
-    // Scroll certain amounts from current position
-    window.scrollBy({
-        top: 100, // could be negative value
-        left: 0,
-        behavior: 'smooth'
-    });
-
-    // Scroll to a certain element
-    document.querySelector('.hello').scrollIntoView({
-        behavior: 'smooth'
-    });
-</script>
-
-
 </html>
 
 
