@@ -286,10 +286,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-eu-cookie-law-popup.js"></script>
 <script src="js/smooth-scroll.polyfills.min.js"></script>
-
 <script>
     var scroll = new SmoothScroll('a[href*="#"]',{
-        speed: 500,
+        speed: 1000,
         speedAsDuration: true
     });
 </script>
@@ -332,7 +331,6 @@
     }
 </script>
 
-
 <script>
     function emptyInputs()
     {
@@ -341,36 +339,6 @@
         document.getElementById('name').value = "";
     }
 </script>
-
-<!--<script>-->
-
-<!--    function sendForm(){-->
-<!--        var my_inputs = {-->
-<!--            name: $("#name").val(),-->
-<!--            email: $("#email").val(),-->
-<!--            message: $("#message").val()-->
-<!--        }-->
-<!--        $.ajax({-->
-<!--            type: "POST",-->
-<!--            url: "https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec", // change it to your application specific url-->
-<!--            dataType: "json",-->
-<!--            data: my_inputs,-->
-<!--            success: function(data, status){-->
-<!--                console.log(data);-->
-<!--                console.log(status);-->
-<!--                // $('#success_message').fadeIn("slow");-->
-<!--                // $('.hover_bkgr_fricc').show();-->
-<!--            },-->
-<!--            error: function(err){-->
-<!--                console.log(err);-->
-<!--            }-->
-<!--        });-->
-<!--        // for resetting the form-->
-<!--        $("#name").val("");-->
-<!--        $("#email").val("");-->
-<!--        $("#message").val("");-->
-<!--    }-->
-<!--    </script>-->
 
 <script>
     $('.popupCloseButton').click(function ()
