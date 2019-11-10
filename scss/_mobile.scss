@@ -70,7 +70,7 @@
 }
 
 //Tablets & Small Laptops
-@include mediaMd {
+  @include mediaMd {
   h1,
   h2,
   h3 {
@@ -220,6 +220,15 @@
       }
     }
   }
+
+    .contactItems {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+      justify-content: space-between;
+    }
 }
 
 //Smartphones
