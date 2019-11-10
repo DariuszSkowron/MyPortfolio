@@ -203,8 +203,9 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma,
-  Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  //font-family: "Segoe UI", Tahoma,
+  //Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -348,7 +349,7 @@ main {
   //text-align: center;
   display: flex;
   flex-direction: column;
-  max-width: 400px !important;
+  max-width: 420px !important;
   //flex-basis: 50%;
   //flex-wrap: wrap;
   //justify-content: space-evenly;
@@ -364,7 +365,7 @@ main {
 
   div {
     align-items: center;
-    min-width: 400px;
+    min-width: 420px;
     font-size: 1.2rem;
     border: 3px $secondary-color solid;
     padding: 2rem 2.5rem;
@@ -710,6 +711,7 @@ input:-webkit-autofill:active {
     grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
     padding: 24px 0;
+    //margin-bottom: -30px;
     border-bottom: $secondary-color 1.5px solid;
   }
 
@@ -725,7 +727,7 @@ input:-webkit-autofill:active {
 
   .section-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   /***********************************
@@ -733,7 +735,7 @@ input:-webkit-autofill:active {
   ***********************************/
 
   img.avatar {
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
     border: white 2px solid;
     -mox-box-shadow: 0 0 5px white;
@@ -743,12 +745,13 @@ input:-webkit-autofill:active {
   }
 
   .my-name {
-    font-size: 48px;
+    font-size: 35px;
     line-height: 1;
+    margin-left: -3px;
   }
 
   .my-title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     color: $secondary-color;
   }
@@ -759,7 +762,7 @@ input:-webkit-autofill:active {
   }
 
   .link-item {
-    font-size: 11px;
+    font-size: 13px;
     flex-wrap: wrap;
     display: flex;
     align-items: flex-start;
@@ -779,20 +782,20 @@ input:-webkit-autofill:active {
 
   .job:last-child {
     border-bottom: none;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
     padding-bottom: 0px;
   }
 
   .job-title-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 15px;
   }
 
   .job-company {
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.5;
   }
 
   //School
@@ -805,14 +808,14 @@ input:-webkit-autofill:active {
   .education:last-child {
     border-bottom: none;
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
   }
 
   .education-title-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 15px;
   }
 
   .education-school {
@@ -828,7 +831,7 @@ input:-webkit-autofill:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin-bottom: 24px;
+    margin-bottom: -10px;
   }
 
   .skills-container ul {
@@ -844,6 +847,8 @@ input:-webkit-autofill:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
+    margin-top: -25px;
+    margin-bottom: -20px;
 
     ul {
       display: inline-block;
@@ -882,19 +887,18 @@ input:-webkit-autofill:active {
   }
 
   .clause-text {
-    //font-weight: bold;
     font-size: 0.7rem;
     color: darken(lightgray, 7);
 
   }
 
-  .reference {
-    font-size: 18px;
-  }
-
-  .reference-details {
-    margin-bottom: 20px;
-  }
+  //.reference {
+  //  font-size: 12px;
+  //}
+  //
+  //.reference-details {
+  //  margin-bottom: -10px;
+  //}
 
   .button.resume::before {
     border-radius: 5px;
