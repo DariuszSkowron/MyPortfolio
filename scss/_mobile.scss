@@ -151,6 +151,15 @@
       align-content: center;
     }
 
+    .links {
+      grid-template-columns: 1fr;
+    }
+
+    .links ul:last-child{
+      margin-top: -15px;
+      margin-bottom: 30px;
+    }
+
     .links, .job-title-container {
       flex-direction: column;
     }
@@ -301,6 +310,22 @@
   .resume-page {
     img.avatar {
       align-content: center;
+    }
+
+    .links {
+      //display: flex;
+      grid-template-columns: 1fr;
+    }
+
+    .links ul:last-child{
+      margin-top: -15px;
+    }
+
+    .link-item {
+      //flex-wrap: wrap;
+      //display: flex;
+      //align-items: flex-start;
+      //flex: 1;
     }
 
     .links, .job-title-container {
