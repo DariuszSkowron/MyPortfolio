@@ -34,7 +34,7 @@
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -50px;
-    margin-bottom: 10px; }
+    margin-bottom: -50px; }
   html, body {
     height: 297mm;
     width: 210mm; }
@@ -6415,7 +6415,7 @@ input:-webkit-autofill:active {
     grid-template-columns: 1fr; }
   .resume-page .section-title {
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 18px; }
   .resume-page img.avatar {
     width: 120px;
     border-radius: 50%;
@@ -6464,7 +6464,8 @@ input:-webkit-autofill:active {
     line-height: 1.5; }
   .resume-page .job-container {
     margin-bottom: -20px;
-    margin-top: -10px; }
+    margin-top: -10px;
+    font-size: 12px; }
   .resume-page .job-container ul {
     list-style-type: square; }
   .resume-page .education {
@@ -6482,12 +6483,17 @@ input:-webkit-autofill:active {
   .resume-page .education-school {
     font-weight: bold;
     line-height: 1.2; }
+  .resume-page .education-title {
+    font-size: 12px; }
+  .resume-page .education-fos {
+    font-size: 12px; }
   .resume-page .languages-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
     margin-bottom: -30px;
-    margin-top: -15px; }
+    margin-top: -15px;
+    font-size: 12px; }
   .resume-page .languages-container ul {
     margin-left: -20px;
     list-style-type: square; }
@@ -6496,7 +6502,8 @@ input:-webkit-autofill:active {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 40px;
     margin-bottom: -20px;
-    margin-top: -15px; }
+    margin-top: -15px;
+    font-size: 12px; }
   .resume-page .skills-container ul {
     margin-left: -20px;
     list-style-type: square; }
@@ -6505,7 +6512,8 @@ input:-webkit-autofill:active {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     margin-bottom: -20px;
-    margin-top: -15px; }
+    margin-top: -15px;
+    font-size: 12px; }
   .resume-page .other-skills-container ul {
     margin-left: -20px;
     list-style-type: square; }
@@ -6523,7 +6531,8 @@ input:-webkit-autofill:active {
       color: rgba(79, 101, 28, 0.6); }
     .resume-page .interests-container .title {
       color: #000;
-      text-align: center; }
+      text-align: center;
+      font-size: 12px; }
   .resume-page table {
     border-collapse: collapse;
     width: 100%;
@@ -6533,8 +6542,6 @@ input:-webkit-autofill:active {
     text-align: left; }
   .resume-page td {
     text-align: left; }
-  .resume-page .interest-title {
-    text-align: center; }
   .resume-page .interest-title {
     text-align: center; }
   .resume-page .clause-text {

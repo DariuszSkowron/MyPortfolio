@@ -507,12 +507,6 @@ input:-webkit-autofill:active {
   background: $secondary-color;
 }
 
-//.contact-form-succes-info.goRight {
-//  opacity: 1;
-//  pointer-events: auto;
-//  cursor: pointer;
-//}
-
 
 //Button Styles
 .btn {
@@ -738,7 +732,7 @@ input:-webkit-autofill:active {
 
   .section-title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /***********************************
@@ -769,13 +763,7 @@ input:-webkit-autofill:active {
     text-align: right;
   }
 
-  .links-title {
-    //font-weight: bold;
-  }
-
   .links {
-    //display: flex;
-    //margin: 10px 0 20px 0;
     display: grid;
     justify-items: left;
     margin-left: -40px;
@@ -786,12 +774,7 @@ input:-webkit-autofill:active {
   }
 
   .link-item {
-    //display: inline-block;
     font-size: 12px;
-    //flex-wrap: wrap;
-    //display: flex;
-    //align-items: flex-start;
-    //flex: 1;
   }
 
   .link-item a {
@@ -799,15 +782,8 @@ input:-webkit-autofill:active {
   }
 
   .links ul {
-    //margin-left: -20px;
-    //margin-top: -20px;
     list-style-type: none;
   }
-
-  //.links ul:last-child{
-  //  margin-top: 0px;
-  //}
-
 
   /***********************************
   * =Experience
@@ -828,8 +804,6 @@ input:-webkit-autofill:active {
   .job-title-container {
     display: flex;
     justify-content: space-between;
-    //margin-bottom: 10px;
-
     font-size: 15px;
   }
 
@@ -841,6 +815,7 @@ input:-webkit-autofill:active {
   .job-container {
     margin-bottom: -20px;
     margin-top: -10px;
+    font-size: 12px;
   }
 
   .job-container ul {
@@ -863,13 +838,20 @@ input:-webkit-autofill:active {
   .education-title-container {
     display: flex;
     justify-content: space-between;
-    //margin-bottom: 10px;
     font-size: 15px;
   }
 
   .education-school {
     font-weight: bold;
     line-height: 1.2;
+  }
+
+  .education-title{
+    font-size: 12px;
+  }
+
+  .education-fos{
+    font-size: 12px;
   }
 
   /***********************************
@@ -880,9 +862,9 @@ input:-webkit-autofill:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
-
     margin-bottom: -30px;
     margin-top: -15px;
+    font-size: 12px;
   }
 
   .languages-container ul {
@@ -900,6 +882,7 @@ input:-webkit-autofill:active {
     grid-gap: 40px;
     margin-bottom: -20px;
     margin-top: -15px;
+    font-size: 12px;
   }
 
   .skills-container ul {
@@ -917,6 +900,7 @@ input:-webkit-autofill:active {
     grid-gap: 40px;
     margin-bottom: -20px;
     margin-top: -15px;
+    font-size: 12px;
   }
 
   .other-skills-container ul {
@@ -935,6 +919,7 @@ input:-webkit-autofill:active {
     margin-top: -10px;
     margin-bottom: -20px;
     margin-left: -50px;
+    //font-size: 12px;
 
     ul {
       display: inline-block;
@@ -946,6 +931,7 @@ input:-webkit-autofill:active {
     .title {
       color: set-text-color($resume-color);
       text-align: center;
+      font-size: 12px;
     }
   }
 
@@ -962,10 +948,6 @@ input:-webkit-autofill:active {
 
   td {
     text-align: left;
-  }
-
-  .interest-title {
-    text-align: center;
   }
 
   .interest-title {
