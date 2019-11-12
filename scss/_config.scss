@@ -95,7 +95,12 @@ $background-opacity: 0.9;
   @page {
     size: A4;
     //margin: 0cm;
+    margin-left: -10px;
+    margin-right: -10px;
     margin-top: -50px;
+
+    margin-bottom: 10px;
+
   }
   html, body {
     height:297mm;

@@ -31,7 +31,10 @@
     page-break-after: avoid; }
   @page {
     size: A4;
-    margin-top: -50px; }
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -50px;
+    margin-bottom: 10px; }
   html, body {
     height: 297mm;
     width: 210mm; }
@@ -6365,7 +6368,13 @@ input:-webkit-autofill:active {
   * =Experience
   ***********************************/
   /***********************************
+  * =Languages
+  ***********************************/
+  /***********************************
   * =Skills
+  ***********************************/
+  /***********************************
+  * =Other-Skills
   ***********************************/
   /***********************************
   * =Interests
@@ -6473,21 +6482,40 @@ input:-webkit-autofill:active {
   .resume-page .education-school {
     font-weight: bold;
     line-height: 1.2; }
-  .resume-page .skills-container {
+  .resume-page .languages-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
     margin-bottom: -30px;
     margin-top: -15px; }
+  .resume-page .languages-container ul {
+    margin-left: -20px;
+    list-style-type: square; }
+  .resume-page .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: -20px;
+    margin-top: -15px; }
   .resume-page .skills-container ul {
+    margin-left: -20px;
+    list-style-type: square; }
+  .resume-page .other-skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: -20px;
+    margin-top: -15px; }
+  .resume-page .other-skills-container ul {
     margin-left: -20px;
     list-style-type: square; }
   .resume-page .interests-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
-    margin-top: -30px;
-    margin-bottom: -30px; }
+    margin-top: -10px;
+    margin-bottom: -20px;
+    margin-left: -50px; }
     .resume-page .interests-container ul {
       display: inline-block;
       list-style-type: none;
