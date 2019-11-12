@@ -6398,7 +6398,7 @@ input:-webkit-autofill:active {
     align-self: center;
     max-width: 210mm;
     margin: 35px auto;
-    padding: 32px;
+    padding: 32px 32px 10px 32px;
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
   .resume-page section {
