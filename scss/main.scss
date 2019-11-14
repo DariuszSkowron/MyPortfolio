@@ -9,10 +9,6 @@ $fa-font-path: "webfonts";
 @import "regular.scss";
 @import "flag-icon.scss";
 
-//html {
-//  scroll-behavior: smooth;
-//}
-
 #main > section {
   border-top: solid 6px lighten($secondary-color, 0.5);
 }
@@ -130,6 +126,7 @@ $fa-font-path: "webfonts";
   &__title {
     display: flex;
     align-items: center;
+
   }
 
   &__content {
@@ -139,6 +136,8 @@ $fa-font-path: "webfonts";
     h2 {
       margin: 0;
       text-transform: uppercase;
+      font-size: 28px;
+      text-align: center;
     }
 
     p {
@@ -154,8 +153,15 @@ $fa-font-path: "webfonts";
     list-style: none;
     align-items: center;
 
+    ul {
+      vertical-align: middle;
+    }
+
+
+
     li {
-      margin: 0 0 0 10px;
+      vertical-align: middle;
+      margin: 5px 0 0 10px;
     }
   }
 
@@ -174,7 +180,7 @@ $fa-font-path: "webfonts";
     overflow: hidden;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0px 0px 15px 0px $secondary-color;
+    box-shadow: 0px 0px 15px 0px $primary-color;
 
     img {
       display: block;
@@ -209,8 +215,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  //font-family: "Segoe UI", Tahoma,
-  //Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -823,6 +827,13 @@ input:-webkit-autofill:active {
     list-style-type: square;
   }
 
+  .job-ul:before{
+      content:attr(data-header);
+      font-size:120%;
+      font-weight:bold;
+      margin-left:-15px;
+  }
+
   //School
   .education {
     padding-bottom: 12px;
@@ -860,17 +871,29 @@ input:-webkit-autofill:active {
   ***********************************/
 
   .languages-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
-    margin-bottom: -30px;
-    margin-top: -15px;
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //grid-gap: 60px;
+    //margin-bottom: -30px;
+    //margin-top: -15px;
+    //font-size: 12px;
+    display: table;
+    //grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: -20px;
+    //grid-gap: 87px;
+    margin-bottom: -20px;
+    margin-top: 5px;
     font-size: 12px;
+    margin-left: -20px;
   }
 
   .languages-container ul {
-    margin-left: -20px;
+    //margin-left: -20px;
+    //list-style-type: square;
+    display: table-cell;
+    //border: solid red 1px;
     list-style-type: square;
+    width: 185px !important;
   }
 
   /***********************************
@@ -896,16 +919,25 @@ input:-webkit-autofill:active {
   ***********************************/
 
   .other-skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    display: table;
+    //grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: -20px;
+    //grid-gap: 87px;
     margin-bottom: -20px;
-    margin-top: -15px;
+    margin-top: -5px;
     font-size: 12px;
+    margin-left: -20px;
+    //width: 380px;
   }
 
-  .other-skills-container ul {
-    margin-left: -20px;
+  .other-skills-container ul:first-child {
+    display: table-cell;
+    list-style-type: square;
+    width: 185px !important;
+  }
+
+  .other-skills-container ul:last-child {
+    display: table-cell;
     list-style-type: square;
   }
 
