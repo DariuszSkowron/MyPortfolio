@@ -12,8 +12,8 @@ $background-opacity: 0.9;
 }
 
 @mixin whiteBox {
-  background-color: lighten($primary-color, 0.8);
-  box-shadow: 0px 0px 15px 0px $secondary-color;
+  background-color: lighten($primary-color, 0.1);
+  box-shadow: 0px 0px 15px 0px $primary-color;
 }
 
 
@@ -47,7 +47,6 @@ $background-opacity: 0.9;
   }
 }
 
-//Media Query Mixins
 @mixin mediaResume{
   @media screen and (max-width: 1100px){
     @content;
@@ -79,7 +78,7 @@ $background-opacity: 0.9;
 }
 
 @media print{
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  * { background: transparent !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   //a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
