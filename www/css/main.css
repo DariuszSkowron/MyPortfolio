@@ -30,8 +30,8 @@
     page-break-after: avoid; }
   @page {
     size: A4;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: -50px;
     margin-bottom: -50px; }
   html, body {
@@ -6438,19 +6438,22 @@ input:-webkit-autofill:active {
     color: #4f651c;
     text-align: right; }
   .resume-page .links {
-    display: grid;
-    justify-items: left;
-    margin-left: -40px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: -50px;
-    margin-bottom: -30px;
-    margin-top: -15px; }
+    display: table;
+    grid-gap: -20px;
+    margin-bottom: -20px;
+    margin-top: 5px;
+    font-size: 12px; }
   .resume-page .link-item {
     font-size: 12px; }
   .resume-page .link-item a {
     display: inline-block; }
   .resume-page .links ul {
-    list-style-type: none; }
+    padding-left: 0;
+    list-style-type: none;
+    display: table-cell;
+    width: 200px !important; }
+  .resume-page .links ul:last-child {
+    display: table-cell; }
   .resume-page .job {
     padding-bottom: 12px;
     margin-bottom: 12px;
@@ -6700,7 +6703,9 @@ input:-webkit-autofill:active {
   .resume-page img.avatar {
     align-content: center; }
   .resume-page .links {
-    grid-template-columns: 1fr; }
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -7px; }
   .resume-page .links ul:last-child {
     margin-top: -15px;
     margin-bottom: 30px; }
@@ -6792,6 +6797,7 @@ input:-webkit-autofill:active {
   .resume-page img.avatar {
     align-content: center; }
   .resume-page .links {
+    display: grid;
     grid-template-columns: 1fr; }
   .resume-page .links ul:last-child {
     margin-top: -15px; }
