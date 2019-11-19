@@ -31,7 +31,10 @@
     page-break-after: avoid; }
   @page {
     size: A4;
-    margin: -50px, 0, -50px, 0; }
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -55px;
+    margin-bottom: -50px; }
   html, body {
     height: 297mm;
     width: 210mm; }
@@ -72,7 +75,10 @@
     page-break-after: avoid; }
   @page {
     size: A4;
-    margin: -50px, 0, -50px, 0; }
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -55px;
+    margin-bottom: -50px; }
   html, body {
     height: 297mm;
     width: 210mm; }
@@ -6532,14 +6538,15 @@ input:-webkit-autofill:active {
   .resume-page .education:last-child {
     border-bottom: none;
     padding-bottom: 0px;
-    margin-bottom: 10px; }
+    margin-bottom: -0px; }
   .resume-page .education-title-container {
     display: flex;
     justify-content: space-between;
     font-size: 15px; }
   .resume-page .education-school {
     font-weight: bold;
-    line-height: 1.2; }
+    line-height: 1.2;
+    max-width: 400px !important; }
   .resume-page .education-title {
     font-size: 12px; }
   .resume-page .education-fos {

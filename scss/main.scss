@@ -860,7 +860,7 @@ input:-webkit-autofill:active {
   .education:last-child {
     border-bottom: none;
     padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: -0px;
   }
 
   .education-title-container {
@@ -872,6 +872,7 @@ input:-webkit-autofill:active {
   .education-school {
     font-weight: bold;
     line-height: 1.2;
+    max-width:400px !important;
   }
 
   .education-title{

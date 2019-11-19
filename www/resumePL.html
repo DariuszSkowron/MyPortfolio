@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dariusz Skowron's Resume English Version </title>
+    <title>Dariusz Skowron Resume Polish Version </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="resume-page">
@@ -15,12 +15,12 @@
         </button>
     </div>
     <div class="menu-printButton">
-        <button class="button resume" type="button" onclick="printPdf('docs/resumeENG.pdf')">
+        <button class="button resume" type="button" onclick="print()">
             <span class="rotated"><i class="fas fa-print buttonIcon"></i>Print</span>
         </button>
     </div>
     <div class="menu-downloadButton">
-        <button class="button resume" onclick="generatePdf()">
+        <button class="button resume" onclick="generatePdf('ENG')">
             <span class="rotated"><i class="fas fa-download buttonIcon"></i>Download</span>
         </button>
     </div>
@@ -29,32 +29,46 @@
 <div class="container">
     <section>
         <div>
-            <div><img src="images/portrait150.png" class="avatar"></div>
+            <div><img alt="portrait" src="images/portrait150.png" class="avatar"></div>
         </div>
         <div>
             <div class="my-name">Dariusz Skowron</div>
-
             <div class="my-title">Intern Java Developer</div>
 
-            <div class="links">
-                <div class="link-item">
-                    <a href="mailto:dariusz.skowron@gmail.com"><i class="fas fa-at"></i> dariusz.skowron@gmail.com</a>
-                </div>
-                <div class="link-item">
-                    <a href="tel:48 534 635 177"><i class="fas fa-phone"></i> (+48) 534 635 177</a>
-                </div>
-                <div class="link-item">
-                    <a href="www.skowrondariusz.com"><i class="fas fa-globe"></i> skowrondariusz.com</a>
-                </div>
+            <div class="links-title">
+                Kontakt:
             </div>
-
-            <p>Ambitious novice java developer, my strong sides are that I am a team player who is focused on a overall effect instead of individual achievements. Im hard worker and fast learner
-                but most important my inquisitiveness leads to thorough understanding of the taken subjects.</p>
+            <div class="links">
+                <ul>
+                    <li>
+                        <div class="link-item">
+                            <a href="mailto:dariusz.skowron@gmail.com"><i class="fas fa-at"></i> dariusz.skowron@gmail.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <a href="tel:48 534 635 177"><i class="fas fa-phone"></i> (+48) 534 635 177</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="link-item">
+                            <a href="https://www.skowrondariusz.com"><i class="fas fa-globe"></i> skowrondariusz.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <a href="https://github.com/DariuszSkowron"><i class="fab fa-github"></i> github.com/dariuszskowron</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section>
-        <div class="section-title">Experience</div>
+        <div class="section-title">Doświadczenie</div>
         <div>
             <div class="job">
                 <div class="job-title-container">
@@ -63,158 +77,188 @@
                         <div class="job-title">Intern Java Developer</div>
                     </div>
                     <div>
-                        Jan 2019 - Now
+                        01.2019 - Obecnie
                     </div>
                 </div>
-                <p>Member of open source group as a programming adept focused on improving skills in Java/Kotlin.
-                    Project i took part in was Kylon where i used technologies like: Java/Kotlin, Spring, Hibernate, Gradle, CSS/Bootstrap.</p>
+                <div class="job-container">
+                    <p>Członek grupy open source jako początkujący programista, skupiony na poprawie umiejętności z programowania w języku Java.</p>
+                    <ul class="job-ul" data-header="Projekty:">
+                        <li>Kylon: Java, Spring, Hibernate, Angular</li>
+                        <li>Epomis Cloud: Java/Kotlin, Spring</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="job">
                 <div class="job-title-container">
                     <div>
                         <div class="job-company">Dan-Rob Technology</div>
-                        <div class="job-title">Lead Prject Engineer</div>
+                        <div class="job-title">Konstruktor / Inżynier Projektu</div>
                     </div>
                     <div>
-                        Sep 2018 - Now
+                        09.2018 - Obecnie
                     </div>
                 </div>
-                <p>Member of open source group as a programming adept focused on improving skills in Java/Kotlin. Project i took part in was Kylon where i used technologies like: Java/Kotlin, Spring,
-                    Hibernate, Gradle, CSS/Bootstrap.</p>
+                <div class="job-container">
+                    <ul>
+                        <li>Projektowanie maszyn i urządzeń przemysłowych</li>
+                        <li>Planowanie prac zgodnie z harmonogramem projektu</li>
+                        <li>Zarządzanie projektem w całym okresie projektowania i wdrażania wymagań klienta</li>
+                        <li>Nadzór nad sporządzaniem dokumentacji technicznej</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="job">
                 <div class="job-title-container">
                     <div>
                         <div class="job-company">PMT Systems</div>
-                        <div class="job-title">Mechanical Constructor</div>
+                        <div class="job-title">Asystent Konstruktora</div>
                     </div>
                     <div>
-                        Jul 2017 - Jun 2018
+                        07.2017 - 05.2018
                     </div>
                 </div>
-                <p>Member of open source group as a programming adept focused on improving skills in Java/Kotlin. Project i took part in was Kylon where i used technologies like: Java/Kotlin, Spring,
-                    Hibernate, Gradle, CSS/Bootstrap.</p>
+                <div class="job-container">
+                    <ul>
+                        <li>Odpowiedzialność za kontakt i ustalenia z klientem</li>
+                        <li>Wykonywanie projektów modyfikacji istniejących maszyn</li>
+                        <li>Projektowanie mechaniczne stanowisk testujących produkt</li>
+                        <li>Sporządzanie dokumentacji technicznej</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="section-title">Education</div>
+        <div class="section-title">Edukacja</div>
         <div>
-            <div class="education">
-        <div class="education-title-container">
-            <div>
-                <div class="education-school">AGH University Of Science And Technology</div>
-                <div class="education-title">Master of Science Engineering (M.Sc.Eng.)</div>
-            </div>
-            <div>
-                Jul 2017 - Jun 2018
-            </div>
-        </div>
-    </div>
             <div class="education">
                 <div class="education-title-container">
                     <div>
-                        <div class="education-school">AGH University Of Science And Technology</div>
-                        <div class="education-title">Master of Science Engineering (M.Sc.Eng.)</div>
+                        <div class="education-school">Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</div>
+                        <div class="education-title"></div>
+                        <div class="education-fos">Mechanika i Budowa Maszyn</div>
                     </div>
                     <div>
-                        Jul 2017 - Jun 2018
+                        02.2017 - 06.2018
                     </div>
                 </div>
             </div>
-</div>
-    </section>
-    <section>
-        <div class="section-title">Languages</div>
-        <div>
-            <div class="skills-container">
-                <ul>
-                    <li>English - C1</li>
-                    <li>German - A2</li>
-                </ul>
-            </div> <!-- end skills-container -->
-
-            <p>My level of advance in English allows me to communicate with clients, work with documentation, and deliver programming code in understandable form</p>
+            <div class="education">
+                <div class="education-title-container">
+                    <div>
+                        <div class="education-school">Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</div>
+                        <div class="education-title"></div>
+                        <div class="education-fos">Mechanika i Budowa Maszyn</div>
+                    </div>
+                    <div>
+                        10.2012 - 01.2018
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section>
-        <div class="section-title">Skills (Technologies??)</div>
+        <div class="section-title">Języki obce</div>
+        <div>
+            <div class="languages-container">
+                <ul>
+                    <li>Angielski - poziom B2</li>
+                </ul>
+                <ul>
+                    <li>Niemiecki - poziom A2</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">Technologie</div>
         <div>
             <div class="skills-container">
                 <ul>
                     <li>Java</li>
-                    <li>SQL</li>
+                    <li>Spring</li>
                     <li>HTML/CSS/Bootstrap</li>
                 </ul>
 
                 <ul>
-                    <li>GIT</li>
-                    <li>Spring</li>
+                    <li>Angular</li>
+                    <li>SQL</li>
+                    <li>Javascript</li>
+                </ul>
+
+                <ul>
                     <li>Docker</li>
-                </ul>
-
-                <ul>
-                    <li>Maven</li>
                     <li>Gradle</li>
-                    <li>Node</li>
+                    <li>Maven</li>
                 </ul>
-            </div> <!-- end skills-container -->
 
-            <p>With support of documentation and knowledge avaible on the internet I am able to solve problems encountered while projecting the web services </p>
+                <ul>
+                    <li>GIT</li>
+                    <li>Sass</li>
+                    <li>JUnit</li>
+                </ul>
+            </div>
         </div>
     </section>
+
     <section>
-        <div class="section-title">Other skills</div>
+        <div class="section-title">Inne umiejętności</div>
         <div>
-            <div class="skills-container">
+            <div class="other-skills-container">
                 <ul>
-                    <li>Driving licence cat. B</li>
-                    <li>Microsoft Office</li>
-                    <li>Teamwork</li>
+                    <li>Doświadczenie w pracy w grupie</li>
+                    <li>Pakiet Microsoft Office</li>
                 </ul>
-            </div> <!-- end skills-container -->
+                <ul>
+                    <li>Prawo jazdy (kat. B)</li>
+                    <li>Efektywna organizacja pracy</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section>
-        <div class="section-title">Interests</div>
+        <div class="section-title">Zainteresowania</div>
         <div class="interests-container">
-                <ul>
-                    <li><i class="fab fa-bitcoin fa-3x" title="powerlifting"></i>
-                    <div class="title">Cryptocurrencies</div>
-                    </li>
-                </ul>
-                <ul>
-                    <li><i class="fas fa-dumbbell fa-3x"></i>
-                    <div class="title">Powerliftig</div>
-                    </li>
-                </ul>
             <ul>
-                <li><i class="fas fa-tools fa-3x"></i>
-                <div class="title">DIY</div>
-                </li>
-            </ul>
-            <ul>
-                <li><i class="fas fa-gamepad fa-3x"></i>
+                <li><i class="fas fa-gamepad fa-2x"></i>
                     <div class="title">E-sport</div>
                 </li>
             </ul>
-            </div>
+            <ul>
+                <li><i class="fab fa-bitcoin fa-2x" title="powerlifting"></i>
+                    <div class="title">Cryptocurrencies</div>
+                </li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-dumbbell fa-2x"></i>
+                    <div class="title">Powerliftig</div>
+                </li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-tools fa-2x"></i>
+                    <div class="title">DIY</div>
+                </li>
+            </ul>
+        </div>
     </section>
 
-<section class="section-clause">
-    <div class="clause-text">
-    I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item
-    1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal
-    data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)
-    </div>
-</section>
+    <section class="section-clause">
+        <div class="clause-text">
+            Wyrażam zgodę na przetwarzanie danych osobowych zawartych w niniejszym dokumencie do realizacji obecnego procesu rekrutacyjnego zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych
+            osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku
+            z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)
+        </div>
+    </section>
 </div>
 </body>
-<script src="js/main.js"></script>
 <script src="js/buttonResume.js" type="text/javascript"></script>
+<script src="js/html2pdf.bundle.min.js"></script>
+<script src="js/generateResume.js" type="text/javascript"></script>
+<script src="js/printResume.js" type="text/javascript"></script>
 </html>
