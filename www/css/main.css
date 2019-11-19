@@ -6163,6 +6163,11 @@ main {
     background: #120f07;
     padding: 0.5rem;
     border-bottom: #51652d 5px solid; }
+  .about-info ul {
+    text-align: left; }
+  .about-info .job-ul:before {
+    content: attr(data-header);
+    margin-left: -20px; }
 
 .projects {
   display: grid;
@@ -6322,7 +6327,7 @@ input:-webkit-autofill:active {
   height: 80px;
   text-align: center;
   display: block;
-  background: rgba(48, 40, 18, 0.6); }
+  background: rgba(4, 3, 1, 0.7); }
 
 .resume {
   margin-top: 1rem; }

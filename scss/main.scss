@@ -319,6 +319,16 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+
+  ul {
+    text-align: left
+  }
+
+  .job-ul:before{
+    content:attr(data-header);
+    //font-size:120%;
+    margin-left:-20px;
+  }
 }
 
 //Work/Projects
@@ -550,7 +560,7 @@ input:-webkit-autofill:active {
   height: 80px;
   text-align: center;
   display: block;
-  background: rgba((lighten($primary-color, 10)), 0.6);
+  background: rgba((darken($primary-color, 2)), 0.7);
 }
 
 .resume {
