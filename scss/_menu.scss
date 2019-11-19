@@ -1,8 +1,10 @@
+@import '_config.scss';
+
 //Menu Button
 .menu-btn {
   visibility: hidden;
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   right: 35px;
   top: 30px;
 
@@ -59,7 +61,10 @@
   justify-content: space-around;
   align-items: center;
   height: 5rem;
-  background-color: $primary-color;
+  z-index: 10;
+  opacity: 1;
+  background-color: lighten($primary-color, 0.5);
+  //background-color: #000c00;
 
   .logo{
     color: white;
@@ -88,6 +93,7 @@
     padding: 1rem 0;
     font-weight: bold;
     color: set-text-color($primary-color);
+    z-index: 10;
     text-decoration: none;
     letter-spacing: 3px;
 
@@ -99,7 +105,6 @@
   }
 }
 
-//Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
@@ -125,7 +130,9 @@
     position: absolute;
     top: 56px;
     height: 40vh;
-    background: darken($primary-color, 5);
+    background: lighten($primary-color, 0.5);
+    //background: rgba(36, 36, 36, 0.94);
+    opacity: 1;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -144,7 +151,6 @@
     @include easeOut;
 
     &.show {
-            //Slide in from right
       transform: translate3d(0px,0px,0px);
     }
   }
