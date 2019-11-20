@@ -5957,7 +5957,7 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
   max-width: 1170px; }
 
-.btn-portfolio {
+.btn-portfolio, .btn-portfolio-disabled {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -5965,9 +5965,16 @@ readers do not read off random characters that represent icons */
   display: inline-block;
   background-color: #51652d;
   transition: all .2s ease; }
-  .btn-portfolio:hover {
+  .btn-portfolio:hover, .btn-portfolio-disabled:hover {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     transform: translateY(-3px); }
+
+.btn-portfolio-disabled {
+  background-color: lightgray;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: gray; }
 
 .img-fluid {
   max-width: 100%;
