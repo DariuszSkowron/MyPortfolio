@@ -5957,6 +5957,9 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
   max-width: 1170px; }
 
+.warning-text {
+  color: #8aac4c; }
+
 .btn-portfolio, .btn-portfolio-disabled {
   color: #fff;
   font-size: 18px;
@@ -6426,7 +6429,7 @@ input:-webkit-autofill:active {
 .resume-page {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-  background: #0B0904;
+  background: #323232;
   color: #000;
   /***********************************
   * =Main Info
@@ -6660,14 +6663,15 @@ input:-webkit-autofill:active {
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 180px;
+    top: 185px;
     height: 12rem;
     cursor: pointer;
     transition: all 0.5s ease-out; }
   .resume-page .menu-downloadButton {
-    top: 286px;
+    top: 296px;
     right: 30px; }
   .resume-page .menu-returnButton {
+    height: 20rem;
     top: -5px;
     right: 30px;
     flex-direction: column; }
