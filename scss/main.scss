@@ -1,7 +1,7 @@
 @import '_config.scss';
 @import '_menu.scss';
 @import '_cookies.scss';
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 $fa-font-path: "webfonts";
 @import "fontawesome.scss";
 @import "solid.scss";
@@ -39,6 +39,10 @@ $fa-font-path: "webfonts";
   max-width: 1170px;
 }
 
+.warning-text {
+  color: lighten($secondary-color, 20);
+}
+
 
 .btn-portfolio {
   color: #fff;
@@ -53,7 +57,15 @@ $fa-font-path: "webfonts";
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     transform: translateY(-3px);
   }
+}
 
+.btn-portfolio-disabled{
+  @extend .btn-portfolio;
+  background-color: lightgray;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: gray;
 }
 
 .img-fluid {
@@ -245,6 +257,7 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  opacity: 1;
 }
 
 
@@ -314,9 +327,19 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten($primary-color, 2);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+
+  ul {
+    text-align: left
+  }
+
+  .job-ul:before{
+    content:attr(data-header);
+    //font-size:120%;
+    margin-left:-20px;
   }
 }
 
@@ -549,7 +572,7 @@ input:-webkit-autofill:active {
   height: 80px;
   text-align: center;
   display: block;
-  background: rgba((lighten($primary-color, 10)), 0.6);
+  background: rgba((darken($primary-color, 2)), 0.7);
 }
 
 .resume {
@@ -676,7 +699,7 @@ input:-webkit-autofill:active {
 .resume-page {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-  background: $primary-color;
+  background: #323232;
   color: set-text-color($resume-color);
 
 
@@ -859,7 +882,7 @@ input:-webkit-autofill:active {
   .education:last-child {
     border-bottom: none;
     padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: -0px;
   }
 
   .education-title-container {
@@ -871,6 +894,7 @@ input:-webkit-autofill:active {
   .education-school {
     font-weight: bold;
     line-height: 1.2;
+    max-width:400px !important;
   }
 
   .education-title{
@@ -1052,7 +1076,7 @@ input:-webkit-autofill:active {
     position: absolute;
     z-index: 3;
     right: 30px;
-    top: 180px;
+    top: 185px;
     height: 12rem;
     cursor: pointer;
     @include easeOut;
@@ -1060,12 +1084,13 @@ input:-webkit-autofill:active {
 
   .menu-downloadButton {
     @extend .menu-printButton;
-    top: 286px;
+    top: 296px;
     right: 30px;
   }
 
   .menu-returnButton {
     @extend .menu-printButton;
+    height: 20rem;
     top: -5px;
     right: 30px;
     flex-direction: column;
