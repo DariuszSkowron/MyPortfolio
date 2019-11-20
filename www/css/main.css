@@ -170,9 +170,9 @@
   .menu-nav {
     margin-left: 0;
     margin-right: 0;
-    position: absolute;
+    position: fixed;
     top: 56px;
-    height: 40vh;
+    height: 200px !important;
     background: #0d0b05;
     opacity: 1;
     flex-direction: column;
@@ -194,7 +194,7 @@
   clear: both; }
 
 .eupopup-container {
-  background-color: rgba(11, 9, 4, 0.8);
+  background-color: #0b0904;
   color: #ffffff;
   padding: 5px 20px;
   font-size: 12px;

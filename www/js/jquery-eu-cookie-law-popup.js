@@ -35,8 +35,8 @@ $.fn.euCookieLawPopup = (function() {
 		popupTitle : 'This website is using cookies',
 		popupText : 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies on this website.',
 		buttonContinueTitle : 'Continue',
-		buttonLearnmoreTitle : 'Learn&nbsp;more',
-		buttonLearnmoreOpenInNewWindow : false,
+		// buttonLearnmoreTitle : 'Learn&nbsp;more',
+		// buttonLearnmoreOpenInNewWindow : false,
 		agreementExpiresInDays : 30,
 		autoAcceptCookiePolicy : false,
 		htmlMarkup : null
@@ -135,21 +135,34 @@ $.fn.euCookieLawPopup = (function() {
 			return _self.params.htmlMarkup;
 		}
 
+		// var html =
+		// 	'<div class="eupopup-container' +
+		// 	    ' eupopup-container-' + _self.params.popupPosition +
+		// 	    (_self.params.compactStyle ? ' eupopup-style-compact' : '') +
+		// 		' eupopup-color-' + _self.params.colorStyle + '">' +
+		// 		'<div class="eupopup-head">' + _self.params.popupTitle + '</div>' +
+		// 		'<div class="eupopup-body">' + _self.params.popupText + '</div>' +
+		// 		'<div class="eupopup-buttons">' +
+		// 		  '<a href="#" class="eupopup-button eupopup-button_1">' + _self.params.buttonContinueTitle + '</a>' +
+		// 		  '<a href="' + _self.params.cookiePolicyUrl + '"' +
+		// 		 	(_self.params.buttonLearnmoreOpenInNewWindow ? ' target=_blank ' : '') +
+		// 			' class="eupopup-button eupopup-button_2">' + _self.params.buttonLearnmoreTitle + '</a>' +
+		// 		  '<div class="clearfix"></div>' +
+		// 		'</div>' +
+		// 		'<a href="#" class="eupopup-closebutton">x</a>' +
+		// 	'</div>';
+
 		var html =
 			'<div class="eupopup-container' +
-			    ' eupopup-container-' + _self.params.popupPosition +
-			    (_self.params.compactStyle ? ' eupopup-style-compact' : '') +
-				' eupopup-color-' + _self.params.colorStyle + '">' +
-				'<div class="eupopup-head">' + _self.params.popupTitle + '</div>' +
-				'<div class="eupopup-body">' + _self.params.popupText + '</div>' +
-				'<div class="eupopup-buttons">' +
-				  '<a href="#" class="eupopup-button eupopup-button_1">' + _self.params.buttonContinueTitle + '</a>' +
-				  '<a href="' + _self.params.cookiePolicyUrl + '"' +
-				 	(_self.params.buttonLearnmoreOpenInNewWindow ? ' target=_blank ' : '') +
-					' class="eupopup-button eupopup-button_2">' + _self.params.buttonLearnmoreTitle + '</a>' +
-				  '<div class="clearfix"></div>' +
-				'</div>' +
-				'<a href="#" class="eupopup-closebutton">x</a>' +
+			' eupopup-container-' + _self.params.popupPosition +
+			(_self.params.compactStyle ? ' eupopup-style-compact' : '') +
+			' eupopup-color-' + _self.params.colorStyle + '">' +
+			'<div class="eupopup-head">' + _self.params.popupTitle + '</div>' +
+			'<div class="eupopup-body">' + _self.params.popupText + '</div>' +
+			'<div class="eupopup-buttons">' +
+			'<a href="#" class="eupopup-button eupopup-button_1">' + _self.params.buttonContinueTitle + '</a>' +
+			'</div>' +
+			'<a href="#" class="eupopup-closebutton">x</a>' +
 			'</div>';
 
 		return html;
