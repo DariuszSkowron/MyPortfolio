@@ -3,7 +3,7 @@
 }
 
 .eupopup-container {
-  background-color: rgba($primary-color, 0.8);
+  background-color: rgba($primary-color, 1);
   color: #ffffff;
   padding: 5px 20px;
   font-size: 12px;
@@ -84,6 +84,7 @@
   color: rgba((lighten($secondary-color, 25)), 0.5);
   font-weight: normal;
   font-size: 12px;
+  //visibility: hidden;
 }
 
 .eupopup-button {

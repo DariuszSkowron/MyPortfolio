@@ -127,9 +127,9 @@
   .menu-nav{
     margin-left: 0;
     margin-right: 0;
-    position: absolute;
+    position: fixed;
     top: 56px;
-    height: 40vh;
+    height: 200px !important;
     background: lighten($primary-color, 0.5);
     //background: rgba(36, 36, 36, 0.94);
     opacity: 1;
