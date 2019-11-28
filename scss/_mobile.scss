@@ -356,6 +356,27 @@
       }
     }
   }
+
+
+
+  .boxes {
+    max-width: 300px !important;
+
+
+    div {
+      min-width: 200px;
+      font-size: 1rem;
+
+
+      .text-secondary {
+        padding-top: 50px;
+        //align-items: center;
+        margin: 0 auto;
+        display: block;
+      }
+
+    }
+  }
 }
 
 @include mediaResume {
