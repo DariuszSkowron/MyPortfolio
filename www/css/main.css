@@ -6396,10 +6396,15 @@ input:-webkit-autofill:active {
     -webkit-transition: -webkit-transform 2s;
     /* Safari */
     transition: transform 2s;
-    min-width: 140px; }
+    min-width: 110px;
+    text-align: left; }
     .resume #button3 span, .resume #button2 span {
-      padding-left: 30px;
-      padding-right: 20px; }
+      display: inline-block;
+      text-align: right; }
+    .resume #button3 .lang-name, .resume #button2 .lang-name {
+      display: inline-block;
+      min-width: 70px;
+      text-align: left; }
   .resume #button1 {
     z-index: 10;
     -webkit-transition: opacity 2s;
