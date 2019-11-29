@@ -366,11 +366,13 @@
     div {
       min-width: 200px;
       font-size: 1rem;
+      text-align: center;
 
 
       .text-secondary {
-        padding-top: 50px;
-        //align-items: center;
+        padding-top: 0;
+        padding-bottom: 10px;
+        text-align: center;
         margin: 0 auto;
         display: block;
       }
@@ -406,6 +408,5 @@
     .menu-downloadButton{
       right: 0px;
     }
-
   }
 }

@@ -14,10 +14,25 @@
   .btn-line {
     width: 28px;
     height: 3px;
-    margin: 0 0 5px 0;
+    margin: 0 -5px 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
   }
+
+  //.btn-line {
+  //  &:nth-child(1) {
+  //    margin-top: 30px;
+  //  }
+  //
+  //  &:nth-child(2) {
+  //    margin-top: 40px;
+  //  }
+  //
+  //  &:nth-child(3) {
+  //    margin-top: 50px;
+  //  }
+  //}
+
 
 
   .btn-lineResume{
@@ -27,12 +42,14 @@
 
     //Rotate into X with menu lines
   &.close {
-    transform: rotate(180deg);
+    transform: rotate(180deg) ;
 
     .btn-line {
+      right: 120px;
             //Line 1 = Rotate
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(5px, 12px);
+        //transform: rotate(45deg) translate(5px, 11px);
       }
 
             //Line 2 - Hide
@@ -42,7 +59,8 @@
 
             //Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(135deg) translate(-6px, 6px);
+        transform: rotate(135deg) translate(1px, 5px);
+        //transform: rotate(135deg) translate(0px, 6px);
       }
     }
   }

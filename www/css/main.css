@@ -98,19 +98,21 @@
   .menu-btn .btn-line, .menu-btnResume .btn-line, .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
     width: 28px;
     height: 3px;
-    margin: 0 0 5px 0;
+    margin: 0 -5px 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn .btn-lineResume, .menu-btnResume .btn-lineResume {
     background-color: rgba(150, 182, 91, 0.5); }
   .menu-btn.close, .close.menu-btnResume {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1), .close.menu-btnResume .btn-line:nth-child(1), .menu-btn.close .btn-lineResume:nth-child(1), .close.menu-btnResume .btn-lineResume:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2), .close.menu-btnResume .btn-line:nth-child(2), .menu-btn.close .btn-lineResume:nth-child(2), .close.menu-btnResume .btn-lineResume:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3), .close.menu-btnResume .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3), .close.menu-btnResume .btn-lineResume:nth-child(3) {
-      transform: rotate(135deg) translate(-6px, 6px); }
+    .menu-btn.close .btn-line, .close.menu-btnResume .btn-line, .menu-btn.close .btn-lineResume, .close.menu-btnResume .btn-lineResume {
+      right: 120px; }
+      .menu-btn.close .btn-line:nth-child(1), .close.menu-btnResume .btn-line:nth-child(1), .menu-btn.close .btn-lineResume:nth-child(1), .close.menu-btnResume .btn-lineResume:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 12px); }
+      .menu-btn.close .btn-line:nth-child(2), .close.menu-btnResume .btn-line:nth-child(2), .menu-btn.close .btn-lineResume:nth-child(2), .close.menu-btnResume .btn-lineResume:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3), .close.menu-btnResume .btn-line:nth-child(3), .menu-btn.close .btn-lineResume:nth-child(3), .close.menu-btnResume .btn-lineResume:nth-child(3) {
+        transform: rotate(135deg) translate(1px, 5px); }
 
 .menu-btnResume {
   top: 0; }
@@ -6886,9 +6888,12 @@ input:-webkit-autofill:active {
     max-width: 300px !important; }
     .boxes div {
       min-width: 200px;
-      font-size: 1rem; }
+      font-size: 1rem;
+      text-align: center; }
       .boxes div .text-secondary {
-        padding-top: 50px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        text-align: center;
         margin: 0 auto;
         display: block; } }
 

@@ -252,7 +252,7 @@
                     <div class="contact-section">
                         <h1>Write a message to me</h1>
                         <div class="border"></div>
-                        <form method="POST" class="gform" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" onsubmit="sendForm()">
+                        <form method="POST" class="gform" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" onsubmit="sendForm()" target="dummyframe">
                             <!--                        <form id="gform" method="POST" class="contact-form" target="dummyframe" onsubmit="sendForm()">-->
                             <input id="name" name="name" type="text" class="contact-form-text" required placeholder="Name" data-error="Enter your name"
                                    oninvalid="this.setCustomValidity('Enter name or alias')"
@@ -267,7 +267,7 @@
                             <div id="success_message" class="contact-form-succes-info">Message sent</div>
                         </form>
                     </div>
-                    <!--                <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>-->
+                                    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 </div>
             </div>
         </section>
