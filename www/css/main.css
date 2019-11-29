@@ -6395,7 +6395,8 @@ input:-webkit-autofill:active {
     z-index: 10;
     -webkit-transition: -webkit-transform 2s;
     /* Safari */
-    transition: transform 2s; }
+    transition: transform 2s;
+    min-width: 140px; }
     .resume #button3 span, .resume #button2 span {
       padding-left: 30px;
       padding-right: 20px; }
@@ -6405,7 +6406,7 @@ input:-webkit-autofill:active {
     /* Safari */
     transition: opacity 2s; }
   .resume #nav {
-    min-height: 6rem;
+    min-height: 9rem;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
