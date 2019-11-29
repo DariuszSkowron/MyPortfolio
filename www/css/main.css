@@ -162,9 +162,17 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 420px) {
+  .logo {
+    max-width: 250px !important;
+    margin-left: 35px !important;
+    display: block;
+    align-items: inherit; } }
+
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    width: 60%; } }
+    width: 60%;
+    left: 35px; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn, .menu-btnResume {
@@ -6885,16 +6893,16 @@ input:-webkit-autofill:active {
     .portfolio__buttons a {
       margin: 0 0 10px 0; }
   .boxes {
-    max-width: 300px !important; }
+    max-width: 250px !important; }
     .boxes div {
-      min-width: 200px;
+      min-width: 150px;
       font-size: 1rem;
+      padding: 10px 0;
       text-align: center; }
       .boxes div .text-secondary {
         padding-top: 0;
         padding-bottom: 10px;
         text-align: center;
-        margin: 0 auto;
         display: block; } }
 
 @media screen and (max-width: 1100px) {
