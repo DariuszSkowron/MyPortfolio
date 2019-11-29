@@ -163,6 +163,8 @@
   transition-delay: 0.4s; }
 
 @media screen and (max-width: 420px) {
+  .menu {
+    justify-content: left; }
   .logo {
     max-width: 250px !important;
     margin-left: 35px !important;
@@ -171,8 +173,7 @@
 
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    width: 60%;
-    left: 35px; } }
+    width: 60%; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn, .menu-btnResume {
@@ -6897,7 +6898,7 @@ input:-webkit-autofill:active {
     .boxes div {
       min-width: 150px;
       font-size: 1rem;
-      padding: 10px 0;
+      padding: 10px 5px 0 5px;
       text-align: center; }
       .boxes div .text-secondary {
         padding-top: 0;
