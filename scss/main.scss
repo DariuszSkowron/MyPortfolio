@@ -639,11 +639,21 @@ input:-webkit-autofill:active {
     z-index: 10;
     -webkit-transition: -webkit-transform 2s; /* Safari */
     transition: transform 2s;
+    min-width: 110px;
+    text-align: left;
 
     span {
-      padding-left: 30px;
-      padding-right: 20px;
+      //padding-left: 30px;
+      //padding-right: 20px;
+      display: inline-block;
+      text-align: right;
 
+    }
+
+    .lang-name{
+      display: inline-block;
+      min-width: 70px;
+      text-align: left;
     }
   }
 
@@ -654,7 +664,7 @@ input:-webkit-autofill:active {
   }
 
   #nav {
-    min-height: 6rem;
+    min-height: 9rem;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;

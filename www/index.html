@@ -61,8 +61,8 @@
                         </button>
                     </div>
                     <div id="nav">
-                        <button id="button2">Polish<span class="flag-icon flag-icon-pl"></span></button>
-                        <button id="button3">English<span class="flag-icon flag-icon-gb"></span></button>
+                        <button id="button2"><span class="lang-name">Polish</span><span class="flag-icon flag-icon-pl"></span></button>
+                        <button id="button3"><span class="lang-name">English</span><span class="flag-icon flag-icon-gb"></span></button>
                     </div>
                 </div>
             </div>
@@ -229,9 +229,9 @@
                 </h2>
                 <div class="contactItems">
                     <div class="boxes">
-                        <div class="location">
+                        <div>
                             <span class="text-secondary"><i class="fas fa-envelope fa-2x"></i></span>
-                            <span>dariusz.skowron@gmail.com</span>
+                            dariusz.skowron@gmail.com
                         </div>
 
                         <div>
@@ -252,7 +252,7 @@
                     <div class="contact-section">
                         <h1>Write a message to me</h1>
                         <div class="border"></div>
-                        <form method="POST" class="gform" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" onsubmit="sendForm()">
+                        <form method="POST" class="gform" action="https://script.google.com/macros/s/AKfycbyEam0wsKV3TzSmsyeDX-UzZH1RXS1tw8TJclQQ7w/exec" onsubmit="sendForm()" target="dummyframe">
                             <!--                        <form id="gform" method="POST" class="contact-form" target="dummyframe" onsubmit="sendForm()">-->
                             <input id="name" name="name" type="text" class="contact-form-text" required placeholder="Name" data-error="Enter your name"
                                    oninvalid="this.setCustomValidity('Enter name or alias')"
@@ -267,7 +267,7 @@
                             <div id="success_message" class="contact-form-succes-info">Message sent</div>
                         </form>
                     </div>
-                    <!--                <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>-->
+                                    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 </div>
             </div>
         </section>
