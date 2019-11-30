@@ -2,7 +2,6 @@
 @import '_menu.scss';
 @import '_cookies.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 $fa-font-path: "webfonts";
 @import "fontawesome.scss";
 @import "solid.scss";
@@ -661,6 +660,7 @@ input:-webkit-autofill:active {
     z-index: 10;
     -webkit-transition: opacity 2s; /* Safari */
     transition: opacity 2s;
+    min-width: 110px;
   }
 
   #nav {

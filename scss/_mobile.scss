@@ -132,7 +132,7 @@
 
   .resume {
     #nav.goRight {
-      padding: 1rem;
+      padding-top: 1rem;
     }
 
     .arrow::before {
@@ -302,8 +302,17 @@
   }
 
   .resume {
+    //span{
+    //  display: inline;
+    //}
+    //.button.resume::before{
+    //
+    //
+    //}
+
     #nav.goRight {
-      padding: 1rem;
+      //padding: 1rem;
+      padding-top: 1rem;
     }
 
     .arrow::before {
@@ -385,6 +394,7 @@
   .menu-btnResume {
     right: 5px;
   }
+
   .resume-page {
     .container {
       margin-right: 40px;

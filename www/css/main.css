@@ -6409,7 +6409,8 @@ input:-webkit-autofill:active {
     z-index: 10;
     -webkit-transition: opacity 2s;
     /* Safari */
-    transition: opacity 2s; }
+    transition: opacity 2s;
+    min-width: 110px; }
   .resume #nav {
     min-height: 9rem;
     background: none;
@@ -6779,7 +6780,7 @@ input:-webkit-autofill:active {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .resume #nav.goRight {
-    padding: 1rem; }
+    padding-top: 1rem; }
   .resume .arrow::before {
     content: "\f078"; }
   section {
@@ -6875,7 +6876,7 @@ input:-webkit-autofill:active {
   .projects {
     grid-template-columns: 1fr; }
   .resume #nav.goRight {
-    padding: 1rem; }
+    padding-top: 1rem; }
   .resume .arrow::before {
     content: "\f078"; }
   .resume-page img.avatar {
