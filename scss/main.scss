@@ -2,6 +2,7 @@
 @import '_menu.scss';
 @import '_cookies.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 $fa-font-path: "webfonts";
 @import "fontawesome.scss";
 @import "solid.scss";
@@ -59,7 +60,7 @@ $fa-font-path: "webfonts";
   }
 }
 
-.btn-portfolio-disabled{
+.btn-portfolio-disabled {
   @extend .btn-portfolio;
   background-color: lightgray;
   pointer-events: none;
@@ -168,7 +169,6 @@ $fa-font-path: "webfonts";
     ul {
       vertical-align: middle;
     }
-
 
 
     li {
@@ -336,10 +336,10 @@ main {
     text-align: left
   }
 
-  .job-ul:before{
-    content:attr(data-header);
+  .job-ul:before {
+    content: attr(data-header);
     //font-size:120%;
-    margin-left:-20px;
+    margin-left: -20px;
   }
 }
 
@@ -650,7 +650,7 @@ input:-webkit-autofill:active {
 
     }
 
-    .lang-name{
+    .lang-name {
       display: inline-block;
       min-width: 70px;
       text-align: left;
@@ -833,7 +833,7 @@ input:-webkit-autofill:active {
     width: 200px !important;
   }
 
-  .links ul:last-child{
+  .links ul:last-child {
     display: table-cell;
   }
 
@@ -875,11 +875,11 @@ input:-webkit-autofill:active {
     list-style-type: square;
   }
 
-  .job-ul:before{
-      content:attr(data-header);
-      font-size:120%;
-      font-weight:bold;
-      margin-left:-15px;
+  .job-ul:before {
+    content: attr(data-header);
+    font-size: 120%;
+    font-weight: bold;
+    margin-left: -15px;
   }
 
   //School
@@ -904,14 +904,14 @@ input:-webkit-autofill:active {
   .education-school {
     font-weight: bold;
     line-height: 1.2;
-    max-width:400px !important;
+    max-width: 400px !important;
   }
 
-  .education-title{
+  .education-title {
     font-size: 12px;
   }
 
-  .education-fos{
+  .education-fos {
     font-size: 12px;
   }
 
