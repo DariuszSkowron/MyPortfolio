@@ -302,13 +302,10 @@
   }
 
   .resume {
-    //span{
-    //  display: inline;
-    //}
-    //.button.resume::before{
-    //
-    //
-    //}
+
+    .button-title{
+      display: table-row;
+    }
 
     #nav.goRight {
       //padding: 1rem;
