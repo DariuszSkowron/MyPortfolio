@@ -126,6 +126,7 @@
   opacity: 1;
   background-color: #0d0b05; }
   .menu .logo {
+    margin-left: 15px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -173,7 +174,7 @@
 
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    width: 60%; } }
+    width: 58%; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn, .menu-btnResume {
