@@ -118,30 +118,42 @@
   top: 0; }
 
 .menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 70%;
   height: 5rem;
   z-index: 10;
   opacity: 1;
   background-color: #0d0b05; }
+  .menu ul {
+    padding: 0;
+    list-style-type: none; }
   .menu .logo {
-    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 35px;
+    height: 5rem !important;
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 22px; }
+    font-size: 22px;
+    vertical-align: middle !important; }
   .menu-nav {
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    right: 20px;
+    width: 70%;
     list-style: none; }
-  .menu .nav-item.current > a {
-    color: #51652d; }
+  .menu .nav-item {
+    display: block;
+    margin: 0 !important; }
+    .menu .nav-item.current > a {
+      color: #51652d; }
   .menu .nav-link {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
     font-weight: bold;
     color: #fff;
     z-index: 10;
@@ -174,14 +186,14 @@
 
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    width: 58%; } }
+    width: 70%; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn, .menu-btnResume {
     visibility: visible; }
   .menu-nav {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     position: fixed;
     top: 56px;
     height: 200px !important;
@@ -189,7 +201,8 @@
     opacity: 1;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    text-align: center;
+    width: 100%;
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
     transition: all 0.5s ease-out; }
@@ -197,7 +210,7 @@
       visibility: visible;
       transform: translate3d(0, 0, 0); }
   .nav-item {
-    transform: translate3d(600px, 0, 0);
+    transform: translate3d(100%, 0, 0);
     transition: all 0.5s ease-out; }
     .nav-item.show {
       transform: translate3d(0px, 0px, 0px); } }
@@ -6853,10 +6866,10 @@ input:-webkit-autofill:active {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 2.5rem; }
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
+  #main > section > .container {
+    padding: 6em 1rem 15em 1rem; }
+  main #home h1 {
+    margin-top: 10vh; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
