@@ -6231,19 +6231,19 @@ main {
   vertical-align: center; }
   .boxes i {
     padding-right: 10px; }
-  .boxes div {
+  .boxes a {
     min-width: 420px;
     font-size: 1.2rem;
     border: 3px #51652d solid;
     padding: 2rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
+    .boxes a:hover {
       background: #51652d;
       color: #fff; }
-      .boxes div:hover span {
+      .boxes a:hover span {
         color: #fff; }
-    .boxes div .text-secondary {
+    .boxes a .text-secondary {
       padding-top: 50px; }
 
 .contact-section {
