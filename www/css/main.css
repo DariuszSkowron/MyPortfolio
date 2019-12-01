@@ -118,30 +118,41 @@
   top: 0; }
 
 .menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 70%;
   height: 5rem;
   z-index: 10;
   opacity: 1;
   background-color: #0d0b05; }
+  .menu ul {
+    padding: 0;
+    list-style-type: none; }
   .menu .logo {
-    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 35px;
+    height: 5rem !important;
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 22px; }
+    font-size: 22px;
+    vertical-align: middle !important; }
+    .menu .logo .nav-link {
+      font-size: 22px;
+      padding: 0; }
+      .menu .logo .nav-link .nav-link.current {
+        color: #51652d; }
   .menu-nav {
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 70%;
     list-style: none; }
-  .menu .nav-item.current > a {
-    color: #51652d; }
   .menu .nav-link {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
     font-weight: bold;
     color: #fff;
     z-index: 10;
@@ -150,6 +161,8 @@
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #51652d; }
+  .menu .nav-link.current {
+    color: #51652d; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -174,14 +187,14 @@
 
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    width: 58%; } }
+    width: 70%; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn, .menu-btnResume {
     visibility: visible; }
   .menu-nav {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     position: fixed;
     top: 56px;
     height: 200px !important;
@@ -189,6 +202,7 @@
     opacity: 1;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 50%;
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
@@ -6218,37 +6232,36 @@ main {
   vertical-align: center; }
   .boxes i {
     padding-right: 10px; }
-  .boxes div {
+  .boxes a {
     min-width: 420px;
     font-size: 1.2rem;
     border: 3px #51652d solid;
     padding: 2rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
+    .boxes a:hover {
       background: #51652d;
       color: #fff; }
-      .boxes div:hover span {
+      .boxes a:hover span {
         color: #fff; }
-    .boxes div .text-secondary {
+    .boxes a .text-secondary {
       padding-top: 50px; }
 
 .contact-section {
-  padding: 0rem 0;
-  max-width: 400px !important;
+  padding: 10px 0;
+  max-width: 600px !important;
   align-items: center; }
 
 .contact-section h1 {
   text-align: center; }
 
 .border {
-  height: 10px;
+  height: 7px;
   background: #51652d;
-  margin: 40px auto; }
+  margin-top: 10px;
+  margin-bottom: 12px; }
 
 .contact-form {
-  max-width: 600px !important;
-  margin: auto;
   padding: 0 10px;
   overflow: hidden; }
 
@@ -6291,17 +6304,16 @@ input:-webkit-autofill:active {
     color: inherit; } }
 
 .contact-form-btn, .contact-form-succes-info {
-  float: left;
+  display: block;
   border: 0;
   background: rgba(150, 182, 91, 0.5);
   color: #fff;
   height: 40px;
   padding: 12px 50px;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-radius: 4px;
   cursor: pointer;
   transition: 0.5s;
-  width: 40%; }
+  width: 100%; }
 
 .contact-form-btn:hover, .contact-form-succes-info:hover {
   background: #51652d; }
@@ -6316,8 +6328,7 @@ input:-webkit-autofill:active {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   opacity: 0;
-  float: left;
-  width: 60%;
+  width: 90%;
   background: #51652d; }
 
 .btn, .btn-dark, .btn-light {
@@ -6415,7 +6426,7 @@ input:-webkit-autofill:active {
     transition: opacity 2s;
     min-width: 110px; }
   .resume #nav {
-    min-height: 9rem;
+    min-height: 8rem;
     background: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -6853,10 +6864,10 @@ input:-webkit-autofill:active {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 2.5rem; }
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
+  #main > section > .container {
+    padding: 6em 1rem 15em 1rem; }
+  main #home h1 {
+    margin-top: 10vh; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -6905,18 +6916,16 @@ input:-webkit-autofill:active {
     flex-direction: column; }
     .portfolio__buttons a {
       margin: 0 0 10px 0; }
-  .boxes {
-    max-width: 250px !important; }
-    .boxes div {
-      min-width: 150px;
-      font-size: 1rem;
-      padding: 10px 5px 0 5px;
-      text-align: center; }
-      .boxes div .text-secondary {
-        padding-top: 0;
-        padding-bottom: 10px;
-        text-align: center;
-        display: block; } }
+  .boxes a {
+    min-width: 150px;
+    font-size: 1rem;
+    padding: 10px 5px 0 5px;
+    text-align: center; }
+    .boxes a .text-secondary {
+      padding-top: 0;
+      padding-bottom: 10px;
+      text-align: center;
+      display: block; } }
 
 @media screen and (max-width: 1100px) {
   .menu-btnResume {

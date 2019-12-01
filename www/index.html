@@ -13,7 +13,7 @@
 <header>
     <nav class="menu">
         <div class="logo">
-            <a href="#home"><h4>Skowron <span class="text-secondary">Dariusz</span></h4></a>
+            <a href="#home" class="nav-link"><h4>Skowron <span class="text-secondary">Dariusz</span></h4></a>
         </div>
         <!--        <div class="menu-branding">-->
         <!--&lt;!&ndash;&lt;!&ndash;            <div class="portrait"></div>&ndash;&gt;&ndash;&gt;-->
@@ -78,7 +78,7 @@
                     You can find more information in the resume
                 </h2>
                 <div class="about-info">
-                    <img src="images/portrait250.png" , alt="Dariusz Skowron"
+                    <img src="images/portrait250.png" alt="Dariusz Skowron"
                          class="bio-image">
 
                     <div class="bio">
@@ -204,7 +204,7 @@
                         <p>An application that facilitates the management of mechanical projects. Main functions:
                             control of expenditures for the project, review and controlling orders of parts,
                             database managing of contractors and sales representatives, inquiries sending
-                        <span class="warning-text"><b>Application is not finished yet, there are a few things that works and a lot that still needs to be done.</b></span></p>
+                            <span class="warning-text"><b>Application is not finished yet, there are a few things that works and a lot that still needs to be done.</b></span></p>
                         <div class="portfolio__buttons">
                             <a target="_blank" class="btn-portfolio" href="https://github.com/DariuszSkowron/MechanicalProjectManager"><i class="fab fa-github"></i>GitHub</a><a target="_blank"
                                                                                                                                                                                  class="btn-portfolio-disabled"
@@ -230,24 +230,20 @@
                 </h2>
                 <div class="contactItems">
                     <div class="boxes">
-                        <div>
+                        <a href="mailto:dariusz.skowron@gmail.com">
                             <span class="text-secondary"><i class="fas fa-envelope fa-2x"></i></span>
                             dariusz.skowron@gmail.com
-                        </div>
+                        </a>
 
-                        <div>
-            <span
-                    class="text-secondary"><i class="fas fa-mobile-alt fa-2x"></i></span>
+                        <a href="tel:48 534 635 177">
+                            <span class="text-secondary"><i class="fas fa-mobile-alt fa-2x"></i></span>
                             (+48) 534 635 177
-                        </div>
+                        </a>
 
-                        <div>
-            <span
-                    class="text-secondary"><i class="fas fa-map-marker-alt fa-2x"></i></span>
+                        <a href="https://goo.gl/maps/oDTQxz7nDZigEbY68">
+                            <span class="text-secondary"><i class="fas fa-map-marker-alt fa-2x"></i></span>
                             Krakow, Poland
-                        </div>
-
-
+                        </a>
                     </div>
 
                     <div class="contact-section">
@@ -268,7 +264,7 @@
                             <div id="success_message" class="contact-form-succes-info">Message sent</div>
                         </form>
                     </div>
-                                    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 </div>
             </div>
         </section>
@@ -323,22 +319,30 @@
         var originalColor = getComputedStyle(button).background;
         button.style.background = "gray";
         button.disabled = true;
-        var move = document.getElementById('success_message');
         // alert('Thank you for your feedback, the information will be delivered to me shortly');
         setTimeout(emptyInputs, 500);
         setTimeout(function ()
         {
-            move.style.opacity = 1
-        }, 500);
+            button.value = "Sending...";
+        }, 200);
+
+        setTimeout(function(){
+            // button.style.opacity= 0;
+        }, 1500);
+
+
         button.disabled = false;
         setTimeout(function ()
         {
-            button.style.background = originalColor
-        }, 2000);
+            button.style.background = originalColor;
+            button.value = "Send";
+
+        }, 4000);
         setTimeout(function ()
         {
-            move.style.opacity = 0
-        }, 1500);
+            // button.style.opacity= 1;
+            button.value = "Thank you!";
+        }, 2000);
     }
 </script>
 
@@ -352,9 +356,30 @@
 </script>
 
 <script>
-    $('.popupCloseButton').click(function ()
-    {
-        $('.hover_bkgr_fricc').hide();
+    let mainNavLinks = document.querySelectorAll(".nav-link");
+    let mainSections = document.querySelectorAll("main section");
+
+    let lastId;
+    let cur = [];
+
+    navbarHeight = $('.menu').height();
+
+    window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach(link => {
+            let section = document.querySelector(link.hash);
+
+            if (
+                section.offsetTop <= fromTop + navbarHeight &&
+                section.offsetTop + section.offsetHeight > fromTop + navbarHeight
+            ) {
+                link.classList.add("current");
+            } else {
+                link.classList.remove("current");
+            }
+        });
     });
 </script>
+
 </html>

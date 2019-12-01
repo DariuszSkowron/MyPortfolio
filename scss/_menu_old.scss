@@ -146,3 +146,204 @@
     transition-delay: $x * 0.1s;
   }
 }
+
+
+
+
+
+
+
+//
+//@import '_config.scss';
+//
+////Menu Button
+//.menu-btn {
+//  visibility: hidden;
+//  position: absolute;
+//  z-index: 10;
+//  right: 35px;
+//  top: 30px;
+//
+//  cursor: pointer;
+//  @include easeOut;
+//
+//  .btn-line {
+//    width: 28px;
+//    height: 3px;
+//    margin: 0 -5px 5px 0;
+//    background: set-text-color($primary-color);
+//    @include easeOut;
+//  }
+
+  //.btn-line {
+  //  &:nth-child(1) {
+  //    margin-top: 30px;
+  //  }
+  //
+  //  &:nth-child(2) {
+  //    margin-top: 40px;
+  //  }
+  //
+  //  &:nth-child(3) {
+  //    margin-top: 50px;
+  //  }
+  //}
+
+
+
+//MMENU from 12.01//
+
+
+//  .btn-lineResume{
+//    @extend .btn-line;
+//    background-color: rgba((lighten($secondary-color, 25)), 0.5);
+//  }
+//
+//  //Rotate into X with menu lines
+//  &.close {
+//    transform: rotate(180deg) ;
+//
+//    .btn-line {
+//      right: 120px;
+//      //Line 1 = Rotate
+//      &:nth-child(1) {
+//        transform: rotate(45deg) translate(5px, 12px);
+//        //transform: rotate(45deg) translate(5px, 11px);
+//      }
+//
+//      //Line 2 - Hide
+//      &:nth-child(2) {
+//        opacity: 0;
+//      }
+//
+//      //Line 3 - Rotate
+//      &:nth-child(3) {
+//        transform: rotate(135deg) translate(1px, 5px);
+//        //transform: rotate(135deg) translate(0px, 6px);
+//      }
+//    }
+//  }
+//
+//}
+//
+//.menu-btnResume{
+//  @extend .menu-btn;
+//  top: 0;
+//}
+//
+//
+////Menu Overlay
+//.menu {
+//  display:flex;
+//  justify-content: space-around;
+//  align-items: center;
+//  height: 5rem;
+//  z-index: 10;
+//  opacity: 1;
+//  background-color: lighten($primary-color, 0.5);
+//  //background-color: #000c00;
+//
+//  .logo{
+//    margin-left: 15px;
+//    color: white;
+//    text-transform: uppercase;
+//    letter-spacing: 4px;
+//    font-size: 22px;
+//  }
+//
+//  &-nav {
+//    display: flex;
+//    justify-content: space-around;
+//    width: 60%;
+//    list-style: none;
+//  }
+//
+//  .nav-item {
+//
+//    &.current > a {
+//      color: $secondary-color;
+//    }
+//  }
+//
+//  .nav-link {
+//    font-size: 15px;
+//    text-transform: uppercase;
+//    padding: 1rem 0;
+//    font-weight: bold;
+//    color: set-text-color($primary-color);
+//    z-index: 10;
+//    text-decoration: none;
+//    letter-spacing: 3px;
+//
+//    @include easeOut;
+//
+//    &:hover {
+//      color: $secondary-color;
+//    }
+//  }
+//}
+//
+//@for $x from 1 through 4 {
+//  .nav-item:nth-child(#{$x}) {
+//    transition-delay: $x * 0.1s;
+//  }
+//}
+//
+//@media screen and (max-width:420px){
+//
+//  .menu {
+//    justify-content: left;
+//  }
+//  .logo{
+//    max-width: 250px !important;
+//    margin-left: 35px !important;
+//    display: block;
+//    align-items: inherit;
+//  }
+//}
+//
+//
+//@media screen and (max-width: 1024px){
+//  .menu-nav{
+//    width: 58%;
+//  }
+//}
+//
+//@media screen and (max-width:768px){
+//  .menu-btn {
+//    visibility: visible;
+//  }
+//
+//
+//
+//  .menu-nav{
+//    margin-left: 0;
+//    margin-right: 0;
+//    position: fixed;
+//    top: 56px;
+//    height: 200px !important;
+//    background: lighten($primary-color, 0.5);
+//    //background: rgba(36, 36, 36, 0.94);
+//    opacity: 1;
+//    flex-direction: column;
+//    align-items: center;
+//    width: 50%;
+//    visibility: hidden;
+//    transform: translate3d(100%, 0, 0);
+//    @include easeOut;
+//
+//    &.show {
+//      visibility: visible;
+//      transform: translate3d(0, 0, 0);
+//    }
+//  }
+//
+//  .nav-item{
+//    transform: translate3d(600px,0,0);
+//    @include easeOut;
+//
+//    &.show {
+//      transform: translate3d(0px,0px,0px);
+//    }
+//  }
+//}

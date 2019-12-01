@@ -257,8 +257,12 @@
     }
   }
 
+  #main > section > .container {
+    padding: 6em 1rem 15em 1rem;
+  }
+
   main {
-    padding: 2rem;
+    //padding: 2rem;
 
     #home h1 {
       margin-top: 10vh;
@@ -366,10 +370,10 @@
 
 
   .boxes {
-    max-width: 250px !important;
+    //max-width: 250px !important;
 
 
-    div {
+    a {
       min-width: 150px;
       font-size: 1rem;
       padding: 10px 5px 0 5px;
