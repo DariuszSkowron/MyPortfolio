@@ -319,22 +319,30 @@
         var originalColor = getComputedStyle(button).background;
         button.style.background = "gray";
         button.disabled = true;
-        var move = document.getElementById('success_message');
         // alert('Thank you for your feedback, the information will be delivered to me shortly');
         setTimeout(emptyInputs, 500);
         setTimeout(function ()
         {
-            move.style.opacity = 1
-        }, 500);
+            button.value = "Sending...";
+        }, 200);
+
+        setTimeout(function(){
+            // button.style.opacity= 0;
+        }, 1500);
+
+
         button.disabled = false;
         setTimeout(function ()
         {
-            button.style.background = originalColor
-        }, 2000);
+            button.style.background = originalColor;
+            button.value = "Send";
+
+        }, 4000);
         setTimeout(function ()
         {
-            move.style.opacity = 0
-        }, 1500);
+            // button.style.opacity= 1;
+            button.value = "Thank you!";
+        }, 2000);
     }
 </script>
 
