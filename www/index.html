@@ -13,7 +13,7 @@
 <header>
     <nav class="menu">
         <div class="logo">
-            <a href="#home"><h4>Skowron <span class="text-secondary">Dariusz</span></h4></a>
+            <a class="nav-link" href="#home"><h4>Skowron<span class="text-secondary">Dariusz</span></h4></a>
         </div>
         <!--        <div class="menu-branding">-->
         <!--&lt;!&ndash;&lt;!&ndash;            <div class="portrait"></div>&ndash;&gt;&ndash;&gt;-->
@@ -361,4 +361,33 @@
         $('.hover_bkgr_fricc').hide();
     });
 </script>
+
+
+<script>
+    let mainNavLinks = document.querySelectorAll(".nav-link");
+    let mainSections = document.querySelectorAll("main section");
+
+    let lastId;
+    let cur = [];
+
+    navbarHeight = $('.menu').height();
+
+    window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach(link => {
+            let section = document.querySelector(link.hash);
+
+            if (
+                section.offsetTop <= fromTop + navbarHeight &&
+                section.offsetTop + section.offsetHeight > fromTop + navbarHeight
+            ) {
+                link.classList.add("current");
+            } else {
+                link.classList.remove("current");
+            }
+        });
+    });
+</script>
+
 </html>

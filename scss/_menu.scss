@@ -89,6 +89,12 @@
     font-size: 22px;
     vertical-align: middle !important;
 
+    .nav-link{
+      font-size: 22px;
+      .nav-link.current{
+        color: $secondary-color;
+      }
+    }
 
     //a{
     //  vertical-align: middle;
@@ -115,10 +121,10 @@
   .nav-item {
     display: block;
     margin: 0 !important;
+  }
 
-    &.current > a {
-      color: $secondary-color;
-    }
+  &.current > a {
+    color: $secondary-color;
   }
 
   .nav-link {
@@ -136,6 +142,11 @@
     &:hover {
       color: $secondary-color;
     }
+  }
+
+
+  .nav-link.current{
+    color: $secondary-color;
   }
 }
 

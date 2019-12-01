@@ -138,6 +138,10 @@
     letter-spacing: 4px;
     font-size: 22px;
     vertical-align: middle !important; }
+    .menu .logo .nav-link {
+      font-size: 22px; }
+      .menu .logo .nav-link .nav-link.current {
+        color: #51652d; }
   .menu-nav {
     align-items: center;
     display: flex;
@@ -147,8 +151,8 @@
   .menu .nav-item {
     display: block;
     margin: 0 !important; }
-    .menu .nav-item.current > a {
-      color: #51652d; }
+  .menu.current > a {
+    color: #51652d; }
   .menu .nav-link {
     font-size: 15px;
     text-transform: uppercase;
@@ -161,6 +165,8 @@
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #51652d; }
+  .menu .nav-link.current {
+    color: #51652d; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
