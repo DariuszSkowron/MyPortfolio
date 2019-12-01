@@ -126,6 +126,7 @@
   opacity: 1;
   background-color: #0d0b05; }
   .menu .logo {
+    margin-left: 15px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -173,7 +174,7 @@
 
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    width: 60%; } }
+    width: 58%; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn, .menu-btnResume {
@@ -6360,7 +6361,7 @@ input:-webkit-autofill:active {
     text-align: center;
     align-items: center;
     content: "\f56d";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
     z-index: 10;
     transition-duration: 0.4s; }
@@ -6368,8 +6369,10 @@ input:-webkit-autofill:active {
       background: #51652d;
       color: #fff;
       transition: all 0.5s ease-out; }
+  .resume .button-title {
+    display: inline; }
   .resume .arrow::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", serif;
     font-weight: 600;
     z-index: 10;
     padding: 4px 10px 4px 10px; }
@@ -6409,7 +6412,8 @@ input:-webkit-autofill:active {
     z-index: 10;
     -webkit-transition: opacity 2s;
     /* Safari */
-    transition: opacity 2s; }
+    transition: opacity 2s;
+    min-width: 110px; }
   .resume #nav {
     min-height: 9rem;
     background: none;
@@ -6779,7 +6783,7 @@ input:-webkit-autofill:active {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .resume #nav.goRight {
-    padding: 1rem; }
+    padding-top: 1rem; }
   .resume .arrow::before {
     content: "\f078"; }
   section {
@@ -6874,8 +6878,10 @@ input:-webkit-autofill:active {
     background-attachment: scroll; }
   .projects {
     grid-template-columns: 1fr; }
+  .resume .button-title {
+    display: table-row; }
   .resume #nav.goRight {
-    padding: 1rem; }
+    padding-top: 1rem; }
   .resume .arrow::before {
     content: "\f078"; }
   .resume-page img.avatar {
